@@ -1,0 +1,8 @@
+E:\COM Terminal\COMx\COM Terminal\SuperContextMenu\bin\Debug\SuperContextMenu.dll
+E:\COM Terminal\COMx\COM Terminal\SuperContextMenu\bin\Debug\SuperContextMenu.pdb
+E:\COM Terminal\COMx\COM Terminal\SuperContextMenu\obj\Debug\SuperContextMenu.ContextMenuForButton.resources
+E:\COM Terminal\COMx\COM Terminal\SuperContextMenu\obj\Debug\SuperContextMenu.csproj.GenerateResource.Cache
+E:\COM Terminal\COMx\COM Terminal\SuperContextMenu\obj\Debug\SuperContextMenu.dll
+E:\COM Terminal\COMx\COM Terminal\SuperContextMenu\obj\Debug\SuperContextMenu.pdb
+E:\COM Terminal\COMx\COM Terminal\SuperContextMenu\obj\Debug\SuperContextMenu.csprojResolveAssemblyReference.cache
+E:\COM Terminal\COMx\COM Terminal\SuperContextMenu\obj\Debug\SuperContextMenu.Properties.Resources.resources
