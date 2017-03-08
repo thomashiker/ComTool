@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chat-active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\chat-active.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="no" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\no.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +160,9 @@
   <data name="notepad-alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\notepad-alt.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="window-tile-vertically" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\window-tile-vertically.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="error_64px_1169843_easyicon.net" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\other\error_64px_1169843_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,6 +178,9 @@
   <data name="MD-record" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\MD-record.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="brush-alt-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\brush-alt-2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="arrow-7-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\arrow-7-left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -184,11 +193,14 @@
   <data name="map-marker-pin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\map-marker-pin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\file-add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MD-repeat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\MD-repeat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shapes-move-backward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\shapes-move-backward.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="typewritter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\typewritter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,14 +241,8 @@
   <data name="MD-vhs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\MD-vhs.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="badge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\badge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="file-download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\file-download.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MD-repeat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\MD-repeat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toolbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\toolbox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,17 +256,17 @@
   <data name="arrow-3-down-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\arrow-3-down-left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="display-mac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\display-mac.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\file-add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="database-upload-alt-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\database-upload-alt-2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MD-reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\MD-reload.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="brush-alt-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\brush-alt-1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MD-stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\MD-stop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow-8-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\arrow-8-right.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,14 +277,8 @@
   <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="time-alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\time-alt.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="arrow-4-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\arrow-4-down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MD-reload1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\MD-reload.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MD-levels-increase" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\MD-levels-increase.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,11 +292,14 @@
   <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\128x128\help.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shapes-move-forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\shapes-move-forward.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MD-repeat-once" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\MD-repeat-once.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow-3-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\arrow-3-down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="screenshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\screenshot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="zoom-in" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\zoom-in.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,11 +316,14 @@
   <data name="MD-levels-decrease" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\MD-levels-decrease.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MD-stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\MD-stop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="favourite-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\favourite-add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="window-tile-vertically" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\window-tile-vertically.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="display-mac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\display-mac.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="window-stack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\window-stack.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -346,11 +352,14 @@
   <data name="arrow-3-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\arrow-3-left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MD-pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\MD-pause.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MD-shuffle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\MD-shuffle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow-8-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\arrow-8-up.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connection-error-alt-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\connection-error-alt-1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="database-download-alt-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\database-download-alt-2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,8 +367,8 @@
   <data name="eraser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\eraser.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="connection-error-alt-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\connection-error-alt-1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MD-reload1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\MD-reload.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="door-closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\door-closed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -367,20 +376,14 @@
   <data name="bookmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\bookmark.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shapes-move-backward" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\shapes-move-backward.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="time-alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\time-alt.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow-2-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\arrow-2-right.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MD-reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\MD-reload.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="list-ordered" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\list-ordered.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow-8-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\arrow-8-down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="badge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\badge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hardware-processor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\hardware-processor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -391,8 +394,8 @@
   <data name="arrow-2-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\arrow-2-left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shapes-move-forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\shapes-move-forward.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow-3-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\arrow-3-down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MD-resume" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\MD-resume.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -400,8 +403,8 @@
   <data name="MD-play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\MD-play.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chat-active" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\chat-active.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow-8-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\arrow-8-down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="connection-error" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\connection-error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -415,8 +418,8 @@
   <data name="MD-previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\MD-previous.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="screenshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\screenshot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MD-pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\MD-pause.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow-3-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\arrow-3-up.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -439,8 +442,8 @@
   <data name="location" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\location.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="brush-alt-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\brush-alt-2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="list-ordered" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\list-ordered.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="checkbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DefaultIcon\png\16x16\checkbox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -455,7 +458,7 @@
     <value>..\Resources\DefaultIcon\png\16x16\star.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="arrow-8-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultIcon\png\16x16\arrow-8-up.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ftp-alt-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultIcon\png\16x16\ftp-alt-2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

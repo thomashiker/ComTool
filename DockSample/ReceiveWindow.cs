@@ -169,6 +169,11 @@ namespace DockSample
             return portInfo;
         }
 
+        public string GetPortName()
+        {
+            return serialPort.PortName;
+        }
+
         public void SetSavedLogPath(string path)
         {
             logPath = path;
@@ -266,11 +271,18 @@ namespace DockSample
             try
             {
                 serialPort.Open();
-                this.Icon = new Icon("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\ico\\connect.ico");
+                Bitmap bmp = new Bitmap(global::DockSample.Properties.Resources.connect);
+                IntPtr h = bmp.GetHicon();
+                this.Icon = System.Drawing.Icon.FromHandle(h);
+                //DeleteObject(h);
+                //this.Icon = new Icon("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\ico\\connect.ico");
             }
             catch
             {
-                this.Icon = new Icon("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\ico\\connection_error.ico");
+                Bitmap bmp = new Bitmap(global::DockSample.Properties.Resources.connection_error);
+                IntPtr h = bmp.GetHicon();
+                this.Icon = System.Drawing.Icon.FromHandle(h);
+                //this.Icon = new Icon("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\ico\\connection_error.ico");
                 return false;
             }
 
@@ -286,7 +298,6 @@ namespace DockSample
             serialPort.Encoding = System.Text.Encoding.GetEncoding("GB2312");
 
             SetContextMenuStripState(true);
-            //this.Icon = new Icon("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\ico\\connect.ico");
 
             CreateLogFile();
 
@@ -294,12 +305,16 @@ namespace DockSample
 
             return true;
         }
+
         public bool CloseSerialPort()
         {
             try
             {
                 serialPort.Close();
-                this.Icon = new Icon("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\ico\\connection_error.ico");
+                Bitmap bmp = new Bitmap(global::DockSample.Properties.Resources.connection_error);
+                IntPtr h = bmp.GetHicon();
+                this.Icon = System.Drawing.Icon.FromHandle(h);
+                //this.Icon = new Icon("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\ico\\connection_error.ico");
             }
             catch// (IOException)
             {

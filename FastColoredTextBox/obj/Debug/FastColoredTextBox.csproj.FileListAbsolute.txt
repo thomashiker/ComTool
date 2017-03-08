@@ -49,3 +49,16 @@ E:\COM Terminal\COMx\COM Terminal\FastColoredTextBox\obj\Debug\FastColoredTextBo
 E:\COM Terminal\COMx\COM Terminal\FastColoredTextBox\obj\Debug\FastColoredTextBox.dll
 E:\COM Terminal\COMx\COM Terminal\FastColoredTextBox\obj\Debug\FastColoredTextBox.pdb
 E:\COM Terminal\COMx\COM Terminal\FastColoredTextBox\obj\Debug\FastColoredTextBox.csprojResolveAssemblyReference.cache
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\bin\Debug\FastColoredTextBox.XML
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\bin\Debug\FastColoredTextBox.dll
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\bin\Debug\FastColoredTextBox.pdb
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBox.csprojResolveAssemblyReference.cache
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FastColoredTextBox.resources
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FindForm.resources
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.GoToForm.resources
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.HotkeysEditorForm.resources
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.Properties.Resources.resources
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.ReplaceForm.resources
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBox.csproj.GenerateResource.Cache
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBox.dll
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBox.pdb

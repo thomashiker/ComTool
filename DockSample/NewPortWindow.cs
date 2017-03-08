@@ -41,6 +41,31 @@ namespace DockSample
             //ReadParseXml(configFile);
         }
 
+        public DialogResult ShowNewPortDialog(IWin32Window owner, string portName)
+        {
+            if (portComboBox.Items.Contains(portName))
+            {
+                portComboBox.SelectedItem = portName;
+            }
+            else
+            {
+                string[] ports = SerialPort.GetPortNames();
+                if (Array.Exists<string>(ports, element => element == portName))
+                {
+                    portComboBox.Items.Clear();
+                    portComboBox.Items.AddRange(ports);
+                    portComboBox.SelectedText = portName;
+                }
+            }
+            if (!this.Visible)
+            {
+                this.ShowDialog(owner);
+            }
+            this.Activate();
+
+            return DialogResult.OK;
+        }
+
         private void OpenPortTitleToolStrip_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)

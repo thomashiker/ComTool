@@ -970,9 +970,7 @@ namespace DockSample
 
         private void DropDownPorts_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
-            this.Activate();
-            /*ToolStripItem item = (ToolStripItem)sender;
+            ToolStripItem item = (ToolStripItem)sender;
             //MessageBox.Show(item.Text);
 
             foreach (IDockContent document in dockPanel.DocumentsToArray())
@@ -983,24 +981,24 @@ namespace DockSample
                     if (this.WindowState == FormWindowState.Minimized)
                     {
                         this.WindowState = FormWindowState.Normal;
-                        //this.Activate();
+                        this.Activate();
                         this.ShowInTaskbar = true;
                     }
-                    //rcv.Activate();
+                    rcv.Activate();
                     return;
                 }
             }
 
-            /*if (null != newPortForm)
+            if (null != newPortForm)
             {
                 if (this.WindowState == FormWindowState.Minimized)
                 {
                     this.WindowState = FormWindowState.Normal;
-                    //this.Activate();
+                    this.Activate();
                     this.ShowInTaskbar = true;
                 }
                 newPortForm.ShowNewPortDialog(this, item.Text);
-            }*/
+            }
         }
    
         private void CreatDropDownPorts()
@@ -1014,7 +1012,7 @@ namespace DockSample
                 {
                     ToolStripItem item = notifyTSMINewPort.DropDownItems.Add(name);
                     item.BackColor = System.Drawing.SystemColors.ButtonFace;
-                    item.Image = global::DockSample.Properties.Resources.connect;
+                    item.Image = global::DockSample.Properties.Resources.ftp_alt_2;
                     item.Click += new System.EventHandler(DropDownPorts_Click);
                 }
             }

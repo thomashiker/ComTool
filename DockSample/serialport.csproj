@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DockSample</RootNamespace>
-    <AssemblyName>DockSample</AssemblyName>
+    <AssemblyName>ComTool</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -399,6 +399,7 @@
     <Content Include="Resources\DefaultIcon\ico\ship_128px_1164196_easyicon.net.ico" />
     <Content Include="Resources\DefaultIcon\ico\sitemap_128px.ico" />
     <Content Include="Resources\DefaultIcon\ico\terminal_32px.ico" />
+    <None Include="Resources\DefaultIcon\png\16x16\ftp-alt-2.png" />
     <None Include="Resources\DefaultIcon\png\16x16\view.png" />
     <None Include="Resources\DefaultIcon\png\16x16\arrow-7-right.png" />
     <None Include="Resources\DefaultIcon\png\16x16\arrow-7-left.png" />
