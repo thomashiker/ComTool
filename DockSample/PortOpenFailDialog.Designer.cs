@@ -78,7 +78,7 @@
             // 
             // warnPicBox
             // 
-            this.warnPicBox.BackgroundImage = global::DockSample.Properties.Resources.error_64px_1169843_easyicon_net;
+            this.warnPicBox.BackgroundImage = global::DockSample.Properties.Resources.error_64px;
             this.warnPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.warnPicBox.InitialImage = null;
             this.warnPicBox.Location = new System.Drawing.Point(10, 14);

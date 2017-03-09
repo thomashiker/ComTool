@@ -54,7 +54,7 @@
             this.btOpenPort = new System.Windows.Forms.ToolStripButton();
             this.btAddCfg = new System.Windows.Forms.ToolStripButton();
             this.btDelCfg = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.titleLabel = new System.Windows.Forms.ToolStripLabel();
             this.btEnableCustomBaud = new System.Windows.Forms.ToolStripButton();
             this.portOpenStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.portInfoStatusStrip = new System.Windows.Forms.StatusStrip();
@@ -313,7 +313,7 @@
             this.btOpenPort,
             this.btAddCfg,
             this.btDelCfg,
-            this.toolStripLabel1,
+            this.titleLabel,
             this.btEnableCustomBaud});
             this.OpenPortTitleToolStrip.Location = new System.Drawing.Point(0, 1);
             this.OpenPortTitleToolStrip.Margin = new System.Windows.Forms.Padding(2);
@@ -323,7 +323,6 @@
             this.OpenPortTitleToolStrip.TabIndex = 27;
             this.OpenPortTitleToolStrip.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OpenPortTitleToolStrip_MouseDown);
             this.OpenPortTitleToolStrip.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OpenPortTitleToolStrip_MouseMove);
-            this.OpenPortTitleToolStrip.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OpenPortTitleToolStrip_MouseUp);
             // 
             // btClose
             // 
@@ -369,13 +368,16 @@
             this.btDelCfg.Text = "Del From List";
             this.btDelCfg.Click += new System.EventHandler(this.btDelCfg_Click);
             // 
-            // toolStripLabel1
+            // titleLabel
             // 
-            this.toolStripLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripLabel1.Image = global::DockSample.Properties.Resources.terminal;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(16, 22);
-            this.toolStripLabel1.Text = "Port";
+            this.titleLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.titleLabel.Image = global::DockSample.Properties.Resources.settings;
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.titleLabel.Size = new System.Drawing.Size(26, 22);
+            this.titleLabel.Text = "New Port";
+            this.titleLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titleLabel_MouseDown);
+            this.titleLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.titleLabel_MouseMove);
             // 
             // btEnableCustomBaud
             // 
@@ -471,7 +473,7 @@
         private System.Windows.Forms.ToolStripButton btClose;
         private System.Windows.Forms.ToolStripButton btDelCfg;
         private System.Windows.Forms.ToolStripButton btAddCfg;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripLabel titleLabel;
         private System.Windows.Forms.ToolStripButton btOpenPort;
         private System.Windows.Forms.ToolStripStatusLabel portOpenStatusLabel;
         private System.Windows.Forms.StatusStrip portInfoStatusStrip;

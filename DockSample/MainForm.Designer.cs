@@ -123,40 +123,6 @@ namespace DockSample
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.mainMenu = new System.Windows.Forms.MenuStrip();
-            this.menuItemFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemNew = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemOpen = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemClose = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemCloseAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemCloseAllButThisOne = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItem4 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuItemExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitWithoutSavingLayout = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemView = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemSolutionExplorer = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemPropertyWindow = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemToolbox = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemOutputWindow = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemTaskList = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuItemToolBar = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemStatusBar = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuItemLayoutByCode = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemLayoutByXml = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemTools = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemLockLayout = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItem3 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuItemSchemaVS2003 = new System.Windows.Forms.ToolStripMenuItem();
-            this.showRightToLeft = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemShowDocumentIcon = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItem6 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuItemSystemMdi = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItem5 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuItemWindow = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemNewWindow = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.toolBar = new System.Windows.Forms.ToolStrip();
             this.toolBarButtonSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -177,6 +143,7 @@ namespace DockSample
             this.cmsNotifyMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.mainTimer = new System.Windows.Forms.Timer(this.components);
+            this.tsWindowTitle = new System.Windows.Forms.ToolStrip();
             this.sendTimerPeriodLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.sendCharNumLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.rcvCharNumLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -193,7 +160,6 @@ namespace DockSample
             this.newLogToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolBarButtonOpenLog = new System.Windows.Forms.ToolStripButton();
             this.openLogFolderButton = new System.Windows.Forms.ToolStripButton();
-            this.hideMenuButton = new System.Windows.Forms.ToolStripButton();
             this.topMostButton = new System.Windows.Forms.ToolStripButton();
             this.tsBtGoBack = new System.Windows.Forms.ToolStripButton();
             this.tsBtGoForward = new System.Windows.Forms.ToolStripButton();
@@ -205,270 +171,19 @@ namespace DockSample
             this.horizontalToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.verticalToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.stackToolStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemDockingWindow = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemDockingMdi = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.btWindowClose = new System.Windows.Forms.ToolStripButton();
+            this.btMaximum = new System.Windows.Forms.ToolStripButton();
+            this.btMinimum = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.btTopMost = new System.Windows.Forms.ToolStripButton();
             this.notifyTSMIShow = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyTSMINewPort = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyTSMIExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.mainMenu.SuspendLayout();
             this.toolBar.SuspendLayout();
             this.systemStatusStrip.SuspendLayout();
             this.cmsNotifyMenu.SuspendLayout();
+            this.tsWindowTitle.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mainMenu
-            // 
-            this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemFile,
-            this.menuItemView,
-            this.menuItemTools,
-            this.menuItemWindow,
-            this.menuItemHelp});
-            this.mainMenu.Location = new System.Drawing.Point(0, 0);
-            this.mainMenu.MdiWindowListItem = this.menuItemWindow;
-            this.mainMenu.Name = "mainMenu";
-            this.mainMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.mainMenu.Size = new System.Drawing.Size(684, 25);
-            this.mainMenu.TabIndex = 7;
-            // 
-            // menuItemFile
-            // 
-            this.menuItemFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemNew,
-            this.menuItemOpen,
-            this.menuItemClose,
-            this.menuItemCloseAll,
-            this.menuItemCloseAllButThisOne,
-            this.menuItem4,
-            this.menuItemExit,
-            this.exitWithoutSavingLayout});
-            this.menuItemFile.Name = "menuItemFile";
-            this.menuItemFile.Size = new System.Drawing.Size(39, 21);
-            this.menuItemFile.Text = "&File";
-            // 
-            // menuItemNew
-            // 
-            this.menuItemNew.Name = "menuItemNew";
-            this.menuItemNew.Size = new System.Drawing.Size(229, 22);
-            this.menuItemNew.Text = "&New Receive Window";
-            // 
-            // menuItemOpen
-            // 
-            this.menuItemOpen.Name = "menuItemOpen";
-            this.menuItemOpen.Size = new System.Drawing.Size(229, 22);
-            this.menuItemOpen.Text = "&New Send Window";
-            // 
-            // menuItemClose
-            // 
-            this.menuItemClose.Name = "menuItemClose";
-            this.menuItemClose.Size = new System.Drawing.Size(229, 22);
-            this.menuItemClose.Text = "&New Tool Window";
-            // 
-            // menuItemCloseAll
-            // 
-            this.menuItemCloseAll.Name = "menuItemCloseAll";
-            this.menuItemCloseAll.Size = new System.Drawing.Size(229, 22);
-            this.menuItemCloseAll.Text = "Close &All";
-            // 
-            // menuItemCloseAllButThisOne
-            // 
-            this.menuItemCloseAllButThisOne.Name = "menuItemCloseAllButThisOne";
-            this.menuItemCloseAllButThisOne.Size = new System.Drawing.Size(229, 22);
-            this.menuItemCloseAllButThisOne.Text = "Close All &But This One";
-            this.menuItemCloseAllButThisOne.Click += new System.EventHandler(this.menuItemCloseAllButThisOne_Click);
-            // 
-            // menuItem4
-            // 
-            this.menuItem4.Name = "menuItem4";
-            this.menuItem4.Size = new System.Drawing.Size(226, 6);
-            // 
-            // menuItemExit
-            // 
-            this.menuItemExit.Name = "menuItemExit";
-            this.menuItemExit.Size = new System.Drawing.Size(229, 22);
-            this.menuItemExit.Text = "&Exit";
-            // 
-            // exitWithoutSavingLayout
-            // 
-            this.exitWithoutSavingLayout.Name = "exitWithoutSavingLayout";
-            this.exitWithoutSavingLayout.Size = new System.Drawing.Size(229, 22);
-            this.exitWithoutSavingLayout.Text = "Exit &Without Saving Layout";
-            // 
-            // menuItemView
-            // 
-            this.menuItemView.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemSolutionExplorer,
-            this.menuItemPropertyWindow,
-            this.menuItemToolbox,
-            this.menuItemOutputWindow,
-            this.menuItemTaskList,
-            this.menuItem1,
-            this.menuItemToolBar,
-            this.menuItemStatusBar,
-            this.menuItem2,
-            this.menuItemLayoutByCode,
-            this.menuItemLayoutByXml});
-            this.menuItemView.MergeIndex = 1;
-            this.menuItemView.Name = "menuItemView";
-            this.menuItemView.Size = new System.Drawing.Size(47, 21);
-            this.menuItemView.Text = "&View";
-            // 
-            // menuItemSolutionExplorer
-            // 
-            this.menuItemSolutionExplorer.Name = "menuItemSolutionExplorer";
-            this.menuItemSolutionExplorer.Size = new System.Drawing.Size(198, 22);
-            this.menuItemSolutionExplorer.Text = "&Solution Explorer";
-            // 
-            // menuItemPropertyWindow
-            // 
-            this.menuItemPropertyWindow.Name = "menuItemPropertyWindow";
-            this.menuItemPropertyWindow.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.menuItemPropertyWindow.Size = new System.Drawing.Size(198, 22);
-            this.menuItemPropertyWindow.Text = "&Property Window";
-            // 
-            // menuItemToolbox
-            // 
-            this.menuItemToolbox.Name = "menuItemToolbox";
-            this.menuItemToolbox.Size = new System.Drawing.Size(198, 22);
-            this.menuItemToolbox.Text = "&Toolbox";
-            // 
-            // menuItemOutputWindow
-            // 
-            this.menuItemOutputWindow.Name = "menuItemOutputWindow";
-            this.menuItemOutputWindow.Size = new System.Drawing.Size(198, 22);
-            this.menuItemOutputWindow.Text = "&Output Window";
-            // 
-            // menuItemTaskList
-            // 
-            this.menuItemTaskList.Name = "menuItemTaskList";
-            this.menuItemTaskList.Size = new System.Drawing.Size(198, 22);
-            this.menuItemTaskList.Text = "Task &List";
-            // 
-            // menuItem1
-            // 
-            this.menuItem1.Name = "menuItem1";
-            this.menuItem1.Size = new System.Drawing.Size(195, 6);
-            // 
-            // menuItemToolBar
-            // 
-            this.menuItemToolBar.Checked = true;
-            this.menuItemToolBar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.menuItemToolBar.Name = "menuItemToolBar";
-            this.menuItemToolBar.Size = new System.Drawing.Size(198, 22);
-            this.menuItemToolBar.Text = "Tool &Bar";
-            // 
-            // menuItemStatusBar
-            // 
-            this.menuItemStatusBar.Checked = true;
-            this.menuItemStatusBar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.menuItemStatusBar.Name = "menuItemStatusBar";
-            this.menuItemStatusBar.Size = new System.Drawing.Size(198, 22);
-            this.menuItemStatusBar.Text = "Status B&ar";
-            // 
-            // menuItem2
-            // 
-            this.menuItem2.Name = "menuItem2";
-            this.menuItem2.Size = new System.Drawing.Size(195, 6);
-            // 
-            // menuItemLayoutByCode
-            // 
-            this.menuItemLayoutByCode.Name = "menuItemLayoutByCode";
-            this.menuItemLayoutByCode.Size = new System.Drawing.Size(198, 22);
-            this.menuItemLayoutByCode.Text = "Layout By &Code";
-            // 
-            // menuItemLayoutByXml
-            // 
-            this.menuItemLayoutByXml.Name = "menuItemLayoutByXml";
-            this.menuItemLayoutByXml.Size = new System.Drawing.Size(198, 22);
-            this.menuItemLayoutByXml.Text = "Layout By &XML";
-            // 
-            // menuItemTools
-            // 
-            this.menuItemTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemLockLayout,
-            this.menuItem3,
-            this.menuItemSchemaVS2003,
-            this.showRightToLeft,
-            this.menuItemShowDocumentIcon,
-            this.menuItem6,
-            this.menuItemDockingWindow,
-            this.menuItemDockingMdi,
-            this.menuItemSystemMdi,
-            this.menuItem5});
-            this.menuItemTools.MergeIndex = 2;
-            this.menuItemTools.Name = "menuItemTools";
-            this.menuItemTools.Size = new System.Drawing.Size(60, 21);
-            this.menuItemTools.Text = "&Setting";
-            // 
-            // menuItemLockLayout
-            // 
-            this.menuItemLockLayout.Name = "menuItemLockLayout";
-            this.menuItemLockLayout.Size = new System.Drawing.Size(243, 22);
-            this.menuItemLockLayout.Text = "&Log Setting";
-            // 
-            // menuItem3
-            // 
-            this.menuItem3.Name = "menuItem3";
-            this.menuItem3.Size = new System.Drawing.Size(240, 6);
-            // 
-            // menuItemSchemaVS2003
-            // 
-            this.menuItemSchemaVS2003.Name = "menuItemSchemaVS2003";
-            this.menuItemSchemaVS2003.Size = new System.Drawing.Size(243, 22);
-            this.menuItemSchemaVS2003.Text = "&Serial Port";
-            // 
-            // showRightToLeft
-            // 
-            this.showRightToLeft.Name = "showRightToLeft";
-            this.showRightToLeft.Size = new System.Drawing.Size(243, 22);
-            this.showRightToLeft.Text = "&Main Window";
-            // 
-            // menuItemShowDocumentIcon
-            // 
-            this.menuItemShowDocumentIcon.Name = "menuItemShowDocumentIcon";
-            this.menuItemShowDocumentIcon.Size = new System.Drawing.Size(243, 22);
-            this.menuItemShowDocumentIcon.Text = "&Receive Windows";
-            // 
-            // menuItem6
-            // 
-            this.menuItem6.Name = "menuItem6";
-            this.menuItem6.Size = new System.Drawing.Size(240, 6);
-            // 
-            // menuItemSystemMdi
-            // 
-            this.menuItemSystemMdi.Name = "menuItemSystemMdi";
-            this.menuItemSystemMdi.Size = new System.Drawing.Size(243, 22);
-            this.menuItemSystemMdi.Text = "Document Style: S&ystem MDI";
-            // 
-            // menuItem5
-            // 
-            this.menuItem5.Name = "menuItem5";
-            this.menuItem5.Size = new System.Drawing.Size(240, 6);
-            // 
-            // menuItemWindow
-            // 
-            this.menuItemWindow.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemNewWindow});
-            this.menuItemWindow.MergeIndex = 2;
-            this.menuItemWindow.Name = "menuItemWindow";
-            this.menuItemWindow.Size = new System.Drawing.Size(67, 21);
-            this.menuItemWindow.Text = "&Window";
-            // 
-            // menuItemNewWindow
-            // 
-            this.menuItemNewWindow.Name = "menuItemNewWindow";
-            this.menuItemNewWindow.Size = new System.Drawing.Size(153, 22);
-            this.menuItemNewWindow.Text = "&New Window";
-            // 
-            // menuItemHelp
-            // 
-            this.menuItemHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemAbout});
-            this.menuItemHelp.MergeIndex = 3;
-            this.menuItemHelp.Name = "menuItemHelp";
-            this.menuItemHelp.Size = new System.Drawing.Size(47, 21);
-            this.menuItemHelp.Text = "&Help";
             // 
             // toolBar
             // 
@@ -492,7 +207,6 @@ namespace DockSample
             this.toolBarButtonOpenLog,
             this.openLogFolderButton,
             this.toolBarButtonSeparator2,
-            this.hideMenuButton,
             this.topMostButton,
             this.tsBtGoBack,
             this.tsBtGoForward,
@@ -507,7 +221,7 @@ namespace DockSample
             this.toolBar.Name = "toolBar";
             this.toolBar.Padding = new System.Windows.Forms.Padding(0);
             this.toolBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolBar.Size = new System.Drawing.Size(684, 25);
+            this.toolBar.Size = new System.Drawing.Size(700, 25);
             this.toolBar.TabIndex = 6;
             // 
             // toolBarButtonSeparator1
@@ -553,7 +267,7 @@ namespace DockSample
             this.dockPanel.Location = new System.Drawing.Point(0, 50);
             this.dockPanel.Name = "dockPanel";
             this.dockPanel.ShowDocumentIcon = true;
-            this.dockPanel.Size = new System.Drawing.Size(684, 408);
+            this.dockPanel.Size = new System.Drawing.Size(700, 408);
             this.dockPanel.TabIndex = 0;
             this.dockPanel.ActiveDocumentChanged += new System.EventHandler(this.dockPanel_ActiveDocumentChanged);
             // 
@@ -614,7 +328,7 @@ namespace DockSample
             this.systemStatusStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.systemStatusStrip.Location = new System.Drawing.Point(0, 458);
             this.systemStatusStrip.Name = "systemStatusStrip";
-            this.systemStatusStrip.Size = new System.Drawing.Size(684, 22);
+            this.systemStatusStrip.Size = new System.Drawing.Size(700, 22);
             this.systemStatusStrip.TabIndex = 14;
             this.systemStatusStrip.Text = "statusStrip1";
             // 
@@ -684,6 +398,25 @@ namespace DockSample
             // 
             this.mainTimer.Interval = 2000;
             this.mainTimer.Tick += new System.EventHandler(this.mainTimer_Tick);
+            // 
+            // tsWindowTitle
+            // 
+            this.tsWindowTitle.BackColor = System.Drawing.SystemColors.Window;
+            this.tsWindowTitle.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.tsWindowTitle.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btWindowClose,
+            this.btMaximum,
+            this.btMinimum,
+            this.toolStripLabel1,
+            this.btTopMost});
+            this.tsWindowTitle.Location = new System.Drawing.Point(0, 0);
+            this.tsWindowTitle.Name = "tsWindowTitle";
+            this.tsWindowTitle.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.tsWindowTitle.Size = new System.Drawing.Size(700, 25);
+            this.tsWindowTitle.TabIndex = 16;
+            this.tsWindowTitle.Text = "toolStrip1";
+            this.tsWindowTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tsWindowTitle_MouseDown);
+            this.tsWindowTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tsWindowTitle_MouseMove);
             // 
             // sendTimerPeriodLabel
             // 
@@ -860,17 +593,6 @@ namespace DockSample
             this.openLogFolderButton.ToolTipText = "Open Folder";
             this.openLogFolderButton.Click += new System.EventHandler(this.openLogFolderButton_Click);
             // 
-            // hideMenuButton
-            // 
-            this.hideMenuButton.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.hideMenuButton.Image = global::DockSample.Properties.Resources.arrow_8_down;
-            this.hideMenuButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.hideMenuButton.Margin = new System.Windows.Forms.Padding(1);
-            this.hideMenuButton.Name = "hideMenuButton";
-            this.hideMenuButton.Size = new System.Drawing.Size(23, 23);
-            this.hideMenuButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.hideMenuButton.Click += new System.EventHandler(this.hideMenuButton_Click);
-            // 
             // topMostButton
             // 
             this.topMostButton.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -987,32 +709,59 @@ namespace DockSample
             this.stackToolStrip.Text = "&Stack";
             this.stackToolStrip.Click += new System.EventHandler(this.stackToolStrip_Click);
             // 
-            // menuItemDockingWindow
+            // btWindowClose
             // 
-            this.menuItemDockingWindow.Checked = true;
-            this.menuItemDockingWindow.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.menuItemDockingWindow.Image = ((System.Drawing.Image)(resources.GetObject("menuItemDockingWindow.Image")));
-            this.menuItemDockingWindow.Name = "menuItemDockingWindow";
-            this.menuItemDockingWindow.Size = new System.Drawing.Size(243, 22);
-            this.menuItemDockingWindow.Text = "&Top Most";
+            this.btWindowClose.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btWindowClose.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btWindowClose.Image = global::DockSample.Properties.Resources.cancel;
+            this.btWindowClose.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btWindowClose.Name = "btWindowClose";
+            this.btWindowClose.Size = new System.Drawing.Size(23, 22);
+            this.btWindowClose.Text = "Close";
+            this.btWindowClose.Click += new System.EventHandler(this.btWindowClose_Click);
             // 
-            // menuItemDockingMdi
+            // btMaximum
             // 
-            this.menuItemDockingMdi.Checked = true;
-            this.menuItemDockingMdi.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.menuItemDockingMdi.Image = ((System.Drawing.Image)(resources.GetObject("menuItemDockingMdi.Image")));
-            this.menuItemDockingMdi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.menuItemDockingMdi.Name = "menuItemDockingMdi";
-            this.menuItemDockingMdi.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuItemDockingMdi.Size = new System.Drawing.Size(243, 22);
-            this.menuItemDockingMdi.Text = "&Locked";
+            this.btMaximum.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btMaximum.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btMaximum.Image = global::DockSample.Properties.Resources.full_screen;
+            this.btMaximum.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btMaximum.Name = "btMaximum";
+            this.btMaximum.Size = new System.Drawing.Size(23, 22);
+            this.btMaximum.Text = "Maximum";
+            this.btMaximum.Click += new System.EventHandler(this.btMaximum_Click);
             // 
-            // menuItemAbout
+            // btMinimum
             // 
-            this.menuItemAbout.Image = ((System.Drawing.Image)(resources.GetObject("menuItemAbout.Image")));
-            this.menuItemAbout.Name = "menuItemAbout";
-            this.menuItemAbout.Size = new System.Drawing.Size(111, 22);
-            this.menuItemAbout.Text = "&About";
+            this.btMinimum.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btMinimum.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btMinimum.Image = global::DockSample.Properties.Resources.full_screen_exit;
+            this.btMinimum.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btMinimum.Name = "btMinimum";
+            this.btMinimum.Size = new System.Drawing.Size(23, 22);
+            this.btMinimum.Text = "Minimum";
+            this.btMinimum.Click += new System.EventHandler(this.btMinimum_Click);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Image = global::DockSample.Properties.Resources.terminal_16px;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
+            this.toolStripLabel1.Size = new System.Drawing.Size(99, 22);
+            this.toolStripLabel1.Text = "Serial Port";
+            this.toolStripLabel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tsLabel_MouseDown);
+            this.toolStripLabel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tsLabel_MouseMove);
+            // 
+            // btTopMost
+            // 
+            this.btTopMost.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btTopMost.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btTopMost.Image = global::DockSample.Properties.Resources.padlock_open;
+            this.btTopMost.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btTopMost.Name = "btTopMost";
+            this.btTopMost.Size = new System.Drawing.Size(23, 22);
+            this.btTopMost.Text = "Top Most";
+            this.btTopMost.Click += new System.EventHandler(this.btTopMost_Click);
             // 
             // notifyTSMIShow
             // 
@@ -1039,29 +788,29 @@ namespace DockSample
             // 
             // MainForm
             // 
-            this.ClientSize = new System.Drawing.Size(684, 480);
+            this.ClientSize = new System.Drawing.Size(700, 480);
             this.Controls.Add(this.dockPanel);
             this.Controls.Add(this.systemStatusStrip);
             this.Controls.Add(this.toolBar);
-            this.Controls.Add(this.mainMenu);
+            this.Controls.Add(this.tsWindowTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.KeyPreview = true;
-            this.MainMenuStrip = this.mainMenu;
             this.MinimumSize = new System.Drawing.Size(700, 400);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Serial Port";
+            this.Text = "ComTool";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.LocationChanged += new System.EventHandler(this.MainForm_LocationChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
-            this.mainMenu.ResumeLayout(false);
-            this.mainMenu.PerformLayout();
             this.toolBar.ResumeLayout(false);
             this.toolBar.PerformLayout();
             this.systemStatusStrip.ResumeLayout(false);
             this.systemStatusStrip.PerformLayout();
             this.cmsNotifyMenu.ResumeLayout(false);
+            this.tsWindowTitle.ResumeLayout(false);
+            this.tsWindowTitle.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1077,43 +826,6 @@ namespace DockSample
         private System.Windows.Forms.ToolStripButton tBarButtonRecord;
         private System.Windows.Forms.ToolStripButton toolBarButtonOpenLog;
         private System.Windows.Forms.ToolStripSeparator toolBarButtonSeparator2;
-        private System.Windows.Forms.MenuStrip mainMenu;
-        private System.Windows.Forms.ToolStripMenuItem menuItemFile;
-        private System.Windows.Forms.ToolStripMenuItem menuItemNew;
-        private System.Windows.Forms.ToolStripMenuItem menuItemOpen;
-        private System.Windows.Forms.ToolStripMenuItem menuItemClose;
-        private System.Windows.Forms.ToolStripMenuItem menuItemCloseAll;
-        private System.Windows.Forms.ToolStripMenuItem menuItemCloseAllButThisOne;
-        private System.Windows.Forms.ToolStripSeparator menuItem4;
-        private System.Windows.Forms.ToolStripMenuItem menuItemExit;
-        private System.Windows.Forms.ToolStripMenuItem menuItemView;
-        private System.Windows.Forms.ToolStripMenuItem menuItemSolutionExplorer;
-        private System.Windows.Forms.ToolStripMenuItem menuItemPropertyWindow;
-        private System.Windows.Forms.ToolStripMenuItem menuItemToolbox;
-        private System.Windows.Forms.ToolStripMenuItem menuItemOutputWindow;
-        private System.Windows.Forms.ToolStripMenuItem menuItemTaskList;
-        private System.Windows.Forms.ToolStripSeparator menuItem1;
-        private System.Windows.Forms.ToolStripMenuItem menuItemToolBar;
-        private System.Windows.Forms.ToolStripMenuItem menuItemStatusBar;
-        private System.Windows.Forms.ToolStripSeparator menuItem2;
-        private System.Windows.Forms.ToolStripMenuItem menuItemLayoutByCode;
-        private System.Windows.Forms.ToolStripMenuItem menuItemLayoutByXml;
-        private System.Windows.Forms.ToolStripMenuItem menuItemTools;
-        private System.Windows.Forms.ToolStripMenuItem menuItemLockLayout;
-        private System.Windows.Forms.ToolStripSeparator menuItem3;
-        private System.Windows.Forms.ToolStripMenuItem menuItemSchemaVS2003;
-        private System.Windows.Forms.ToolStripSeparator menuItem6;
-        private System.Windows.Forms.ToolStripMenuItem menuItemDockingMdi;
-        private System.Windows.Forms.ToolStripMenuItem menuItemDockingWindow;
-        private System.Windows.Forms.ToolStripMenuItem menuItemSystemMdi;
-        private System.Windows.Forms.ToolStripSeparator menuItem5;
-        private System.Windows.Forms.ToolStripMenuItem menuItemShowDocumentIcon;
-        private System.Windows.Forms.ToolStripMenuItem menuItemWindow;
-        private System.Windows.Forms.ToolStripMenuItem menuItemNewWindow;
-        private System.Windows.Forms.ToolStripMenuItem menuItemHelp;
-        private System.Windows.Forms.ToolStripMenuItem menuItemAbout;
-        private System.Windows.Forms.ToolStripMenuItem showRightToLeft;
-        private System.Windows.Forms.ToolStripMenuItem exitWithoutSavingLayout;
         private System.Windows.Forms.ToolStripButton toolStripButtonClear;
         private ImageList notifyImageList;
         private ToolStripButton toolStripButtonCloseWindow;
@@ -1127,7 +839,6 @@ namespace DockSample
         private ToolStripButton newLogToolStripButton;
         private ToolStripButton showLineButton;
         private ToolStripButton rmAllBookmarksButton;
-        private ToolStripButton hideMenuButton;
         private ToolStripButton openLogFolderButton;
         private ToolStripButton tsBtFindPrevious;
         private ToolStripButton tsBtFindNext;
@@ -1156,5 +867,11 @@ namespace DockSample
         private ToolStripMenuItem notifyTSMIShow;
         private ToolStripMenuItem notifyTSMINewPort;
         private Timer mainTimer;
+        private ToolStrip tsWindowTitle;
+        private ToolStripButton btWindowClose;
+        private ToolStripButton btMaximum;
+        private ToolStripButton btMinimum;
+        private ToolStripLabel toolStripLabel1;
+        private ToolStripButton btTopMost;
     }
 }

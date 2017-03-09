@@ -21,9 +21,6 @@ namespace DockSample
         private const string PARITY   = "parity";
         private const string FLOW     = "flow";
 
-        private Point mouseOff;                          //鼠标移动位置变量
-        private bool leftFlag;                               //标签是否为左键
-
         private String configFile = "ini.xml";
 
         public NewPortWindow()
@@ -66,34 +63,39 @@ namespace DockSample
             return DialogResult.OK;
         }
 
+        private Point OpenPortTitleToolStrip_MousePoint = new Point();
         private void OpenPortTitleToolStrip_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                mouseOff = new Point(-e.X, -e.Y); //得到变量的值
-                leftFlag = true;                  //点击左键按下时标注为true;
-                //Cursor = Cursors.Default;
-                this.Opacity = 0.90;
-            }
+            base.OnMouseDown(e);
+            this.OpenPortTitleToolStrip_MousePoint.X = e.X;
+            this.OpenPortTitleToolStrip_MousePoint.Y = e.Y;
         }
 
         private void OpenPortTitleToolStrip_MouseMove(object sender, MouseEventArgs e)
         {
-            if (leftFlag)
+            base.OnMouseMove(e);
+            if (e.Button == MouseButtons.Left)
             {
-                Point mouseSet = Control.MousePosition;
-                mouseSet.Offset(mouseOff.X, mouseOff.Y); //设置移动后的位置
-                Location = mouseSet;
+                this.Top = Control.MousePosition.Y - OpenPortTitleToolStrip_MousePoint.Y;
+                this.Left = Control.MousePosition.X - OpenPortTitleToolStrip_MousePoint.X;
             }
         }
 
-        private void OpenPortTitleToolStrip_MouseUp(object sender, MouseEventArgs e)
+        private Point titleLabel_MousePoint = new Point();
+        private void titleLabel_MouseDown(object sender, MouseEventArgs e)
         {
-            if (leftFlag)
+            base.OnMouseDown(e);
+            this.titleLabel_MousePoint.X = e.X;
+            this.titleLabel_MousePoint.Y = e.Y;
+        }
+
+        private void titleLabel_MouseMove(object sender, MouseEventArgs e)
+        {
+            base.OnMouseMove(e);
+            if (e.Button == MouseButtons.Left)
             {
-                leftFlag = false;//释放鼠标后标注为false;
-                //Cursor = Cursors.Default;
-                this.Opacity = 1;
+                this.Top = Control.MousePosition.Y - titleLabel_MousePoint.Y;
+                this.Left = Control.MousePosition.X - titleLabel_MousePoint.X;
             }
         }
 

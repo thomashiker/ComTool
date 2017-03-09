@@ -62,7 +62,7 @@ namespace DockSample
 
             SavedLogPath = Application.StartupPath + "\\log";
 
-            mainMenu.Visible = false;
+            //mainMenu.Visible = false;
 
             //textTimerSetting.Text = cyclicSendTimer.Interval.ToString();
             //sendTimerPeriodLabel.Text = textTimerSetting.Text + "ms";
@@ -83,7 +83,7 @@ namespace DockSample
 
         private void EnableVSRenderer(VisualStudioToolStripExtender.VsVersion version, ThemeBase theme)
         {
-            vsToolStripExtender1.SetStyle(mainMenu, version, theme);
+            //vsToolStripExtender1.SetStyle(mainMenu, version, theme);
             vsToolStripExtender1.SetStyle(toolBar, version, theme);
             vsToolStripExtender1.SetStyle(systemStatusStrip, version, theme);
         }
@@ -667,24 +667,6 @@ namespace DockSample
             }
         }
 
-        private void hideMenuButton_Click(object sender, EventArgs e)
-        {
-            if (mainMenu.Visible)
-            {
-                mainMenu.Hide();
-                //hideMenuButton.Image = toolStripimageList.Images[5];
-                hideMenuButton.Image = global::DockSample.Properties.Resources.arrow_8_down;// Image.FromFile("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\png\\16x16\\arrow-8-down.png");
-                hideMenuButton.ToolTipText = "Show Menu";
-            }
-            else
-            {
-                mainMenu.Show();
-                //hideMenuButton.Image = toolStripimageList.Images[4];
-                hideMenuButton.Image = global::DockSample.Properties.Resources.arrow_8_up;// Image.FromFile("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\png\\16x16\\arrow-8-up.png");
-                hideMenuButton.ToolTipText = "Hide Menu";
-            }
-        }
-
         private void topMostButton_Click(object sender, EventArgs e)
         {
             if (this.TopMost)
@@ -1083,6 +1065,89 @@ namespace DockSample
         private void mainTimer_Tick(object sender, EventArgs e)
         {
             CreatDropDownPorts();
+        }
+
+        private Point tsWindowTitle_MousePoint = new Point();
+        private void tsWindowTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            base.OnMouseDown(e);
+            this.tsWindowTitle_MousePoint.X = e.X;
+            this.tsWindowTitle_MousePoint.Y = e.Y;
+        }
+
+        private void tsWindowTitle_MouseMove(object sender, MouseEventArgs e)
+        {
+            base.OnMouseMove(e);
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Top = Control.MousePosition.Y - tsWindowTitle_MousePoint.Y;
+                this.Left = Control.MousePosition.X - tsWindowTitle_MousePoint.X;
+            }
+        }
+
+        private Point tsLabel_MousePoint = new Point();
+        private void tsLabel_MouseDown(object sender, MouseEventArgs e)
+        {
+            base.OnMouseDown(e);
+            this.tsLabel_MousePoint.X = e.X;
+            this.tsLabel_MousePoint.Y = e.Y;
+        }
+
+        private void tsLabel_MouseMove(object sender, MouseEventArgs e)
+        {
+            base.OnMouseMove(e);
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Top = Control.MousePosition.Y - tsLabel_MousePoint.Y;
+                this.Left = Control.MousePosition.X - tsLabel_MousePoint.X;
+            }
+        }
+
+        private void btWindowClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btMaximum_Click(object sender, EventArgs e)
+        {
+            if (FormWindowState.Maximized == this.WindowState)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            } 
+        }
+
+        private void btMinimum_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btTopMost_Click(object sender, EventArgs e)
+        {
+            if (this.TopMost)
+            {
+                this.TopMost = false;
+                btTopMost.Image = toolStripimageList.Images[6];
+            }
+            else
+            {
+                this.TopMost = true;
+                btTopMost.Image = toolStripimageList.Images[7];
+            }
+        }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                const int WS_MINIMIZEBOX = 0x00020000;  // Winuser.h中定义
+                CreateParams cp = base.CreateParams;
+                cp.Style = cp.Style | WS_MINIMIZEBOX;   // 允许最小化操作
+                return cp;
+            }
         }
     }
 }
