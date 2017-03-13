@@ -19,11 +19,15 @@ using System.Linq;
 using System.Data;
 using System.Drawing.Drawing2D;
 using System.IO.Ports;
+using CCWin;
+using CCWin.SkinClass;
+using CCWin.SkinControl;
+using CCWin.Win32;
 
 
 namespace DockSample
 {
-    public partial class MainForm : Form
+    public partial class MainForm : CCSkinMain
     {
         private SendToolsBox m_solutionExplorer;// = new SendToolsBox(this);
         //private CommandWindow m_propertyWindow = new CommandWindow();
@@ -37,7 +41,6 @@ namespace DockSample
         //private bool btRepeatedSendEnable = false;
         string[] CurrentPorts;
 
-        private VS2013BlueTheme vS2013BlueTheme1;
         private VisualStudioToolStripExtender vsToolStripExtender1;
 
 
@@ -68,7 +71,6 @@ namespace DockSample
             //sendTimerPeriodLabel.Text = textTimerSetting.Text + "ms";
             linkTimeLabel.Alignment = ToolStripItemAlignment.Right;
 
-            vS2013BlueTheme1 = new VS2013BlueTheme();
             vsToolStripExtender1 = new VisualStudioToolStripExtender();
 
             SetSchema(null);
@@ -84,7 +86,7 @@ namespace DockSample
         private void EnableVSRenderer(VisualStudioToolStripExtender.VsVersion version, ThemeBase theme)
         {
             //vsToolStripExtender1.SetStyle(mainMenu, version, theme);
-            vsToolStripExtender1.SetStyle(toolBar, version, theme);
+            //vsToolStripExtender1.SetStyle(toolBar, version, theme);
             vsToolStripExtender1.SetStyle(systemStatusStrip, version, theme);
         }
 
@@ -101,9 +103,11 @@ namespace DockSample
 
             if (dockPanel.Theme.ColorPalette != null)
             {
-                systemStatusStrip.BackColor = dockPanel.Theme.ColorPalette.MainWindowStatusBarDefault.Background;
+                //systemStatusStrip.BackColor = dockPanel.Theme.ColorPalette.MainWindowStatusBarDefault.Background;
                 //miniSendPanel.BackColor = dockPanel.Theme.ColorPalette.MainWindowStatusBarDefault.Background;
             }
+            systemStatusStrip.BackColor = Color.FromArgb(214, 219, 233);
+            systemStatusStrip.ForeColor = Color.Black;
 
             //if (File.Exists(configFile))
             //    dockPanel.LoadFromXml(configFile, m_deserializeDockContent);
@@ -1067,86 +1071,12 @@ namespace DockSample
             CreatDropDownPorts();
         }
 
-        private Point tsWindowTitle_MousePoint = new Point();
-        private void tsWindowTitle_MouseDown(object sender, MouseEventArgs e)
+        private void MainForm_SysBottomClick(object sender, SysButtonEventArgs e)
         {
-            base.OnMouseDown(e);
-            this.tsWindowTitle_MousePoint.X = e.X;
-            this.tsWindowTitle_MousePoint.Y = e.Y;
-        }
-
-        private void tsWindowTitle_MouseMove(object sender, MouseEventArgs e)
-        {
-            base.OnMouseMove(e);
-            if (e.Button == MouseButtons.Left)
+            if (e.SysButton.Name == "SysMenu")
             {
-                this.Top = Control.MousePosition.Y - tsWindowTitle_MousePoint.Y;
-                this.Left = Control.MousePosition.X - tsWindowTitle_MousePoint.X;
-            }
-        }
+                //cmsNotifyMenu.Show(MousePosition);
 
-        private Point tsLabel_MousePoint = new Point();
-        private void tsLabel_MouseDown(object sender, MouseEventArgs e)
-        {
-            base.OnMouseDown(e);
-            this.tsLabel_MousePoint.X = e.X;
-            this.tsLabel_MousePoint.Y = e.Y;
-        }
-
-        private void tsLabel_MouseMove(object sender, MouseEventArgs e)
-        {
-            base.OnMouseMove(e);
-            if (e.Button == MouseButtons.Left)
-            {
-                this.Top = Control.MousePosition.Y - tsLabel_MousePoint.Y;
-                this.Left = Control.MousePosition.X - tsLabel_MousePoint.X;
-            }
-        }
-
-        private void btWindowClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btMaximum_Click(object sender, EventArgs e)
-        {
-            if (FormWindowState.Maximized == this.WindowState)
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Maximized;
-            } 
-        }
-
-        private void btMinimum_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btTopMost_Click(object sender, EventArgs e)
-        {
-            if (this.TopMost)
-            {
-                this.TopMost = false;
-                btTopMost.Image = toolStripimageList.Images[6];
-            }
-            else
-            {
-                this.TopMost = true;
-                btTopMost.Image = toolStripimageList.Images[7];
-            }
-        }
-
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                const int WS_MINIMIZEBOX = 0x00020000;  // Winuser.h中定义
-                CreateParams cp = base.CreateParams;
-                cp.Style = cp.Style | WS_MINIMIZEBOX;   // 允许最小化操作
-                return cp;
             }
         }
     }

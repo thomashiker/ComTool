@@ -263,7 +263,7 @@
             // 
             // sendPanel
             // 
-            this.sendPanel.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.sendPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.sendPanel.Controls.Add(this.panel2);
             this.sendPanel.Controls.Add(this.btReadOnly);
             this.sendPanel.Controls.Add(this.panel1);
@@ -511,6 +511,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.CloseButton = false;
             this.CloseButtonVisible = false;
             this.Controls.Add(this.fctbSend);

@@ -223,7 +223,6 @@ namespace DockSample
             this.fastColoredTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastColoredTextBox.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.fastColoredTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fastColoredTextBox.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.fastColoredTextBox.Hotkeys = resources.GetString("fastColoredTextBox.Hotkeys");
             this.fastColoredTextBox.ImeMode = System.Windows.Forms.ImeMode.On;
             this.fastColoredTextBox.IsReplaceMode = false;
@@ -258,7 +257,7 @@ namespace DockSample
             // ReceiveWindow
             // 
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(564, 299);
             this.Controls.Add(this.fastColoredTextBox);
             this.DockAreas = WeifenLuo.WinFormsUI.Docking.DockAreas.Document;

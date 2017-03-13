@@ -112,15 +112,15 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="rightKeyMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="rightKeyMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>129, 28</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="openToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -178,7 +178,7 @@
         MQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="tabMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="tabMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>7, 25</value>
   </metadata>
   <data name="horizontalToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -212,26 +212,26 @@
         QmCC
 </value>
   </data>
-  <metadata name="menuStripImageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="menuStripImageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>286, 27</value>
   </metadata>
   <data name="menuStripImageList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAC8
-        AwAAAk1TRnQBSQFMAgEBAgEAARABAgEQAQIBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        AwAAAk1TRnQBSQFMAgEBAgEAARgBAgEYAQIBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABEAMAAQEBAAEgBgABEP8AFwADRgGAAzkBYDgAA0YBgAM5AWC8AANQAZ8DVwHfAzkBYDQAA1ABnwNX
         Ad8DOQFguAADUAGfAwAB/wNXAd8DOQFgMAADUAGfAwAB/wNXAd8DOQFgtAADUAGfAwAB/wMAAf8DVwHf
         AzkBYCwAA1ABnwMAAf8DAAH/A1cB3wM5AWCwAANQAZ8DAAH/AwAB/wMAAf8DVwHfAzkBYCgAA1ABnwMA
         Af8DAAH/AwAB/wNXAd8DOQFgCAADOQFgA1cB35wAA1ABnwMAAf8DAAH/AwAB/wMAAf8DVwHfAzkBYCQA
-        A1ABnwMAAf8DAAH/A1kBzwMqAUADKgFAA1cBvwNVAe8DRgGAmAADOQFgA1cB3wMAAf8DAAH/AwAB/wMA
-        Af8DVwHfAzkBYCAAAzkBYANXAd8DVQHvAzkBYAMXASADUAGfAwAB/wNQAZ8DDAEQlAADOQFgA1cB3wMA
-        Af8DAAH/AwAB/wMAAf8DVwHfAzkBYCAAAzkBYANXAd8DAAH/A0YBgAMXASADRgGAA1UB7wNXAb8DIQEw
+        A1ABnwMAAf8DAAH/A1kBzwMqAUADKgFAA1cBvwNWAe8DRgGAmAADOQFgA1cB3wMAAf8DAAH/AwAB/wMA
+        Af8DVwHfAzkBYCAAAzkBYANXAd8DVgHvAzkBYAMXASADUAGfAwAB/wNQAZ8DDAEQlAADOQFgA1cB3wMA
+        Af8DAAH/AwAB/wMAAf8DVwHfAzkBYCAAAzkBYANXAd8DAAH/A0YBgAMXASADRgGAA1YB7wNXAb8DIQEw
         nAADOQFgA1cB3wMAAf8DAAH/AwAB/wMAAf8DUAGfJAADOQFgA1ABnwMXASADOQFgA1cB3wMAAf8DVwG/
         rAADOQFgA1cB3wMAAf8DAAH/AwAB/wNQAZ8kAAMqAUADVwG/AwAB/wMAAf8DAAH/AwAB/wNQAZ+wAAM5
         AWADVwHfAwAB/wMAAf8DUAGfGAADFwEgA1ABnwMAAf8DUAGfAwwBEAM5AWADVwHfAwAB/wMAAf8DUAGf
-        tAADOQFgA1cB3wMAAf8DUAGfEAADRgGAA1UB7wNXAb8DIQEwEAADOQFgA1cB3wMAAf8DUAGfuAADOQFg
+        tAADOQFgA1cB3wMAAf8DUAGfEAADRgGAA1YB7wNXAb8DIQEwEAADOQFgA1cB3wMAAf8DUAGfuAADOQFg
         A1cB3wNQAZ8MAANXAd8DMgFQIAADOQFgA1cB3wNQAZ+8AAM5AWADRgGAOAADOQFgA0YBgP8AhQABQgFN
         AT4HAAE+AwABKAMAAUADAAEQAwABAQEAAQEFAAGAFwAD/wEABP8EAAGfAf8BnwH/BAABxwH/AccB/wQA
         AeEB/wHhAf8EAAHwAX8B8AF/BAAB+AEfAfgBGQQAAfwBBwH8AQEEAAH4AQcB+AEDBAAB4AEfAeABDwQA
@@ -246,7 +246,7 @@
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFZGYXN0Q29sb3JlZFRleHRCb3gsIFZlcnNpb249Mi4xNi4yLjAs
         IEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49ZmI4YWExMmI5OTRlZjYxYgwDAAAAUVN5c3Rl
-        bS5EcmF3aW5nLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49
+        bS5EcmF3aW5nLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49
         YjAzZjVmN2YxMWQ1MGEzYQUBAAAAIkZhc3RDb2xvcmVkVGV4dEJveE5TLlNlcnZpY2VDb2xvcnMGAAAA
         KDxDb2xsYXBzZU1hcmtlckZvcmVDb2xvcj5rX19CYWNraW5nRmllbGQoPENvbGxhcHNlTWFya2VyQmFj
         a0NvbG9yPmtfX0JhY2tpbmdGaWVsZCo8Q29sbGFwc2VNYXJrZXJCb3JkZXJDb2xvcj5rX19CYWNraW5n
@@ -260,10 +260,10 @@
         AAAAAAAAAACNAAEAAfj////8////CgAAAAAAAAAApAABAAH3/////P///woAAAAAAAAAAJYAAQAL
 </value>
   </data>
-  <metadata name="serialPort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="serialPort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>456, 27</value>
   </metadata>
-  <metadata name="openedTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="openedTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>563, 27</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

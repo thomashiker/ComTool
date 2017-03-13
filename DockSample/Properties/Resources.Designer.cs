@@ -65,7 +65,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3D_Cube {
             get {
-                object obj = ResourceManager.GetObject("3D-Cube", resourceCulture);
+                object obj = ResourceManager.GetObject("_3D_Cube", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3D_cylinder {
             get {
-                object obj = ResourceManager.GetObject("3D-cylinder", resourceCulture);
+                object obj = ResourceManager.GetObject("_3D_cylinder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3D_glasses {
             get {
-                object obj = ResourceManager.GetObject("3D-glasses", resourceCulture);
+                object obj = ResourceManager.GetObject("_3D_glasses", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +95,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3D_plane {
             get {
-                object obj = ResourceManager.GetObject("3D-plane", resourceCulture);
+                object obj = ResourceManager.GetObject("_3D_plane", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,7 +105,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3D_pyramid {
             get {
-                object obj = ResourceManager.GetObject("3D-pyramid", resourceCulture);
+                object obj = ResourceManager.GetObject("_3D_pyramid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,7 +115,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3D_sphere {
             get {
-                object obj = ResourceManager.GetObject("3D-sphere", resourceCulture);
+                object obj = ResourceManager.GetObject("_3D_sphere", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -125,7 +125,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3D_wedge {
             get {
-                object obj = ResourceManager.GetObject("3D-wedge", resourceCulture);
+                object obj = ResourceManager.GetObject("_3D_wedge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -135,7 +135,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3D_X_Axis_Rotation {
             get {
-                object obj = ResourceManager.GetObject("3D_X_Axis_Rotation", resourceCulture);
+                object obj = ResourceManager.GetObject("_3D_X_Axis_Rotation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -145,7 +145,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3D_Y_Axis_Rotation {
             get {
-                object obj = ResourceManager.GetObject("3D-Y-Axis-Rotation", resourceCulture);
+                object obj = ResourceManager.GetObject("_3D_Y_Axis_Rotation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -155,7 +155,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3D_Z_Axis_Rotation {
             get {
-                object obj = ResourceManager.GetObject("3D-Z-Axis-Rotation", resourceCulture);
+                object obj = ResourceManager.GetObject("_3D_Z_Axis_Rotation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -165,7 +165,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _4_direction {
             get {
-                object obj = ResourceManager.GetObject("4-direction", resourceCulture);
+                object obj = ResourceManager.GetObject("_4_direction", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -175,7 +175,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _4_direction_alt {
             get {
-                object obj = ResourceManager.GetObject("4-direction-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("_4_direction_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -185,7 +185,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _8_direction {
             get {
-                object obj = ResourceManager.GetObject("8-direction", resourceCulture);
+                object obj = ResourceManager.GetObject("_8_direction", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -195,7 +195,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _8_direction_alt {
             get {
-                object obj = ResourceManager.GetObject("8-direction-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("_8_direction_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -245,7 +245,37 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap address_book {
             get {
-                object obj = ResourceManager.GetObject("address-book", resourceCulture);
+                object obj = ResourceManager.GetObject("address_book", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aio_setting_down {
+            get {
+                object obj = ResourceManager.GetObject("aio_setting_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aio_setting_hover {
+            get {
+                object obj = ResourceManager.GetObject("aio_setting_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aio_setting_normal {
+            get {
+                object obj = ResourceManager.GetObject("aio_setting_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -285,7 +315,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap alert_alt {
             get {
-                object obj = ResourceManager.GetObject("alert-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("alert_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -335,7 +365,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap antivirus_alt {
             get {
-                object obj = ResourceManager.GetObject("antivirus-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("antivirus_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -345,7 +375,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_1_backward {
             get {
-                object obj = ResourceManager.GetObject("arrow-1-backward", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_1_backward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -355,7 +385,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_1_down {
             get {
-                object obj = ResourceManager.GetObject("arrow-1-down", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_1_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -365,7 +395,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_1_down_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-1-down-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_1_down_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -375,7 +405,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_1_down_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-1-down-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_1_down_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -385,7 +415,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_1_forward {
             get {
-                object obj = ResourceManager.GetObject("arrow-1-forward", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_1_forward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -395,7 +425,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_1_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-1-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_1_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -405,7 +435,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_1_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-1-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_1_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -415,7 +445,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_1_up {
             get {
-                object obj = ResourceManager.GetObject("arrow-1-up", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_1_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -425,7 +455,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_1_up_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-1-up-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_1_up_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -435,7 +465,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_1_up_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-1-up-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_1_up_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -445,7 +475,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_2_down {
             get {
-                object obj = ResourceManager.GetObject("arrow-2-down", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_2_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -455,7 +485,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_2_down_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-2-down-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_2_down_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -465,7 +495,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_2_down_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-2-down-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_2_down_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -475,7 +505,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_2_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-2-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_2_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -485,7 +515,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_2_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-2-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_2_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -495,7 +525,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_2_up {
             get {
-                object obj = ResourceManager.GetObject("arrow-2-up", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_2_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -505,7 +535,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_2_up_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-2-up-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_2_up_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -515,7 +545,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_2_up_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-2-up-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_2_up_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -525,7 +555,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_3_down {
             get {
-                object obj = ResourceManager.GetObject("arrow-3-down", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_3_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -535,7 +565,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_3_down_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-3-down-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_3_down_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -545,7 +575,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_3_down_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-3-down-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_3_down_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -555,7 +585,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_3_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-3-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_3_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -565,7 +595,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_3_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-3-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_3_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -575,7 +605,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_3_up {
             get {
-                object obj = ResourceManager.GetObject("arrow-3-up", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_3_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -585,7 +615,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_3_up_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-3-up-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_3_up_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -595,7 +625,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_3_up_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-3-up-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_3_up_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -605,7 +635,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_4_down {
             get {
-                object obj = ResourceManager.GetObject("arrow-4-down", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_4_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -615,7 +645,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_4_down_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-4-down-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_4_down_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -625,7 +655,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_4_down_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-4-down-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_4_down_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -635,7 +665,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_4_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-4-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_4_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -645,7 +675,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_4_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-4-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_4_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -655,7 +685,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_4_up {
             get {
-                object obj = ResourceManager.GetObject("arrow-4-up", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_4_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -665,7 +695,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_4_up_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-4-up-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_4_up_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -675,7 +705,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_4_up_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-4-up-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_4_up_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -685,7 +715,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_5_down {
             get {
-                object obj = ResourceManager.GetObject("arrow-5-down", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_5_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -695,7 +725,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_5_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-5-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_5_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -705,7 +735,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_5_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-5-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_5_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -715,7 +745,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_5_up {
             get {
-                object obj = ResourceManager.GetObject("arrow-5-up", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_5_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -725,7 +755,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_6_down {
             get {
-                object obj = ResourceManager.GetObject("arrow-6-down", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_6_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -735,7 +765,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_6_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-6-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_6_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -745,7 +775,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_6_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-6-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_6_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -755,7 +785,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_6_up {
             get {
-                object obj = ResourceManager.GetObject("arrow-6-up", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_6_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -765,7 +795,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_7_down {
             get {
-                object obj = ResourceManager.GetObject("arrow-7-down", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_7_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -775,7 +805,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_7_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-7-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_7_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -785,7 +815,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_7_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-7-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_7_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -795,7 +825,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_7_up {
             get {
-                object obj = ResourceManager.GetObject("arrow-7-up", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_7_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -805,7 +835,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_8_down {
             get {
-                object obj = ResourceManager.GetObject("arrow-8-down", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_8_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -815,7 +845,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_8_left {
             get {
-                object obj = ResourceManager.GetObject("arrow-8-left", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_8_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -825,7 +855,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_8_right {
             get {
-                object obj = ResourceManager.GetObject("arrow-8-right", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_8_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -835,7 +865,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_8_up {
             get {
-                object obj = ResourceManager.GetObject("arrow-8-up", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_8_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -845,7 +875,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_circular_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("arrow-circular-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_circular_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -855,7 +885,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_circular_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("arrow-circular-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_circular_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -865,7 +895,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_orthogonal_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("arrow-orthogonal-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_orthogonal_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -875,7 +905,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap arrow_orthogonal_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("arrow-orthogonal-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_orthogonal_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -895,7 +925,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap asterisk_alt {
             get {
-                object obj = ResourceManager.GetObject("asterisk-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("asterisk_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -915,7 +945,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap axis_x_y {
             get {
-                object obj = ResourceManager.GetObject("axis-x-y", resourceCulture);
+                object obj = ResourceManager.GetObject("axis_x_y", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -925,7 +955,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap axis_x_y_alt {
             get {
-                object obj = ResourceManager.GetObject("axis-x-y-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("axis_x_y_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -955,7 +985,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bag_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("bag-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("bag_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -965,7 +995,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bag_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("bag-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("bag_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -975,7 +1005,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bag_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("bag-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("bag_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -985,7 +1015,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bag_alt_4 {
             get {
-                object obj = ResourceManager.GetObject("bag-alt-4", resourceCulture);
+                object obj = ResourceManager.GetObject("bag_alt_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -995,7 +1025,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bag_alt_5 {
             get {
-                object obj = ResourceManager.GetObject("bag-alt-5", resourceCulture);
+                object obj = ResourceManager.GetObject("bag_alt_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1035,7 +1065,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bank_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("bank-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("bank_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1045,7 +1075,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bank_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("bank-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("bank_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1075,7 +1105,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap basket_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("basket-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("basket_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1085,7 +1115,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap basket_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("basket-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("basket_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1095,7 +1125,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap basket_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("basket-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("basket_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1105,7 +1135,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap battery_empty {
             get {
-                object obj = ResourceManager.GetObject("battery-empty", resourceCulture);
+                object obj = ResourceManager.GetObject("battery_empty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1115,7 +1145,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap battery_empty_alt {
             get {
-                object obj = ResourceManager.GetObject("battery-empty-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("battery_empty_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1125,7 +1155,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap battery_full {
             get {
-                object obj = ResourceManager.GetObject("battery-full", resourceCulture);
+                object obj = ResourceManager.GetObject("battery_full", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1135,7 +1165,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap battery_full_alt {
             get {
-                object obj = ResourceManager.GetObject("battery-full-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("battery_full_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1185,7 +1215,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap book_alt {
             get {
-                object obj = ResourceManager.GetObject("book-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("book_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1195,7 +1225,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap book_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("book-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("book_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1205,7 +1235,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap book_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("book-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("book_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1215,7 +1245,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap book_alt_4 {
             get {
-                object obj = ResourceManager.GetObject("book-alt-4", resourceCulture);
+                object obj = ResourceManager.GetObject("book_alt_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1235,7 +1265,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bookmark_alt {
             get {
-                object obj = ResourceManager.GetObject("bookmark-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("bookmark_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1265,7 +1295,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap box_alt {
             get {
-                object obj = ResourceManager.GetObject("box-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("box_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1295,7 +1325,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap brush_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("brush-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("brush_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1305,7 +1335,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap brush_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("brush-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("brush_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1325,7 +1355,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bussiness_card {
             get {
-                object obj = ResourceManager.GetObject("bussiness-card", resourceCulture);
+                object obj = ResourceManager.GetObject("bussiness_card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1345,7 +1375,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cake_alt {
             get {
-                object obj = ResourceManager.GetObject("cake-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("cake_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1365,7 +1395,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap calculator_alt {
             get {
-                object obj = ResourceManager.GetObject("calculator-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("calculator_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1385,7 +1415,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap calendar_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("calendar-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("calendar_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1395,7 +1425,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap calendar_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("calendar-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("calendar_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1425,7 +1455,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cart_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("cart-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("cart_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1435,7 +1465,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cart_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("cart-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("cart_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1445,7 +1475,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cart_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("cart-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("cart_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1455,7 +1485,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cart_alt_4 {
             get {
-                object obj = ResourceManager.GetObject("cart-alt-4", resourceCulture);
+                object obj = ResourceManager.GetObject("cart_alt_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1465,7 +1495,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cart_alt_5 {
             get {
-                object obj = ResourceManager.GetObject("cart-alt-5", resourceCulture);
+                object obj = ResourceManager.GetObject("cart_alt_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1475,7 +1505,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cart_alt_6 {
             get {
-                object obj = ResourceManager.GetObject("cart-alt-6", resourceCulture);
+                object obj = ResourceManager.GetObject("cart_alt_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1495,7 +1525,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chair_alt {
             get {
-                object obj = ResourceManager.GetObject("chair-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("chair_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1515,7 +1545,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chat_active {
             get {
-                object obj = ResourceManager.GetObject("chat-active", resourceCulture);
+                object obj = ResourceManager.GetObject("chat_active", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1525,7 +1555,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chat_active_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("chat-active-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("chat_active_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1535,7 +1565,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chat_active_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("chat-active-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("chat_active_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1545,7 +1575,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chat_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("chat-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("chat_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1555,7 +1585,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chat_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("chat-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("chat_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1565,7 +1595,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap chat_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("chat-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("chat_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1585,7 +1615,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap check_alt {
             get {
-                object obj = ResourceManager.GetObject("check-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("check_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1605,7 +1635,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap checkbox_empty {
             get {
-                object obj = ResourceManager.GetObject("checkbox-empty", resourceCulture);
+                object obj = ResourceManager.GetObject("checkbox_empty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1655,7 +1685,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap color_picker {
             get {
-                object obj = ResourceManager.GetObject("color-picker", resourceCulture);
+                object obj = ResourceManager.GetObject("color_picker", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1665,7 +1695,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap color_swatch {
             get {
-                object obj = ResourceManager.GetObject("color-swatch", resourceCulture);
+                object obj = ResourceManager.GetObject("color_swatch", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1685,7 +1715,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap comment_alt {
             get {
-                object obj = ResourceManager.GetObject("comment-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("comment_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1705,7 +1735,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap compass_alt {
             get {
-                object obj = ResourceManager.GetObject("compass-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("compass_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1735,7 +1765,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap computer_laptop {
             get {
-                object obj = ResourceManager.GetObject("computer-laptop", resourceCulture);
+                object obj = ResourceManager.GetObject("computer_laptop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1745,7 +1775,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap computer_retro {
             get {
-                object obj = ResourceManager.GetObject("computer-retro", resourceCulture);
+                object obj = ResourceManager.GetObject("computer_retro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1765,7 +1795,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap connect_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("connect-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("connect_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1775,7 +1805,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap connect_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("connect-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("connect_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1785,7 +1815,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap connection_error {
             get {
-                object obj = ResourceManager.GetObject("connection-error", resourceCulture);
+                object obj = ResourceManager.GetObject("connection_error", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1795,7 +1825,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap connection_error_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("connection-error-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("connection_error_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1805,7 +1835,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap connection_error_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("connection-error-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("connection_error_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1845,7 +1875,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap controls_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("controls-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("controls_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1855,7 +1885,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap controls_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("controls-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("controls_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1885,7 +1915,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap couch_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("couch-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("couch_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1895,7 +1925,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap couch_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("couch-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("couch_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1915,7 +1945,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap credit_card {
             get {
-                object obj = ResourceManager.GetObject("credit-card", resourceCulture);
+                object obj = ResourceManager.GetObject("credit_card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1955,7 +1985,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap cup_alt {
             get {
-                object obj = ResourceManager.GetObject("cup-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("cup_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1985,7 +2015,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap data_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("data-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("data_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1995,7 +2025,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap data_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("data-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("data_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2015,7 +2045,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_add {
             get {
-                object obj = ResourceManager.GetObject("database-add", resourceCulture);
+                object obj = ResourceManager.GetObject("database_add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2025,7 +2055,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_add_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("database-add-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("database_add_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2035,7 +2065,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_add_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("database-add-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("database_add_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2045,7 +2075,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("database-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("database_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2055,7 +2085,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("database-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("database_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2065,7 +2095,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_download {
             get {
-                object obj = ResourceManager.GetObject("database-download", resourceCulture);
+                object obj = ResourceManager.GetObject("database_download", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2075,7 +2105,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_download_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("database-download-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("database_download_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2085,7 +2115,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_download_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("database-download-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("database_download_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2095,7 +2125,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_reload {
             get {
-                object obj = ResourceManager.GetObject("database-reload", resourceCulture);
+                object obj = ResourceManager.GetObject("database_reload", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2105,7 +2135,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_reload_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("database-reload-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("database_reload_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2115,7 +2145,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_reload_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("database-reload-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("database_reload_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2125,7 +2155,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_remove {
             get {
-                object obj = ResourceManager.GetObject("database-remove", resourceCulture);
+                object obj = ResourceManager.GetObject("database_remove", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2135,7 +2165,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_remove_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("database-remove-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("database_remove_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2145,7 +2175,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_remove_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("database-remove-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("database_remove_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2155,7 +2185,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_upload {
             get {
-                object obj = ResourceManager.GetObject("database-upload", resourceCulture);
+                object obj = ResourceManager.GetObject("database_upload", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2165,7 +2195,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_upload_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("database-upload-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("database_upload_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2175,7 +2205,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_upload_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("database-upload-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("database_upload_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2185,7 +2215,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_user {
             get {
-                object obj = ResourceManager.GetObject("database-user", resourceCulture);
+                object obj = ResourceManager.GetObject("database_user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2195,7 +2225,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap database_user_alt {
             get {
-                object obj = ResourceManager.GetObject("database-user-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("database_user_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2225,7 +2255,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap directions_alt {
             get {
-                object obj = ResourceManager.GetObject("directions-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("directions_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2245,7 +2275,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap display_mac {
             get {
-                object obj = ResourceManager.GetObject("display-mac", resourceCulture);
+                object obj = ResourceManager.GetObject("display_mac", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2255,7 +2285,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap display_mac_alt {
             get {
-                object obj = ResourceManager.GetObject("display-mac-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("display_mac_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2275,7 +2305,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap document_empty {
             get {
-                object obj = ResourceManager.GetObject("document-empty", resourceCulture);
+                object obj = ResourceManager.GetObject("document_empty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2285,7 +2315,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap document_new {
             get {
-                object obj = ResourceManager.GetObject("document-new", resourceCulture);
+                object obj = ResourceManager.GetObject("document_new", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2315,7 +2345,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap door_closed {
             get {
-                object obj = ResourceManager.GetObject("door-closed", resourceCulture);
+                object obj = ResourceManager.GetObject("door_closed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2335,7 +2365,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap download_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("download-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("download_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2345,7 +2375,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap download_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("download-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("download_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2355,7 +2385,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap download_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("download-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("download_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2365,7 +2395,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap download_alt_4 {
             get {
-                object obj = ResourceManager.GetObject("download-alt-4", resourceCulture);
+                object obj = ResourceManager.GetObject("download_alt_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2385,7 +2415,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap drawer_locked {
             get {
-                object obj = ResourceManager.GetObject("drawer-locked", resourceCulture);
+                object obj = ResourceManager.GetObject("drawer_locked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2395,7 +2425,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap drawer_unlocked {
             get {
-                object obj = ResourceManager.GetObject("drawer-unlocked", resourceCulture);
+                object obj = ResourceManager.GetObject("drawer_unlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2415,7 +2445,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap drawers_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("drawers-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("drawers_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2425,7 +2455,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap drawers_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("drawers-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("drawers_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2445,7 +2475,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap drive_disk_cd {
             get {
-                object obj = ResourceManager.GetObject("drive-disk-cd", resourceCulture);
+                object obj = ResourceManager.GetObject("drive_disk_cd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2455,7 +2485,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap drive_network {
             get {
-                object obj = ResourceManager.GetObject("drive-network", resourceCulture);
+                object obj = ResourceManager.GetObject("drive_network", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2475,7 +2505,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap edit_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("edit-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("edit_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2485,7 +2515,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap edit_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("edit-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("edit_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2495,7 +2525,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap edit_document {
             get {
-                object obj = ResourceManager.GetObject("edit-document", resourceCulture);
+                object obj = ResourceManager.GetObject("edit_document", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2543,16 +2573,6 @@ namespace DockSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap error_64px {
-            get {
-                object obj = ResourceManager.GetObject("error_64px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap ethernet {
             get {
                 object obj = ResourceManager.GetObject("ethernet", resourceCulture);
@@ -2585,7 +2605,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap facebook_alt {
             get {
-                object obj = ResourceManager.GetObject("facebook-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("facebook_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2615,7 +2635,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap fan_alt {
             get {
-                object obj = ResourceManager.GetObject("fan-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("fan_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2635,7 +2655,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap favourite_add {
             get {
-                object obj = ResourceManager.GetObject("favourite-add", resourceCulture);
+                object obj = ResourceManager.GetObject("favourite_add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2655,7 +2675,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap file_add {
             get {
-                object obj = ResourceManager.GetObject("file-add", resourceCulture);
+                object obj = ResourceManager.GetObject("file_add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2665,7 +2685,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap file_download {
             get {
-                object obj = ResourceManager.GetObject("file-download", resourceCulture);
+                object obj = ResourceManager.GetObject("file_download", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2675,7 +2695,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap file_download_alt {
             get {
-                object obj = ResourceManager.GetObject("file-download-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("file_download_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2685,7 +2705,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap file_edit {
             get {
-                object obj = ResourceManager.GetObject("file-edit", resourceCulture);
+                object obj = ResourceManager.GetObject("file_edit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2695,7 +2715,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap file_remove {
             get {
-                object obj = ResourceManager.GetObject("file-remove", resourceCulture);
+                object obj = ResourceManager.GetObject("file_remove", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2705,7 +2725,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap file_upload {
             get {
-                object obj = ResourceManager.GetObject("file-upload", resourceCulture);
+                object obj = ResourceManager.GetObject("file_upload", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2715,7 +2735,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap file_upload_alt {
             get {
-                object obj = ResourceManager.GetObject("file-upload-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("file_upload_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2795,7 +2815,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap first_aid {
             get {
-                object obj = ResourceManager.GetObject("first-aid", resourceCulture);
+                object obj = ResourceManager.GetObject("first_aid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2805,7 +2825,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap first_aid_alt {
             get {
-                object obj = ResourceManager.GetObject("first-aid-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("first_aid_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2835,7 +2855,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap folder_open {
             get {
-                object obj = ResourceManager.GetObject("folder-open", resourceCulture);
+                object obj = ResourceManager.GetObject("folder_open", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2875,7 +2895,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ftp_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("ftp-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("ftp_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2885,7 +2905,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ftp_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("ftp-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("ftp_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2895,7 +2915,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen {
             get {
-                object obj = ResourceManager.GetObject("full-screen", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2905,7 +2925,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("full-screen-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2915,7 +2935,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("full-screen-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2925,7 +2945,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("full-screen-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2935,7 +2955,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_alt_4 {
             get {
-                object obj = ResourceManager.GetObject("full-screen-alt-4", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_alt_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2945,7 +2965,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_alt_5 {
             get {
-                object obj = ResourceManager.GetObject("full-screen-alt-5", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_alt_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2955,7 +2975,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_exit {
             get {
-                object obj = ResourceManager.GetObject("full-screen-exit", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_exit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2965,7 +2985,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_exit_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("full-screen-exit-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_exit_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2975,7 +2995,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_exit_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("full-screen-exit-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_exit_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2985,7 +3005,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_exit_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("full-screen-exit-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_exit_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2995,7 +3015,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_exit_alt_4 {
             get {
-                object obj = ResourceManager.GetObject("full-screen-exit-alt-4", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_exit_alt_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3005,7 +3025,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap full_screen_exit_alt_5 {
             get {
-                object obj = ResourceManager.GetObject("full-screen-exit-alt-5", resourceCulture);
+                object obj = ResourceManager.GetObject("full_screen_exit_alt_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3035,7 +3055,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap games_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("games-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("games_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3045,7 +3065,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap games_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("games-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("games_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3055,7 +3075,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap games_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("games-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("games_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3065,7 +3085,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap games_alt_4 {
             get {
-                object obj = ResourceManager.GetObject("games-alt-4", resourceCulture);
+                object obj = ResourceManager.GetObject("games_alt_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3075,7 +3095,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap games_alt_5 {
             get {
-                object obj = ResourceManager.GetObject("games-alt-5", resourceCulture);
+                object obj = ResourceManager.GetObject("games_alt_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3085,7 +3105,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap games_alt_6 {
             get {
-                object obj = ResourceManager.GetObject("games-alt-6", resourceCulture);
+                object obj = ResourceManager.GetObject("games_alt_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3115,7 +3135,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap glasses_swim {
             get {
-                object obj = ResourceManager.GetObject("glasses-swim", resourceCulture);
+                object obj = ResourceManager.GetObject("glasses_swim", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3135,7 +3155,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap grid_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("grid-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("grid_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3145,7 +3165,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap grid_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("grid-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("grid_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3155,7 +3175,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap grid_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("grid-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("grid_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3165,7 +3185,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap grid_dot {
             get {
-                object obj = ResourceManager.GetObject("grid-dot", resourceCulture);
+                object obj = ResourceManager.GetObject("grid_dot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3185,7 +3205,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hammer_alt {
             get {
-                object obj = ResourceManager.GetObject("hammer-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("hammer_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3195,7 +3215,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hardware_chip {
             get {
-                object obj = ResourceManager.GetObject("hardware-chip", resourceCulture);
+                object obj = ResourceManager.GetObject("hardware_chip", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3205,7 +3225,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap hardware_processor {
             get {
-                object obj = ResourceManager.GetObject("hardware-processor", resourceCulture);
+                object obj = ResourceManager.GetObject("hardware_processor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3235,7 +3255,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap help_alt {
             get {
-                object obj = ResourceManager.GetObject("help-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("help_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3255,7 +3275,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap high_definition {
             get {
-                object obj = ResourceManager.GetObject("high-definition", resourceCulture);
+                object obj = ResourceManager.GetObject("high_definition", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3275,7 +3295,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap i_phone {
             get {
-                object obj = ResourceManager.GetObject("i-phone", resourceCulture);
+                object obj = ResourceManager.GetObject("i_phone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3285,7 +3305,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap i_pod {
             get {
-                object obj = ResourceManager.GetObject("i-pod", resourceCulture);
+                object obj = ResourceManager.GetObject("i_pod", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3315,7 +3335,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap idea_alt {
             get {
-                object obj = ResourceManager.GetObject("idea-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("idea_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3345,7 +3365,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_A {
             get {
-                object obj = ResourceManager.GetObject("key-A", resourceCulture);
+                object obj = ResourceManager.GetObject("key_A", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3355,7 +3375,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_Alt {
             get {
-                object obj = ResourceManager.GetObject("key-Alt", resourceCulture);
+                object obj = ResourceManager.GetObject("key_Alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3365,7 +3385,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_apple {
             get {
-                object obj = ResourceManager.GetObject("key-apple", resourceCulture);
+                object obj = ResourceManager.GetObject("key_apple", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3375,7 +3395,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_backspace {
             get {
-                object obj = ResourceManager.GetObject("key-backspace", resourceCulture);
+                object obj = ResourceManager.GetObject("key_backspace", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3385,7 +3405,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_backspace_alt {
             get {
-                object obj = ResourceManager.GetObject("key-backspace-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("key_backspace_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3395,7 +3415,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_caps {
             get {
-                object obj = ResourceManager.GetObject("key-caps", resourceCulture);
+                object obj = ResourceManager.GetObject("key_caps", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3405,7 +3425,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_command {
             get {
-                object obj = ResourceManager.GetObject("key-command", resourceCulture);
+                object obj = ResourceManager.GetObject("key_command", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3415,7 +3435,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_control {
             get {
-                object obj = ResourceManager.GetObject("key-control", resourceCulture);
+                object obj = ResourceManager.GetObject("key_control", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3425,7 +3445,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_enter {
             get {
-                object obj = ResourceManager.GetObject("key-enter", resourceCulture);
+                object obj = ResourceManager.GetObject("key_enter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3435,7 +3455,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_option {
             get {
-                object obj = ResourceManager.GetObject("key-option", resourceCulture);
+                object obj = ResourceManager.GetObject("key_option", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3445,7 +3465,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_page_down {
             get {
-                object obj = ResourceManager.GetObject("key-page-down", resourceCulture);
+                object obj = ResourceManager.GetObject("key_page_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3455,7 +3475,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_page_up {
             get {
-                object obj = ResourceManager.GetObject("key-page-up", resourceCulture);
+                object obj = ResourceManager.GetObject("key_page_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3465,7 +3485,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_shift {
             get {
-                object obj = ResourceManager.GetObject("key-shift", resourceCulture);
+                object obj = ResourceManager.GetObject("key_shift", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3475,7 +3495,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_tab {
             get {
-                object obj = ResourceManager.GetObject("key-tab", resourceCulture);
+                object obj = ResourceManager.GetObject("key_tab", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3485,7 +3505,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap key_windows {
             get {
-                object obj = ResourceManager.GetObject("key-windows", resourceCulture);
+                object obj = ResourceManager.GetObject("key_windows", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3555,7 +3575,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lamp_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("lamp-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("lamp_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3565,7 +3585,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap lamp_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("lamp-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("lamp_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3595,7 +3615,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap layout_content {
             get {
-                object obj = ResourceManager.GetObject("layout-content", resourceCulture);
+                object obj = ResourceManager.GetObject("layout_content", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3605,7 +3625,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap layout_header {
             get {
-                object obj = ResourceManager.GetObject("layout-header", resourceCulture);
+                object obj = ResourceManager.GetObject("layout_header", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3615,7 +3635,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap layout_sidebar {
             get {
-                object obj = ResourceManager.GetObject("layout-sidebar", resourceCulture);
+                object obj = ResourceManager.GetObject("layout_sidebar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3625,7 +3645,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap license_key {
             get {
-                object obj = ResourceManager.GetObject("license-key", resourceCulture);
+                object obj = ResourceManager.GetObject("license_key", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3645,7 +3665,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap link_broken {
             get {
-                object obj = ResourceManager.GetObject("link-broken", resourceCulture);
+                object obj = ResourceManager.GetObject("link_broken", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3665,7 +3685,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap list_numbered {
             get {
-                object obj = ResourceManager.GetObject("list-numbered", resourceCulture);
+                object obj = ResourceManager.GetObject("list_numbered", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3675,7 +3695,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap list_ordered {
             get {
-                object obj = ResourceManager.GetObject("list-ordered", resourceCulture);
+                object obj = ResourceManager.GetObject("list_ordered", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3685,7 +3705,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap list_unordered {
             get {
-                object obj = ResourceManager.GetObject("list-unordered", resourceCulture);
+                object obj = ResourceManager.GetObject("list_unordered", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3755,7 +3775,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mail_inbox {
             get {
-                object obj = ResourceManager.GetObject("mail-inbox", resourceCulture);
+                object obj = ResourceManager.GetObject("mail_inbox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3765,7 +3785,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mail_read {
             get {
-                object obj = ResourceManager.GetObject("mail-read", resourceCulture);
+                object obj = ResourceManager.GetObject("mail_read", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3775,7 +3795,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mail_sent {
             get {
-                object obj = ResourceManager.GetObject("mail-sent", resourceCulture);
+                object obj = ResourceManager.GetObject("mail_sent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3805,7 +3825,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap map_marker_pin {
             get {
-                object obj = ResourceManager.GetObject("map-marker-pin", resourceCulture);
+                object obj = ResourceManager.GetObject("map_marker_pin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3815,7 +3835,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_analog {
             get {
-                object obj = ResourceManager.GetObject("MD-analog", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_analog", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3825,7 +3845,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_aspect_ratio {
             get {
-                object obj = ResourceManager.GetObject("MD-aspect-ratio", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_aspect_ratio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3835,7 +3855,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_aspect_ratio_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-aspect-ratio-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_aspect_ratio_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3845,7 +3865,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_audio {
             get {
-                object obj = ResourceManager.GetObject("MD-audio", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_audio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3855,7 +3875,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_backward {
             get {
-                object obj = ResourceManager.GetObject("MD-backward", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_backward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3865,7 +3885,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_betamax {
             get {
-                object obj = ResourceManager.GetObject("MD-betamax", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_betamax", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3875,7 +3895,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_brightness {
             get {
-                object obj = ResourceManager.GetObject("MD-brightness", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_brightness", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3885,7 +3905,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_camera_photo {
             get {
-                object obj = ResourceManager.GetObject("MD-camera-photo", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_camera_photo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3895,7 +3915,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_camera_photo_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("MD-camera-photo-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_camera_photo_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3905,7 +3925,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_camera_photo_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("MD-camera-photo-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_camera_photo_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3915,7 +3935,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_camera_photo_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("MD-camera-photo-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_camera_photo_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3925,7 +3945,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_camera_polaroid {
             get {
-                object obj = ResourceManager.GetObject("MD-camera-polaroid", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_camera_polaroid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3935,7 +3955,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_camera_surveillance {
             get {
-                object obj = ResourceManager.GetObject("MD-camera-surveillance", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_camera_surveillance", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3945,7 +3965,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_camera_video {
             get {
-                object obj = ResourceManager.GetObject("MD-camera-video", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_camera_video", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3955,7 +3975,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_camera_video_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("MD-camera-video-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_camera_video_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3965,7 +3985,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_camera_video_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("MD-camera-video-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_camera_video_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3975,7 +3995,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_camera_web {
             get {
-                object obj = ResourceManager.GetObject("MD-camera-web", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_camera_web", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3985,7 +4005,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_cassette_tape {
             get {
-                object obj = ResourceManager.GetObject("MD-cassette-tape", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_cassette_tape", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3995,7 +4015,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_cd {
             get {
-                object obj = ResourceManager.GetObject("MD-cd", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_cd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4005,7 +4025,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_cd_burn {
             get {
-                object obj = ResourceManager.GetObject("MD-cd-burn", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_cd_burn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4015,7 +4035,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_cd_card {
             get {
-                object obj = ResourceManager.GetObject("MD-cd-card", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_cd_card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4025,7 +4045,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_contrast {
             get {
-                object obj = ResourceManager.GetObject("MD-contrast", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_contrast", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4035,7 +4055,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_dat {
             get {
-                object obj = ResourceManager.GetObject("MD-dat", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_dat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4045,7 +4065,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_disc_3__ {
             get {
-                object obj = ResourceManager.GetObject("MD-disc-3\'\'", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_disc_3__", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4055,7 +4075,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_disc_3_5__ {
             get {
-                object obj = ResourceManager.GetObject("MD-disc-3-5\'\'", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_disc_3_5__", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4065,7 +4085,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_disc_5_1_4__ {
             get {
-                object obj = ResourceManager.GetObject("MD-disc-5-1-4\'\'", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_disc_5_1_4__", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4075,7 +4095,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_eject {
             get {
-                object obj = ResourceManager.GetObject("MD-eject", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_eject", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4085,7 +4105,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_equalizer {
             get {
-                object obj = ResourceManager.GetObject("MD-equalizer", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_equalizer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4095,7 +4115,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_equalizer_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-equalizer-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_equalizer_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4105,7 +4125,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_fast_backward {
             get {
-                object obj = ResourceManager.GetObject("MD-fast-backward", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_fast_backward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4115,7 +4135,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_fast_backward_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-fast-backward-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_fast_backward_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4125,7 +4145,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_fast_forward {
             get {
-                object obj = ResourceManager.GetObject("MD-fast-forward", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_fast_forward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4135,7 +4155,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_fast_forward_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-fast-forward-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_fast_forward_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4145,7 +4165,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_film {
             get {
-                object obj = ResourceManager.GetObject("MD-film", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_film", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4155,7 +4175,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_flash {
             get {
-                object obj = ResourceManager.GetObject("MD-flash", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_flash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4165,7 +4185,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_headphones {
             get {
-                object obj = ResourceManager.GetObject("MD-headphones", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_headphones", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4175,7 +4195,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_headphones_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-headphones-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_headphones_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4185,7 +4205,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_headphones_mic {
             get {
-                object obj = ResourceManager.GetObject("MD-headphones-mic", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_headphones_mic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4195,7 +4215,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_inverse {
             get {
-                object obj = ResourceManager.GetObject("MD-inverse", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_inverse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4205,7 +4225,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_knob {
             get {
-                object obj = ResourceManager.GetObject("MD-knob", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_knob", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4215,7 +4235,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_knob_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-knob-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_knob_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4225,7 +4245,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_knob_decrease {
             get {
-                object obj = ResourceManager.GetObject("MD-knob-decrease", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_knob_decrease", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4235,7 +4255,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_knob_increase {
             get {
-                object obj = ResourceManager.GetObject("MD-knob-increase", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_knob_increase", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4245,7 +4265,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_knob_volume {
             get {
-                object obj = ResourceManager.GetObject("MD-knob-volume", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_knob_volume", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4255,7 +4275,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_levels {
             get {
-                object obj = ResourceManager.GetObject("MD-levels", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_levels", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4265,7 +4285,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_levels_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-levels-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_levels_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4275,7 +4295,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_levels_decrease {
             get {
-                object obj = ResourceManager.GetObject("MD-levels-decrease", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_levels_decrease", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4285,7 +4305,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_levels_increase {
             get {
-                object obj = ResourceManager.GetObject("MD-levels-increase", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_levels_increase", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4295,7 +4315,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_microphone {
             get {
-                object obj = ResourceManager.GetObject("MD-microphone", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_microphone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4305,7 +4325,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_microphone_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-microphone-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_microphone_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4315,7 +4335,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_minidisc {
             get {
-                object obj = ResourceManager.GetObject("MD-minidisc", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_minidisc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4325,7 +4345,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_music {
             get {
-                object obj = ResourceManager.GetObject("MD-music", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_music", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4335,7 +4355,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_next {
             get {
-                object obj = ResourceManager.GetObject("MD-next", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_next", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4345,7 +4365,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_pause {
             get {
-                object obj = ResourceManager.GetObject("MD-pause", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_pause", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4355,7 +4375,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_photo {
             get {
-                object obj = ResourceManager.GetObject("MD-photo", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_photo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4365,7 +4385,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_photo_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("MD-photo-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_photo_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4375,7 +4395,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_photo_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("MD-photo-alt 2", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_photo_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4385,7 +4405,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_photos {
             get {
-                object obj = ResourceManager.GetObject("MD-photos", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_photos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4395,7 +4415,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_photos_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-photos-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_photos_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4405,7 +4425,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_picture_broken_link {
             get {
-                object obj = ResourceManager.GetObject("MD-picture-broken-link", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_picture_broken_link", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4415,7 +4435,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_picture_broken_link_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-picture-broken-link-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_picture_broken_link_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4425,7 +4445,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_play {
             get {
-                object obj = ResourceManager.GetObject("MD-play", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_play", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4435,7 +4455,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_previous {
             get {
-                object obj = ResourceManager.GetObject("MD-previous", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_previous", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4445,7 +4465,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_radio {
             get {
-                object obj = ResourceManager.GetObject("MD-radio", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_radio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4455,7 +4475,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_record {
             get {
-                object obj = ResourceManager.GetObject("MD-record", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_record", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4465,7 +4485,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_reload {
             get {
-                object obj = ResourceManager.GetObject("MD-reload", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_reload", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4475,7 +4495,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_repeat {
             get {
-                object obj = ResourceManager.GetObject("MD-repeat", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_repeat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4485,7 +4505,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_repeat_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-repeat-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_repeat_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4495,7 +4515,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_repeat_once {
             get {
-                object obj = ResourceManager.GetObject("MD-repeat-once", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_repeat_once", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4505,7 +4525,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_resume {
             get {
-                object obj = ResourceManager.GetObject("MD-resume", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_resume", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4515,7 +4535,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_shuffle {
             get {
-                object obj = ResourceManager.GetObject("MD-shuffle", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_shuffle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4525,7 +4545,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_sound {
             get {
-                object obj = ResourceManager.GetObject("MD-sound", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_sound", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4535,7 +4555,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_speaker {
             get {
-                object obj = ResourceManager.GetObject("MD-speaker", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_speaker", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4545,7 +4565,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_speaker_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-speaker-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_speaker_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4555,7 +4575,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_split {
             get {
-                object obj = ResourceManager.GetObject("MD-split", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_split", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4565,7 +4585,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_stop {
             get {
-                object obj = ResourceManager.GetObject("MD-stop", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_stop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4575,7 +4595,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_stream_audio {
             get {
-                object obj = ResourceManager.GetObject("MD-stream-audio", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_stream_audio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4585,7 +4605,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_stream_video {
             get {
-                object obj = ResourceManager.GetObject("MD-stream-video", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_stream_video", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4595,7 +4615,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_synth {
             get {
-                object obj = ResourceManager.GetObject("MD-synth", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_synth", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4605,7 +4625,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_time_pos_back {
             get {
-                object obj = ResourceManager.GetObject("MD-time-pos-back", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_time_pos_back", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4615,7 +4635,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_time_pos_forward {
             get {
-                object obj = ResourceManager.GetObject("MD-time-pos-forward", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_time_pos_forward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4625,7 +4645,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_time_pos_set {
             get {
-                object obj = ResourceManager.GetObject("MD-time-pos-set", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_time_pos_set", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4635,7 +4655,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_time_position {
             get {
-                object obj = ResourceManager.GetObject("MD-time-position", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_time_position", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4645,7 +4665,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_tv {
             get {
-                object obj = ResourceManager.GetObject("MD-tv", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_tv", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4655,7 +4675,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_vhs {
             get {
-                object obj = ResourceManager.GetObject("MD-vhs", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_vhs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4665,7 +4685,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_video {
             get {
-                object obj = ResourceManager.GetObject("MD-video", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_video", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4675,7 +4695,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_vinyl_33_1_3 {
             get {
-                object obj = ResourceManager.GetObject("MD-vinyl-33-1-3", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_vinyl_33_1_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4685,7 +4705,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_vinyl_45 {
             get {
-                object obj = ResourceManager.GetObject("MD-vinyl-45", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_vinyl_45", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4695,7 +4715,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_volume_0 {
             get {
-                object obj = ResourceManager.GetObject("MD-volume-0", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_volume_0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4705,7 +4725,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_volume_0_alt {
             get {
-                object obj = ResourceManager.GetObject("MD-volume-0-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_volume_0_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4715,7 +4735,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_volume_1 {
             get {
-                object obj = ResourceManager.GetObject("MD-volume-1", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_volume_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4725,7 +4745,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_volume_2 {
             get {
-                object obj = ResourceManager.GetObject("MD-volume-2", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_volume_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4735,7 +4755,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_volume_3 {
             get {
-                object obj = ResourceManager.GetObject("MD-volume-3", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_volume_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4745,7 +4765,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_volume_down {
             get {
-                object obj = ResourceManager.GetObject("MD-volume-down", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_volume_down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4755,7 +4775,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap MD_volume_up {
             get {
-                object obj = ResourceManager.GetObject("MD-volume-up", resourceCulture);
+                object obj = ResourceManager.GetObject("MD_volume_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4775,7 +4795,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap medal_alt {
             get {
-                object obj = ResourceManager.GetObject("medal-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("medal_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4795,7 +4815,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap mobile_alt {
             get {
-                object obj = ResourceManager.GetObject("mobile-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("mobile_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4816,26 +4836,6 @@ namespace DockSample.Properties {
         internal static System.Drawing.Bitmap moleskine {
             get {
                 object obj = ResourceManager.GetObject("moleskine", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Monitor_Flat_16px_1123363_easyicon_net {
-            get {
-                object obj = ResourceManager.GetObject("Monitor_Flat_16px_1123363_easyicon.net", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Monitor_Flat_24px_1123363_easyicon_net {
-            get {
-                object obj = ResourceManager.GetObject("Monitor_Flat_24px_1123363_easyicon.net", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4875,7 +4875,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap navigation_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("navigation-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("navigation_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4885,7 +4885,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap navigation_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("navigation-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("navigation_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4905,7 +4905,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap network_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("network-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("network_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4945,7 +4945,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap notepad_alt {
             get {
-                object obj = ResourceManager.GetObject("notepad-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("notepad_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4955,7 +4955,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap open_in_new_window {
             get {
-                object obj = ResourceManager.GetObject("open-in-new-window", resourceCulture);
+                object obj = ResourceManager.GetObject("open_in_new_window", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4965,7 +4965,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap open_source {
             get {
-                object obj = ResourceManager.GetObject("open-source", resourceCulture);
+                object obj = ResourceManager.GetObject("open_source", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4975,7 +4975,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap orientation_landscape {
             get {
-                object obj = ResourceManager.GetObject("orientation-landscape", resourceCulture);
+                object obj = ResourceManager.GetObject("orientation_landscape", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4985,7 +4985,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap orientation_portrait {
             get {
-                object obj = ResourceManager.GetObject("orientation-portrait", resourceCulture);
+                object obj = ResourceManager.GetObject("orientation_portrait", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4995,7 +4995,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap padlock_closed {
             get {
-                object obj = ResourceManager.GetObject("padlock-closed", resourceCulture);
+                object obj = ResourceManager.GetObject("padlock_closed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5005,7 +5005,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap padlock_open {
             get {
-                object obj = ResourceManager.GetObject("padlock-open", resourceCulture);
+                object obj = ResourceManager.GetObject("padlock_open", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5025,7 +5025,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap paintroller_alt {
             get {
-                object obj = ResourceManager.GetObject("paintroller-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("paintroller_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5035,7 +5035,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap park_bench {
             get {
-                object obj = ResourceManager.GetObject("park-bench", resourceCulture);
+                object obj = ResourceManager.GetObject("park_bench", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5105,7 +5105,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap plugin_disabled {
             get {
-                object obj = ResourceManager.GetObject("plugin-disabled", resourceCulture);
+                object obj = ResourceManager.GetObject("plugin_disabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5135,7 +5135,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_off {
             get {
-                object obj = ResourceManager.GetObject("power-off", resourceCulture);
+                object obj = ResourceManager.GetObject("power_off", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5145,7 +5145,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_on {
             get {
-                object obj = ResourceManager.GetObject("power-on", resourceCulture);
+                object obj = ResourceManager.GetObject("power_on", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5155,7 +5155,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_on_off {
             get {
-                object obj = ResourceManager.GetObject("power-on-off", resourceCulture);
+                object obj = ResourceManager.GetObject("power_on_off", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5165,7 +5165,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap power_standby {
             get {
-                object obj = ResourceManager.GetObject("power-standby", resourceCulture);
+                object obj = ResourceManager.GetObject("power_standby", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5205,7 +5205,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap print_alt {
             get {
-                object obj = ResourceManager.GetObject("print-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("print_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5225,7 +5225,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap printer_preview {
             get {
-                object obj = ResourceManager.GetObject("printer-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("printer_preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5245,7 +5245,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap read_only {
             get {
-                object obj = ResourceManager.GetObject("read-only", resourceCulture);
+                object obj = ResourceManager.GetObject("read_only", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5275,7 +5275,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap remote_control {
             get {
-                object obj = ResourceManager.GetObject("remote-control", resourceCulture);
+                object obj = ResourceManager.GetObject("remote_control", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5315,7 +5315,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap road_sign {
             get {
-                object obj = ResourceManager.GetObject("road-sign", resourceCulture);
+                object obj = ResourceManager.GetObject("road_sign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5355,7 +5355,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap ruler_alt {
             get {
-                object obj = ResourceManager.GetObject("ruler-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("ruler_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5365,7 +5365,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap safety_box {
             get {
-                object obj = ResourceManager.GetObject("safety-box", resourceCulture);
+                object obj = ResourceManager.GetObject("safety_box", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5425,7 +5425,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap search_advanced {
             get {
-                object obj = ResourceManager.GetObject("search-advanced", resourceCulture);
+                object obj = ResourceManager.GetObject("search_advanced", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5465,7 +5465,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_circle {
             get {
-                object obj = ResourceManager.GetObject("shape-circle", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_circle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5475,7 +5475,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_ellipse {
             get {
-                object obj = ResourceManager.GetObject("shape-ellipse", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_ellipse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5485,7 +5485,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_hexagon {
             get {
-                object obj = ResourceManager.GetObject("shape-hexagon", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_hexagon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5495,7 +5495,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_kite {
             get {
-                object obj = ResourceManager.GetObject("shape-kite", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_kite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5505,7 +5505,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_parallelogram_orthogonal {
             get {
-                object obj = ResourceManager.GetObject("shape-parallelogram-orthogonal", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_parallelogram_orthogonal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5515,7 +5515,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_pentagon {
             get {
-                object obj = ResourceManager.GetObject("shape-pentagon", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_pentagon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5525,7 +5525,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_rhombus {
             get {
-                object obj = ResourceManager.GetObject("shape-rhombus", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_rhombus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5535,7 +5535,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_square {
             get {
-                object obj = ResourceManager.GetObject("shape-square", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_square", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5545,7 +5545,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_trapezoid {
             get {
-                object obj = ResourceManager.GetObject("shape-trapezoid", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_trapezoid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5555,7 +5555,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_triangle_equilateral {
             get {
-                object obj = ResourceManager.GetObject("shape-triangle-equilateral", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_triangle_equilateral", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5565,7 +5565,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_triangle_isosceles {
             get {
-                object obj = ResourceManager.GetObject("shape-triangle-isosceles", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_triangle_isosceles", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5575,7 +5575,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_triangle_rectangular {
             get {
-                object obj = ResourceManager.GetObject("shape-triangle-rectangular", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_triangle_rectangular", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5585,7 +5585,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shape_triangle_scalene {
             get {
-                object obj = ResourceManager.GetObject("shape-triangle-scalene", resourceCulture);
+                object obj = ResourceManager.GetObject("shape_triangle_scalene", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5595,7 +5595,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_align_hori_center {
             get {
-                object obj = ResourceManager.GetObject("shapes-align-hori-center", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_align_hori_center", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5605,7 +5605,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_align_hori_left {
             get {
-                object obj = ResourceManager.GetObject("shapes-align-hori-left", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_align_hori_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5615,7 +5615,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_align_hori_right {
             get {
-                object obj = ResourceManager.GetObject("shapes-align-hori-right", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_align_hori_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5625,7 +5625,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_align_verti_bottom {
             get {
-                object obj = ResourceManager.GetObject("shapes-align-verti-bottom", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_align_verti_bottom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5635,7 +5635,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_align_verti_middle {
             get {
-                object obj = ResourceManager.GetObject("shapes-align-verti-middle", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_align_verti_middle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5645,7 +5645,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_align_verti_top {
             get {
-                object obj = ResourceManager.GetObject("shapes-align-verti-top", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_align_verti_top", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5655,7 +5655,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_flip_horizontal {
             get {
-                object obj = ResourceManager.GetObject("shapes-flip-horizontal", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_flip_horizontal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5665,7 +5665,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_flip_vertical {
             get {
-                object obj = ResourceManager.GetObject("shapes-flip-vertical", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_flip_vertical", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5675,7 +5675,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_move_back {
             get {
-                object obj = ResourceManager.GetObject("shapes-move-back", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_move_back", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5685,7 +5685,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_move_backward {
             get {
-                object obj = ResourceManager.GetObject("shapes-move-backward", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_move_backward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5695,7 +5695,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_move_forward {
             get {
-                object obj = ResourceManager.GetObject("shapes-move-forward", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_move_forward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5705,7 +5705,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_move_front {
             get {
-                object obj = ResourceManager.GetObject("shapes-move-front", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_move_front", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5715,7 +5715,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_rotate_anticlockwise {
             get {
-                object obj = ResourceManager.GetObject("shapes-rotate-anticlockwise", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_rotate_anticlockwise", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5725,7 +5725,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap shapes_rotate_clockwise {
             get {
-                object obj = ResourceManager.GetObject("shapes-rotate-clockwise", resourceCulture);
+                object obj = ResourceManager.GetObject("shapes_rotate_clockwise", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5775,7 +5775,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap statistics_chart {
             get {
-                object obj = ResourceManager.GetObject("statistics-chart", resourceCulture);
+                object obj = ResourceManager.GetObject("statistics_chart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5785,7 +5785,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap statistics_pie_chart {
             get {
-                object obj = ResourceManager.GetObject("statistics-pie-chart", resourceCulture);
+                object obj = ResourceManager.GetObject("statistics_pie_chart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5795,7 +5795,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap sticky_note {
             get {
-                object obj = ResourceManager.GetObject("sticky-note", resourceCulture);
+                object obj = ResourceManager.GetObject("sticky_note", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5815,7 +5815,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap stop_alt {
             get {
-                object obj = ResourceManager.GetObject("stop-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("stop_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5845,7 +5845,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap switch_off {
             get {
-                object obj = ResourceManager.GetObject("switch-off", resourceCulture);
+                object obj = ResourceManager.GetObject("switch_off", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5855,7 +5855,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap switch_off_alt {
             get {
-                object obj = ResourceManager.GetObject("switch-off-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("switch_off_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5865,7 +5865,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap switch_on {
             get {
-                object obj = ResourceManager.GetObject("switch-on", resourceCulture);
+                object obj = ResourceManager.GetObject("switch_on", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5875,7 +5875,127 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap switch_on_alt {
             get {
-                object obj = ResourceManager.GetObject("switch-on-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("switch_on_alt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_close_down {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_close_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_close_hover {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_close_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_close_normal {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_close_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_max_down {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_max_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_max_hover {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_max_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_max_normal {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_max_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_min_down {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_min_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_min_hover {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_min_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_min_normal {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_min_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_restore_down {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_restore_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_restore_hover {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_restore_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sysbtn_restore_normal {
+            get {
+                object obj = ResourceManager.GetObject("sysbtn_restore_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5963,26 +6083,6 @@ namespace DockSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap terminal_16px {
-            get {
-                object obj = ResourceManager.GetObject("terminal_16px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap terminal_24px {
-            get {
-                object obj = ResourceManager.GetObject("terminal_24px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap thumbnails {
             get {
                 object obj = ResourceManager.GetObject("thumbnails", resourceCulture);
@@ -6015,7 +6115,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap time_alt {
             get {
-                object obj = ResourceManager.GetObject("time-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("time_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6045,7 +6145,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap trafficlight_green {
             get {
-                object obj = ResourceManager.GetObject("trafficlight-green", resourceCulture);
+                object obj = ResourceManager.GetObject("trafficlight_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6055,7 +6155,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap trafficlight_orange {
             get {
-                object obj = ResourceManager.GetObject("trafficlight-orange", resourceCulture);
+                object obj = ResourceManager.GetObject("trafficlight_orange", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6065,7 +6165,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap trafficlight_red {
             get {
-                object obj = ResourceManager.GetObject("trafficlight-red", resourceCulture);
+                object obj = ResourceManager.GetObject("trafficlight_red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6075,7 +6175,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap trash_empty {
             get {
-                object obj = ResourceManager.GetObject("trash-empty", resourceCulture);
+                object obj = ResourceManager.GetObject("trash_empty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6085,7 +6185,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap trash_full {
             get {
-                object obj = ResourceManager.GetObject("trash-full", resourceCulture);
+                object obj = ResourceManager.GetObject("trash_full", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6135,7 +6235,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap unfold_from_bottom {
             get {
-                object obj = ResourceManager.GetObject("unfold-from-bottom", resourceCulture);
+                object obj = ResourceManager.GetObject("unfold_from_bottom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6145,7 +6245,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap unfold_from_left {
             get {
-                object obj = ResourceManager.GetObject("unfold-from-left", resourceCulture);
+                object obj = ResourceManager.GetObject("unfold_from_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6155,7 +6255,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap unfold_from_right {
             get {
-                object obj = ResourceManager.GetObject("unfold-from-right", resourceCulture);
+                object obj = ResourceManager.GetObject("unfold_from_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6165,7 +6265,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap unfold_from_top {
             get {
-                object obj = ResourceManager.GetObject("unfold-from-top", resourceCulture);
+                object obj = ResourceManager.GetObject("unfold_from_top", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6175,7 +6275,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap unfold_multiple {
             get {
-                object obj = ResourceManager.GetObject("unfold-multiple", resourceCulture);
+                object obj = ResourceManager.GetObject("unfold_multiple", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6195,7 +6295,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("user-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("user_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6205,7 +6305,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("user-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("user_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6215,7 +6315,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("user-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("user_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6225,7 +6325,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_alt_4 {
             get {
-                object obj = ResourceManager.GetObject("user-alt-4", resourceCulture);
+                object obj = ResourceManager.GetObject("user_alt_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6235,7 +6335,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_art {
             get {
-                object obj = ResourceManager.GetObject("user-art", resourceCulture);
+                object obj = ResourceManager.GetObject("user_art", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6245,7 +6345,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_chat {
             get {
-                object obj = ResourceManager.GetObject("user-chat", resourceCulture);
+                object obj = ResourceManager.GetObject("user_chat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6255,7 +6355,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_female {
             get {
-                object obj = ResourceManager.GetObject("user-female", resourceCulture);
+                object obj = ResourceManager.GetObject("user_female", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6265,7 +6365,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_female_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("user-female-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("user_female_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6275,7 +6375,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_female_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("user-female-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("user_female_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6285,7 +6385,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_locked {
             get {
-                object obj = ResourceManager.GetObject("user-locked", resourceCulture);
+                object obj = ResourceManager.GetObject("user_locked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6295,7 +6395,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_male {
             get {
-                object obj = ResourceManager.GetObject("user-male", resourceCulture);
+                object obj = ResourceManager.GetObject("user_male", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6305,7 +6405,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_male_alt_1 {
             get {
-                object obj = ResourceManager.GetObject("user-male-alt-1", resourceCulture);
+                object obj = ResourceManager.GetObject("user_male_alt_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6315,7 +6415,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_male_alt_2 {
             get {
-                object obj = ResourceManager.GetObject("user-male-alt-2", resourceCulture);
+                object obj = ResourceManager.GetObject("user_male_alt_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6325,7 +6425,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_male_alt_3 {
             get {
-                object obj = ResourceManager.GetObject("user-male-alt-3", resourceCulture);
+                object obj = ResourceManager.GetObject("user_male_alt_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6335,7 +6435,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_offline {
             get {
-                object obj = ResourceManager.GetObject("user-offline", resourceCulture);
+                object obj = ResourceManager.GetObject("user_offline", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6345,7 +6445,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_refresh {
             get {
-                object obj = ResourceManager.GetObject("user-refresh", resourceCulture);
+                object obj = ResourceManager.GetObject("user_refresh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6355,7 +6455,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_sleep {
             get {
-                object obj = ResourceManager.GetObject("user-sleep", resourceCulture);
+                object obj = ResourceManager.GetObject("user_sleep", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6375,7 +6475,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap users_alt {
             get {
-                object obj = ResourceManager.GetObject("users-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("users_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6405,7 +6505,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wall_alt {
             get {
-                object obj = ResourceManager.GetObject("wall-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("wall_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6435,7 +6535,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap water_alt {
             get {
-                object obj = ResourceManager.GetObject("water-alt", resourceCulture);
+                object obj = ResourceManager.GetObject("water_alt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6445,7 +6545,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap weather_cloud {
             get {
-                object obj = ResourceManager.GetObject("weather-cloud", resourceCulture);
+                object obj = ResourceManager.GetObject("weather_cloud", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6455,7 +6555,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap weather_cloud_sun {
             get {
-                object obj = ResourceManager.GetObject("weather-cloud-sun", resourceCulture);
+                object obj = ResourceManager.GetObject("weather_cloud_sun", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6465,7 +6565,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap weather_clouds {
             get {
-                object obj = ResourceManager.GetObject("weather-clouds", resourceCulture);
+                object obj = ResourceManager.GetObject("weather_clouds", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6475,7 +6575,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap weather_rain {
             get {
-                object obj = ResourceManager.GetObject("weather-rain", resourceCulture);
+                object obj = ResourceManager.GetObject("weather_rain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6485,7 +6585,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap weather_snow {
             get {
-                object obj = ResourceManager.GetObject("weather-snow", resourceCulture);
+                object obj = ResourceManager.GetObject("weather_snow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6495,7 +6595,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap weather_sun {
             get {
-                object obj = ResourceManager.GetObject("weather-sun", resourceCulture);
+                object obj = ResourceManager.GetObject("weather_sun", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6505,7 +6605,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap weather_thunder {
             get {
-                object obj = ResourceManager.GetObject("weather-thunder", resourceCulture);
+                object obj = ResourceManager.GetObject("weather_thunder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6535,7 +6635,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wi_fi {
             get {
-                object obj = ResourceManager.GetObject("wi-fi", resourceCulture);
+                object obj = ResourceManager.GetObject("wi_fi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6555,7 +6655,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap window_stack {
             get {
-                object obj = ResourceManager.GetObject("window-stack", resourceCulture);
+                object obj = ResourceManager.GetObject("window_stack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6565,7 +6665,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap window_tile {
             get {
-                object obj = ResourceManager.GetObject("window-tile", resourceCulture);
+                object obj = ResourceManager.GetObject("window_tile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6575,7 +6675,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap window_tile_horizontally {
             get {
-                object obj = ResourceManager.GetObject("window-tile-horizontally", resourceCulture);
+                object obj = ResourceManager.GetObject("window_tile_horizontally", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6585,7 +6685,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap window_tile_vertically {
             get {
-                object obj = ResourceManager.GetObject("window-tile-vertically", resourceCulture);
+                object obj = ResourceManager.GetObject("window_tile_vertically", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6595,7 +6695,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap wireless_router {
             get {
-                object obj = ResourceManager.GetObject("wireless-router", resourceCulture);
+                object obj = ResourceManager.GetObject("wireless_router", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6625,7 +6725,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap zoom_in {
             get {
-                object obj = ResourceManager.GetObject("zoom-in", resourceCulture);
+                object obj = ResourceManager.GetObject("zoom_in", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6635,7 +6735,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap zoom_out {
             get {
-                object obj = ResourceManager.GetObject("zoom-out", resourceCulture);
+                object obj = ResourceManager.GetObject("zoom_out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

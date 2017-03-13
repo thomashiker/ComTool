@@ -52,7 +52,6 @@ E:\COM Terminal\COMx\COM Terminal\FastColoredTextBox\obj\Debug\FastColoredTextBo
 C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\bin\Debug\FastColoredTextBox.XML
 C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\bin\Debug\FastColoredTextBox.dll
 C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\bin\Debug\FastColoredTextBox.pdb
-C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBox.csprojResolveAssemblyReference.cache
 C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FastColoredTextBox.resources
 C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FindForm.resources
 C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.GoToForm.resources

@@ -9,6 +9,8 @@ using System.IO.Ports;
 using System.IO;
 using System.Collections;
 using System.Xml;
+using System.Runtime.InteropServices;
+
 
 namespace DockSample
 {
@@ -63,40 +65,22 @@ namespace DockSample
             return DialogResult.OK;
         }
 
-        private Point OpenPortTitleToolStrip_MousePoint = new Point();
-        private void OpenPortTitleToolStrip_MouseDown(object sender, MouseEventArgs e)
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+        [DllImport("user32.dll")]
+        public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
+        public const int WM_SYSCOMMAND = 0x0112;
+        public const int SC_MOVE = 0xF010;
+        public const int HTCAPTION = 0x0002;
+        /// <summary>
+        /// 为了是主界面能够移动
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
-            base.OnMouseDown(e);
-            this.OpenPortTitleToolStrip_MousePoint.X = e.X;
-            this.OpenPortTitleToolStrip_MousePoint.Y = e.Y;
-        }
-
-        private void OpenPortTitleToolStrip_MouseMove(object sender, MouseEventArgs e)
-        {
-            base.OnMouseMove(e);
-            if (e.Button == MouseButtons.Left)
-            {
-                this.Top = Control.MousePosition.Y - OpenPortTitleToolStrip_MousePoint.Y;
-                this.Left = Control.MousePosition.X - OpenPortTitleToolStrip_MousePoint.X;
-            }
-        }
-
-        private Point titleLabel_MousePoint = new Point();
-        private void titleLabel_MouseDown(object sender, MouseEventArgs e)
-        {
-            base.OnMouseDown(e);
-            this.titleLabel_MousePoint.X = e.X;
-            this.titleLabel_MousePoint.Y = e.Y;
-        }
-
-        private void titleLabel_MouseMove(object sender, MouseEventArgs e)
-        {
-            base.OnMouseMove(e);
-            if (e.Button == MouseButtons.Left)
-            {
-                this.Top = Control.MousePosition.Y - titleLabel_MousePoint.Y;
-                this.Left = Control.MousePosition.X - titleLabel_MousePoint.X;
-            }
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
         }
 
         private PortInfo getPortComboBoxInfo()

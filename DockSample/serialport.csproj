@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DockSample</RootNamespace>
     <AssemblyName>ComTool</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -75,6 +75,10 @@
     <Reference Include="ColorTextBox">
       <HintPath>..\..\test\test\test\ColorTextBox.dll</HintPath>
     </Reference>
+    <Reference Include="CSkin, Version=16.1.14.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CSkin.dll</HintPath>
+    </Reference>
     <Reference Include="FastColoredTextBox, Version=2.16.2.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\FastColoredTextBox\bin\Debug\FastColoredTextBox.dll</HintPath>
@@ -82,6 +86,9 @@
     <Reference Include="FontListBox, Version=1.0.5453.2230, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\FontListBox.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialWinforms">
+      <HintPath>..\MaterialWinforms\bin\Debug\MaterialWinforms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="OfficePickers, Version=1.1.2769.15829, Culture=neutral, processorArchitecture=MSIL">
@@ -399,6 +406,26 @@
     <Content Include="Resources\DefaultIcon\ico\ship_128px_1164196_easyicon.net.ico" />
     <Content Include="Resources\DefaultIcon\ico\sitemap_128px.ico" />
     <Content Include="Resources\DefaultIcon\ico\terminal_32px.ico" />
+    <None Include="Resources\DefaultIcon\menu\cancel-inv.png" />
+    <None Include="Resources\DefaultIcon\menu\cancel.png" />
+    <None Include="Resources\DefaultIcon\menu\menu_btn_highlight.png" />
+    <None Include="Resources\DefaultIcon\menu\menu_btn_normal.png" />
+    <None Include="Resources\DefaultIcon\menu\aio_setting_down.png" />
+    <None Include="Resources\DefaultIcon\menu\aio_setting_hover.png" />
+    <None Include="Resources\DefaultIcon\menu\aio_setting_normal.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_min_down.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_min_hover.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_min_normal.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_restore_down.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_restore_hover.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_restore_normal.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_max_down.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_max_hover.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_max_normal.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_close_down.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_close_hover.png" />
+    <None Include="Resources\DefaultIcon\menu\sysbtn_close_normal.png" />
+    <None Include="Resources\DefaultIcon\png\24x24\cancel_24px_1074648_easyicon.net.png" />
     <None Include="Resources\DefaultIcon\other\terminal_16px.png" />
     <None Include="Resources\DefaultIcon\other\terminal_24px.png" />
     <None Include="Resources\DefaultIcon\other\Monitor_Flat_16px_1123363_easyicon.net.png" />
