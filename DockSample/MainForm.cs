@@ -1075,8 +1075,7 @@ namespace DockSample
         {
             if (e.SysButton.Name == "SysMenu")
             {
-                //cmsNotifyMenu.Show(MousePosition);
-
+                sysMenu.Show(MousePosition);
             }
         }
     }

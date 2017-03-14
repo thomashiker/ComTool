@@ -322,7 +322,7 @@ namespace DockSample
             this.tstbTimerInterval.Margin = new System.Windows.Forms.Padding(0);
             this.tstbTimerInterval.Name = "tstbTimerInterval";
             this.tstbTimerInterval.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.tstbTimerInterval.Size = new System.Drawing.Size(31, 25);
+            this.tstbTimerInterval.Size = new System.Drawing.Size(29, 25);
             this.tstbTimerInterval.Text = "1000";
             this.tstbTimerInterval.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tstbTimerInterval.ToolTipText = "ms";
@@ -341,7 +341,7 @@ namespace DockSample
             // 
             // sendToolStrip
             // 
-            this.sendToolStrip.BackColor = System.Drawing.SystemColors.Control;
+            this.sendToolStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.sendToolStrip.GripMargin = new System.Windows.Forms.Padding(0);
             this.sendToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.sendToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -375,6 +375,7 @@ namespace DockSample
             // treeViewFavorite
             // 
             this.treeViewFavorite.AllowDrop = true;
+            this.treeViewFavorite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.treeViewFavorite.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.treeViewFavorite.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeViewFavorite.ImageIndex = 0;
@@ -402,6 +403,7 @@ namespace DockSample
             // 
             // SendToolsBox
             // 
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(232, 361);
             this.CloseButton = false;
             this.CloseButtonVisible = false;

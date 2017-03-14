@@ -2573,6 +2573,16 @@ namespace DockSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap error_64px {
+            get {
+                object obj = ResourceManager.GetObject("error_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ethernet {
             get {
                 object obj = ResourceManager.GetObject("ethernet", resourceCulture);

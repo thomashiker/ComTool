@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace DockSample
 {
@@ -26,6 +27,24 @@ namespace DockSample
                 fontComboBox.Items.Add(family.Name);
                 //sampleFCTBox.AppendText(family.Name + "\r\n");
             }
+        }
+
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+        [DllImport("user32.dll")]
+        public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
+        public const int WM_SYSCOMMAND = 0x0112;
+        public const int SC_MOVE = 0xF010;
+        public const int HTCAPTION = 0x0002;
+        /// <summary>
+        /// 为了是主界面能够移动
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
         }
 
         private void LoadSetting()
@@ -134,37 +153,6 @@ namespace DockSample
         private void receiveWinCharSetComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //
-        }
-
-        Point mouseToolStripOff;                          //鼠标移动位置变量
-        bool leftFlagToolStrip;                           //标签是否为左键
-        private void winSettingToolStrip_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                mouseToolStripOff = new Point(-e.X, -e.Y); //得到变量的值
-                leftFlagToolStrip = true;                  //点击左键按下时标注为true;
-                Cursor = Cursors.SizeAll;
-            }
-        }
-
-        private void winSettingToolStrip_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (leftFlagToolStrip)
-            {
-                Point mouseSet = Control.MousePosition;
-                mouseSet.Offset(mouseToolStripOff.X, mouseToolStripOff.Y); //设置移动后的位置
-                Location = mouseSet;
-            }
-        }
-
-        private void winSettingToolStrip_MouseUp(object sender, MouseEventArgs e)
-        {
-            if (leftFlagToolStrip)
-            {
-                leftFlagToolStrip = false;//释放鼠标后标注为false;
-                Cursor = Cursors.Default;
-            }
         }
 
         private void receiveWinFontStyleComboBox_SelectedIndexChanged(object sender, EventArgs e)

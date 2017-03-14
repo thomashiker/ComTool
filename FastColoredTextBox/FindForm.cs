@@ -3,14 +3,12 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace FastColoredTextBoxNS
 {
     public partial class FindForm : Form
     {
-        Point mouseOff;                          //鼠标移动位置变量
-        bool leftFlag;                               //标签是否为左键
-
         FastColoredTextBox tb;
 
         private bool wholeWordChecked = false;
@@ -76,6 +74,24 @@ namespace FastColoredTextBoxNS
                 //this.Location = new Point(-tb.PointToClient(tb.Location).X + tb.Width - this.Width - 20, -tb.PointToClient(tb.Location).Y + tb.Top);
                 //Point cur = this.PointToScreen(tb.Location);
             }
+        }
+
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+        [DllImport("user32.dll")]
+        public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
+        public const int WM_SYSCOMMAND = 0x0112;
+        public const int SC_MOVE = 0xF010;
+        public const int HTCAPTION = 0x0002;
+        /// <summary>
+        /// 为了是主界面能够移动
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Form_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
         }
 
         public string GetFindComboBoxText()

@@ -120,6 +120,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Go To Line";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

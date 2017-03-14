@@ -42,6 +42,10 @@
             this.baudRateLabel = new System.Windows.Forms.Label();
             this.portNameLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.warnPicBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,10 +83,11 @@
             // warnPicBox
             // 
             this.warnPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.warnPicBox.Image = global::DockSample.Properties.Resources.error_64px;
             this.warnPicBox.InitialImage = null;
             this.warnPicBox.Location = new System.Drawing.Point(10, 14);
             this.warnPicBox.Name = "warnPicBox";
-            this.warnPicBox.Size = new System.Drawing.Size(74, 74);
+            this.warnPicBox.Size = new System.Drawing.Size(64, 64);
             this.warnPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.warnPicBox.TabIndex = 2;
             this.warnPicBox.TabStop = false;
@@ -176,12 +181,52 @@
             this.panel1.Size = new System.Drawing.Size(1, 80);
             this.panel1.TabIndex = 13;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1, 131);
+            this.panel2.TabIndex = 14;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(1, 130);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(270, 1);
+            this.panel3.TabIndex = 15;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(270, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1, 130);
+            this.panel4.TabIndex = 16;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(1, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(269, 1);
+            this.panel5.TabIndex = 17;
+            // 
             // PortOpenFailDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(271, 131);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.stopBitsLabel);
             this.Controls.Add(this.dataBitsLabel);
@@ -200,9 +245,8 @@
             this.Name = "PortOpenFailDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "PortOpenFailDialog";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PortOpenFailDialog_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PortOpenFailDialog_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PortOpenFailDialog_MouseUp);
+            this.Load += new System.EventHandler(this.PortOpenFailDialog_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.form_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.warnPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,5 +269,9 @@
         private System.Windows.Forms.Label baudRateLabel;
         private System.Windows.Forms.Label portNameLabel;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }

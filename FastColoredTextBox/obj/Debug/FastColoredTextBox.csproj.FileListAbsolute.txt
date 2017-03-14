@@ -61,3 +61,4 @@ C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColored
 C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBox.csproj.GenerateResource.Cache
 C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBox.dll
 C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBox.pdb
+C:\Users\hiker\Documents\GitHub\ComTool\FastColoredTextBox\obj\Debug\FastColoredTextBox.csprojResolveAssemblyReference.cache

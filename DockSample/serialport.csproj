@@ -406,6 +406,8 @@
     <Content Include="Resources\DefaultIcon\ico\ship_128px_1164196_easyicon.net.ico" />
     <Content Include="Resources\DefaultIcon\ico\sitemap_128px.ico" />
     <Content Include="Resources\DefaultIcon\ico\terminal_32px.ico" />
+    <None Include="Resources\DefaultIcon\sysmenu\clock_16px_1176545_easyicon.net.png" />
+    <None Include="Resources\DefaultIcon\sysmenu\history_clock_16px_1145086_easyicon.net.png" />
     <None Include="Resources\DefaultIcon\menu\cancel-inv.png" />
     <None Include="Resources\DefaultIcon\menu\cancel.png" />
     <None Include="Resources\DefaultIcon\menu\menu_btn_highlight.png" />

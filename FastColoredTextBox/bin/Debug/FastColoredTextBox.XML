@@ -297,6 +297,13 @@
             Use original font
             </summary>
         </member>
+        <member name="M:FastColoredTextBoxNS.GoToForm.Form_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            为了是主界面能够移动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
         <member name="F:FastColoredTextBoxNS.GoToForm.components">
             <summary>
             Required designer variable.
@@ -877,6 +884,13 @@
             <summary>
             Language
             </summary>
+        </member>
+        <member name="M:FastColoredTextBoxNS.ReplaceForm.Form_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            为了是主界面能够移动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="F:FastColoredTextBoxNS.ReplaceForm.components">
             <summary>
@@ -2663,6 +2677,13 @@
             <summary>
             Remembers current selection and restore it after Undo
             </summary>
+        </member>
+        <member name="M:FastColoredTextBoxNS.FindForm.Form_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            为了是主界面能够移动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="F:FastColoredTextBoxNS.FindForm.components">
             <summary>

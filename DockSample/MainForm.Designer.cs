@@ -174,9 +174,16 @@ namespace DockSample
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.notifyTSMIExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mainTimer = new System.Windows.Forms.Timer(this.components);
+            this.sysMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.settingSysMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.themeSysMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.lightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolBar.SuspendLayout();
             this.systemStatusStrip.SuspendLayout();
             this.cmsNotifyMenu.SuspendLayout();
+            this.sysMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolBar
@@ -282,7 +289,7 @@ namespace DockSample
             // 
             this.toolStripButtonClear.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButtonClear.Enabled = false;
-            this.toolStripButtonClear.Image = global::DockSample.Properties.Resources.brush_alt_1;
+            this.toolStripButtonClear.Image = global::DockSample.Properties.Resources.eraser;
             this.toolStripButtonClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonClear.Margin = new System.Windows.Forms.Padding(1);
             this.toolStripButtonClear.Name = "toolStripButtonClear";
@@ -499,6 +506,7 @@ namespace DockSample
             // dockPanel
             // 
             this.dockPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
+            this.dockPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dockPanel.DockBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.dockPanel.DockBottomPortion = 150D;
             this.dockPanel.DockLeftPortion = 200D;
@@ -571,14 +579,16 @@ namespace DockSample
             this.systemStatusStrip.Location = new System.Drawing.Point(4, 454);
             this.systemStatusStrip.Name = "systemStatusStrip";
             this.systemStatusStrip.Size = new System.Drawing.Size(692, 22);
+            this.systemStatusStrip.SizingGrip = false;
             this.systemStatusStrip.TabIndex = 14;
             this.systemStatusStrip.Text = "statusStrip1";
             // 
             // conectStateLabel
             // 
             this.conectStateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.conectStateLabel.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.conectStateLabel.Name = "conectStateLabel";
-            this.conectStateLabel.Size = new System.Drawing.Size(88, 17);
+            this.conectStateLabel.Size = new System.Drawing.Size(88, 19);
             this.conectStateLabel.Text = "No Conection";
             this.conectStateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -592,8 +602,9 @@ namespace DockSample
             // sendTimerPeriodLabel
             // 
             this.sendTimerPeriodLabel.Image = global::DockSample.Properties.Resources.alarm;
+            this.sendTimerPeriodLabel.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.sendTimerPeriodLabel.Name = "sendTimerPeriodLabel";
-            this.sendTimerPeriodLabel.Size = new System.Drawing.Size(69, 17);
+            this.sendTimerPeriodLabel.Size = new System.Drawing.Size(69, 19);
             this.sendTimerPeriodLabel.Text = "1000ms";
             this.sendTimerPeriodLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -611,8 +622,9 @@ namespace DockSample
             this.sendCharNumLabel.IsLink = true;
             this.sendCharNumLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.sendCharNumLabel.LinkColor = System.Drawing.SystemColors.ControlText;
+            this.sendCharNumLabel.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.sendCharNumLabel.Name = "sendCharNumLabel";
-            this.sendCharNumLabel.Size = new System.Drawing.Size(31, 17);
+            this.sendCharNumLabel.Size = new System.Drawing.Size(31, 19);
             this.sendCharNumLabel.Text = "0";
             this.sendCharNumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sendCharNumLabel.VisitedLinkColor = System.Drawing.SystemColors.ControlText;
@@ -631,8 +643,9 @@ namespace DockSample
             this.rcvCharNumLabel.IsLink = true;
             this.rcvCharNumLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.rcvCharNumLabel.LinkColor = System.Drawing.SystemColors.ControlText;
+            this.rcvCharNumLabel.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.rcvCharNumLabel.Name = "rcvCharNumLabel";
-            this.rcvCharNumLabel.Size = new System.Drawing.Size(31, 17);
+            this.rcvCharNumLabel.Size = new System.Drawing.Size(31, 19);
             this.rcvCharNumLabel.Text = "0";
             this.rcvCharNumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rcvCharNumLabel.VisitedLinkColor = System.Drawing.SystemColors.ControlText;
@@ -647,9 +660,10 @@ namespace DockSample
             // linkTimeLabel
             // 
             this.linkTimeLabel.Image = global::DockSample.Properties.Resources.stopwatch;
+            this.linkTimeLabel.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.linkTimeLabel.Name = "linkTimeLabel";
             this.linkTimeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.linkTimeLabel.Size = new System.Drawing.Size(72, 17);
+            this.linkTimeLabel.Size = new System.Drawing.Size(72, 19);
             this.linkTimeLabel.Text = "00:00:00";
             this.linkTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.linkTimeLabel.ToolTipText = "Link Time";
@@ -708,11 +722,64 @@ namespace DockSample
             this.mainTimer.Interval = 2000;
             this.mainTimer.Tick += new System.EventHandler(this.mainTimer_Tick);
             // 
+            // sysMenu
+            // 
+            this.sysMenu.BackColor = System.Drawing.Color.White;
+            this.sysMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.settingSysMenu,
+            this.themeSysMenu});
+            this.sysMenu.Name = "sysMenu";
+            this.sysMenu.Size = new System.Drawing.Size(117, 48);
+            // 
+            // settingSysMenu
+            // 
+            this.settingSysMenu.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.settingSysMenu.Image = global::DockSample.Properties.Resources._3D_Cube;
+            this.settingSysMenu.Name = "settingSysMenu";
+            this.settingSysMenu.Size = new System.Drawing.Size(116, 22);
+            this.settingSysMenu.Text = "&Setting";
+            // 
+            // themeSysMenu
+            // 
+            this.themeSysMenu.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.themeSysMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.lightToolStripMenuItem,
+            this.colorToolStripMenuItem});
+            this.themeSysMenu.Image = global::DockSample.Properties.Resources.paintroller;
+            this.themeSysMenu.Name = "themeSysMenu";
+            this.themeSysMenu.Size = new System.Drawing.Size(116, 22);
+            this.themeSysMenu.Text = "&Theme";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.toolStripMenuItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
+            this.toolStripMenuItem1.Text = "Dark";
+            this.toolStripMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // lightToolStripMenuItem
+            // 
+            this.lightToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lightToolStripMenuItem.Name = "lightToolStripMenuItem";
+            this.lightToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.lightToolStripMenuItem.Text = "Light";
+            // 
+            // colorToolStripMenuItem
+            // 
+            this.colorToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.colorToolStripMenuItem.Text = "Color";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
+            this.BackRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.BackShade = false;
             this.BackToColor = false;
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
@@ -726,7 +793,7 @@ namespace DockSample
             this.Controls.Add(this.systemStatusStrip);
             this.Controls.Add(this.toolBar);
             this.EffectCaption = CCWin.TitleType.Title;
-            this.EffectWidth = 1;
+            this.EffectWidth = 0;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.InnerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.IsMdiContainer = true;
@@ -741,11 +808,12 @@ namespace DockSample
             this.MiniNormlBack = global::DockSample.Properties.Resources.sysbtn_min_normal;
             this.MiniSize = new System.Drawing.Size(30, 27);
             this.Name = "MainForm";
-            this.Radius = 1;
+            this.Radius = 0;
             this.RestoreDownBack = global::DockSample.Properties.Resources.sysbtn_restore_down;
             this.RestoreMouseBack = global::DockSample.Properties.Resources.sysbtn_restore_hover;
             this.RestoreNormlBack = global::DockSample.Properties.Resources.sysbtn_restore_normal;
             this.Shadow = false;
+            this.ShadowRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.ShadowWidth = 1;
             this.ShowBorder = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -761,7 +829,7 @@ namespace DockSample
             cmSysButton1.ToolTip = null;
             this.SysButtonItems.AddRange(new CCWin.CmSysButton[] {
             cmSysButton1});
-            this.Text = "ComTool";
+            this.Text = "Com Tool";
             this.SysBottomClick += new CCWin.CCSkinMain.SysBottomEventHandler(this.MainForm_SysBottomClick);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.LocationChanged += new System.EventHandler(this.MainForm_LocationChanged);
@@ -771,6 +839,7 @@ namespace DockSample
             this.systemStatusStrip.ResumeLayout(false);
             this.systemStatusStrip.PerformLayout();
             this.cmsNotifyMenu.ResumeLayout(false);
+            this.sysMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -827,5 +896,11 @@ namespace DockSample
         private ToolStripMenuItem notifyTSMIShow;
         private ToolStripMenuItem notifyTSMINewPort;
         private Timer mainTimer;
+        private ContextMenuStrip sysMenu;
+        private ToolStripMenuItem settingSysMenu;
+        private ToolStripMenuItem themeSysMenu;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem lightToolStripMenuItem;
+        private ToolStripMenuItem colorToolStripMenuItem;
     }
 }

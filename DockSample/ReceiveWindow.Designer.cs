@@ -220,11 +220,13 @@ namespace DockSample
             this.fastColoredTextBox.CharHeight = 14;
             this.fastColoredTextBox.CharWidth = 8;
             this.fastColoredTextBox.ContextMenuStrip = this.rightKeyMenuStrip;
+            this.fastColoredTextBox.CurrentLineColor = System.Drawing.Color.Lime;
             this.fastColoredTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastColoredTextBox.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.fastColoredTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fastColoredTextBox.Hotkeys = resources.GetString("fastColoredTextBox.Hotkeys");
             this.fastColoredTextBox.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.fastColoredTextBox.IndentBackColor = System.Drawing.Color.White;
             this.fastColoredTextBox.IsReplaceMode = false;
             this.fastColoredTextBox.LineNumberColor = System.Drawing.SystemColors.Highlight;
             this.fastColoredTextBox.Location = new System.Drawing.Point(0, 4);
@@ -235,7 +237,6 @@ namespace DockSample
             this.fastColoredTextBox.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             this.fastColoredTextBox.SelectionUnFormatColor = System.Drawing.Color.Lime;
             this.fastColoredTextBox.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox.ServiceColors")));
-            this.fastColoredTextBox.ServiceLinesColor = System.Drawing.Color.White;
             this.fastColoredTextBox.Size = new System.Drawing.Size(564, 295);
             this.fastColoredTextBox.TabIndex = 3;
             this.fastColoredTextBox.Zoom = 100;

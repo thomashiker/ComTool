@@ -173,6 +173,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Find";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FindForm_FormClosing);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.ResumeLayout(false);
 
         }

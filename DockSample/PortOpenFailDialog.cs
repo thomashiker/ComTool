@@ -6,16 +6,12 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Runtime.InteropServices;
 
 namespace DockSample
 {
     public partial class PortOpenFailDialog : Form
     {
-        private Point mouseOff;                          //鼠标移动位置变量
-        private bool leftFlag;                               //标签是否为左键
-
-        private SerialPort serialPort;
-
         public PortOpenFailDialog(SerialPort port)
         {
             InitializeComponent();
@@ -46,6 +42,24 @@ namespace DockSample
             }
         }
 
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+        [DllImport("user32.dll")]
+        public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
+        public const int WM_SYSCOMMAND = 0x0112;
+        public const int SC_MOVE = 0xF010;
+        public const int HTCAPTION = 0x0002;
+        /// <summary>
+        /// 为了是主界面能够移动
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void form_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
+        }
+
         private void btIgnore_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Ignore;
@@ -56,35 +70,9 @@ namespace DockSample
             this.DialogResult = DialogResult.Cancel;
         }
 
-        private void PortOpenFailDialog_MouseDown(object sender, MouseEventArgs e)
+        private void PortOpenFailDialog_Load(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                mouseOff = new Point(-e.X, -e.Y); //得到变量的值
-                leftFlag = true;                  //点击左键按下时标注为true;
-                Cursor = Cursors.Arrow;
-                this.Opacity = 0.90;
-            }
-        }
 
-        private void PortOpenFailDialog_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (leftFlag)
-            {
-                Point mouseSet = Control.MousePosition;
-                mouseSet.Offset(mouseOff.X, mouseOff.Y); //设置移动后的位置
-                Location = mouseSet;
-            }
-        }
-
-        private void PortOpenFailDialog_MouseUp(object sender, MouseEventArgs e)
-        {
-            if (leftFlag)
-            {
-                leftFlag = false;//释放鼠标后标注为false;
-                Cursor = Cursors.Default;
-                this.Opacity = 1;
-            }
         }
     }
 }

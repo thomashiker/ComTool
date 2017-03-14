@@ -105,6 +105,7 @@
             this.fctbSend.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fctbSend.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.fctbSend.Hotkeys = resources.GetString("fctbSend.Hotkeys");
+            this.fctbSend.IndentBackColor = System.Drawing.Color.White;
             this.fctbSend.IsReplaceMode = false;
             this.fctbSend.LineNumberColor = System.Drawing.SystemColors.Highlight;
             this.fctbSend.Name = "fctbSend";
@@ -112,7 +113,6 @@
             this.fctbSend.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.fctbSend.SelectionUnFormatColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.fctbSend.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fctbSend.ServiceColors")));
-            this.fctbSend.ServiceLinesColor = System.Drawing.Color.White;
             this.fctbSend.Zoom = 100;
             this.fctbSend.SelectionChanged += new System.EventHandler(this.fctbSend_SelectionChanged);
             this.fctbSend.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fctbSend_KeyDown);
