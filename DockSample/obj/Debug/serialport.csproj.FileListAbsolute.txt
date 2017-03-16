@@ -79,7 +79,6 @@ C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\ComTool.pdb
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\CaptureImageTool.dll
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\ColorListBoxSelector.dll
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\FastColoredTextBox.dll
-C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\MaterialWinforms.dll
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2010.dll
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll
@@ -87,7 +86,6 @@ C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\WeifenLuo.WinFormsU
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\FastColoredTextBox.pdb
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\FastColoredTextBox.xml
-C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\MaterialWinforms.pdb
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\serialport.csprojResolveAssemblyReference.cache
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.HistoryWindow.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.NewPortWindow.resources
@@ -99,7 +97,6 @@ C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.SendTool
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.MainForm.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.Properties.Resources.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.SendWindow.resources
-C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.SpecialButton.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.Customization.Resources.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.ReceiveWindowSetting.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\serialport.csproj.GenerateResource.Cache

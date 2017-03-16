@@ -48,6 +48,24 @@ namespace DockSample
             btFileOps.Enabled = enable;
         }
 
+        private bool btLoopChecked = false;
+        public bool BTLoopChecked
+        {
+            get { return btLoopChecked; }
+            set
+            {
+                btLoopChecked = value;
+                if (true == btLoopChecked)
+                {
+                    btLoopSend.BackColor = Color.FromArgb(222, 77, 58);
+                }
+                else
+                {
+                    btLoopSend.BackColor = sendPanel.BackColor;
+                }
+            }
+        }
+
         public string SendTextBoxMsg
         {
             get { return tbSendMsg.Text; }
@@ -284,11 +302,6 @@ namespace DockSample
 
             SendLine(tbSendMsg.Text);
         }
-        
-       private void btLoopSend_Click(object sender, EventArgs e)
-       {
-           StartCyclicSendTimer(btLoopSend.Checked);
-       }
 
        private void btSendFile_Click(object sender, EventArgs e)
        {
@@ -313,17 +326,23 @@ namespace DockSample
            sendFileBGWorker.CancelAsync();
        }
 
-       private void pauseTool_CheckChanged(object sender, EventArgs e)
-       {
-           if (pauseTool.Checked)
-           {
-               btFileOps.Image = toolStripimageList.Images[9];
-           }
-           else
-           {
-               btFileOps.Image = toolStripimageList.Images[8];
-           }
-       }
+        private void pauseTool_CheckChanged(object sender, EventArgs e)
+        {
+            if (pauseTool.Checked)
+            {
+                btFileOps.Image = toolStripimageList.Images[9];
+            }
+            else
+            {
+                btFileOps.Image = toolStripimageList.Images[8];
+            }
+        }
+
+        private void btLoopSend_Click(object sender, EventArgs e)
+        {
+            BTLoopChecked = !BTLoopChecked;
+            StartCyclicSendTimer(BTLoopChecked);
+        }
 
         private void btLoopSend_MouseDown(object sender, MouseEventArgs e)
         {
@@ -535,7 +554,7 @@ namespace DockSample
             fctbSend.ReadOnly = btReadOnlyChecked;
             if (fctbSend.ReadOnly)
             {
-                btReadOnly.BackColor = SystemColors.Highlight;
+                btReadOnly.BackColor = Color.FromArgb(222, 77, 58);
             }
             else
             {

@@ -64,7 +64,6 @@
             this.repeatTool = new System.Windows.Forms.ToolStripMenuItem();
             this.sendFromFilePgBar = new System.Windows.Forms.ProgressBar();
             this.btMenu = new System.Windows.Forms.Button();
-            this.btLoopSend = new DockSample.SpecialButton();
             this.btSendFile = new System.Windows.Forms.Button();
             this.btSend = new System.Windows.Forms.Button();
             this.settingMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -75,6 +74,7 @@
             this.clearTagsTool = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.settingTool = new System.Windows.Forms.ToolStripMenuItem();
+            this.btLoopSend = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fctbSend)).BeginInit();
             this.sendContextMenu.SuspendLayout();
             this.sendPanel.SuspendLayout();
@@ -264,6 +264,7 @@
             // sendPanel
             // 
             this.sendPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
+            this.sendPanel.Controls.Add(this.btLoopSend);
             this.sendPanel.Controls.Add(this.panel2);
             this.sendPanel.Controls.Add(this.btReadOnly);
             this.sendPanel.Controls.Add(this.panel1);
@@ -271,7 +272,6 @@
             this.sendPanel.Controls.Add(this.btFileOps);
             this.sendPanel.Controls.Add(this.sendFromFilePgBar);
             this.sendPanel.Controls.Add(this.btMenu);
-            this.sendPanel.Controls.Add(this.btLoopSend);
             this.sendPanel.Controls.Add(this.btSendFile);
             this.sendPanel.Controls.Add(this.btSend);
             resources.ApplyResources(this.sendPanel, "sendPanel");
@@ -409,23 +409,6 @@
             this.btMenu.UseVisualStyleBackColor = true;
             this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
             // 
-            // btLoopSend
-            // 
-            this.btLoopSend.BackColor = System.Drawing.SystemColors.Control;
-            this.btLoopSend.Checked = false;
-            this.btLoopSend.CheckedColor = System.Drawing.Color.DodgerBlue;
-            this.btLoopSend.CheckedColorEnable = true;
-            this.btLoopSend.CheckedImage = global::DockSample.Properties.Resources.MD_repeat_alt;
-            resources.ApplyResources(this.btLoopSend, "btLoopSend");
-            this.btLoopSend.FlatAppearance.BorderSize = 0;
-            this.btLoopSend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.btLoopSend.Image = global::DockSample.Properties.Resources.MD_repeat_once;
-            this.btLoopSend.Name = "btLoopSend";
-            this.btLoopSend.UnCheckedImage = global::DockSample.Properties.Resources.MD_repeat_once;
-            this.btLoopSend.UseVisualStyleBackColor = false;
-            this.btLoopSend.Click += new System.EventHandler(this.btLoopSend_Click);
-            this.btLoopSend.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btLoopSend_MouseDown);
-            // 
             // btSendFile
             // 
             resources.ApplyResources(this.btSendFile, "btSendFile");
@@ -507,6 +490,19 @@
             resources.ApplyResources(this.settingTool, "settingTool");
             this.settingTool.Click += new System.EventHandler(this.settingTool_Click);
             // 
+            // btLoopSend
+            // 
+            resources.ApplyResources(this.btLoopSend, "btLoopSend");
+            this.btLoopSend.FlatAppearance.BorderSize = 0;
+            this.btLoopSend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btLoopSend.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btLoopSend.Image = global::DockSample.Properties.Resources.MD_repeat_alt;
+            this.btLoopSend.Name = "btLoopSend";
+            this.btLoopSend.Tag = "Send";
+            this.btLoopSend.UseVisualStyleBackColor = true;
+            this.btLoopSend.Click += new System.EventHandler(this.btLoopSend_Click);
+            this.btLoopSend.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btLoopSend_MouseDown);
+            // 
             // SendWindow
             // 
             resources.ApplyResources(this, "$this");
@@ -541,7 +537,6 @@
         private System.Windows.Forms.Button btFileOps;
         private System.Windows.Forms.ProgressBar sendFromFilePgBar;
         private System.Windows.Forms.Button btMenu;
-        private SpecialButton btLoopSend;
         private System.Windows.Forms.Button btSendFile;
         private System.Windows.Forms.Button btSend;
         private System.Windows.Forms.ContextMenuStrip fileOpMenu;
@@ -578,5 +573,6 @@
         private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
         private System.Windows.Forms.Button btReadOnly;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btLoopSend;
     }
 }

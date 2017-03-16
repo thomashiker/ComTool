@@ -17,6 +17,7 @@ namespace DockSample
 {
     public partial class ReceiveWindow : DockContent
     {
+        delegate void UpdateTextEventHandler(string text);  //委托，此为重点  
         private bool recordState = true;
         private string logPath = "log";
         private string logFileName = null;
@@ -423,17 +424,32 @@ namespace DockSample
             }
         }
 
+        private void DataReceivedHandler(string data)
+        {
+            if (!string.IsNullOrEmpty(data))
+            {
+                rcvCharNum += data.Length;
+
+                LogToFile(data);
+
+                // Display the text to the user in the terminal
+                Log(data);
+            }
+        }
+
         private void serialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             // Read all the data waiting in the buffer
             string data = serialPort.ReadExisting();
 
-            rcvCharNum += data.Length;
+            this.Invoke(new UpdateTextEventHandler(DataReceivedHandler), new string[] { data });
 
-            LogToFile(data);
+            //rcvCharNum += data.Length;
+
+            //LogToFile(data);
 
             // Display the text to the user in the terminal
-            Log(data);
+            //Log(data);
         }
 
         public void CreateSendLogFile()

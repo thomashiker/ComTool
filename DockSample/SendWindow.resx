@@ -284,7 +284,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADk
-        IAAAAk1TRnQBSQFMAgEBFwEAAVgBDgFYAQ4BEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        IAAAAk1TRnQBSQFMAgEBFwEAAZABDgGQAQ4BEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABYAMAAQEBAAEgBgABYP8A/wCjAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         aAADUAGfCAADKgFAA1gB7wMAAf8DWAHvAyoBQFMAAf8DAAH/AwAB/wsAAf8DAAH/AwAB/wMAAf8DAAH/
         UAADWAHvAwAB/wMAAf8DAAH/BAADUAGfAwAB/wMAAf8DMgFQA1gB7wMAAf8HAAH/A1gB71MAAf8DAAH/
@@ -427,11 +427,50 @@
         AQ8BjgEPAf8B+QH/AfkB/gEPAZ4BDwj/Cw==
 </value>
   </data>
+  <data name="btLoopSend.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btLoopSend.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btLoopSend.Font" type="System.Drawing.Font, System.Drawing">
+    <value>SimSun, 7.5pt</value>
+  </data>
+  <data name="btLoopSend.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btLoopSend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 4</value>
+  </data>
+  <data name="btLoopSend.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 2, 1</value>
+  </data>
+  <data name="btLoopSend.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="btLoopSend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 19</value>
+  </data>
+  <data name="btLoopSend.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;btLoopSend.Name" xml:space="preserve">
+    <value>btLoopSend</value>
+  </data>
+  <data name="&gt;&gt;btLoopSend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btLoopSend.Parent" xml:space="preserve">
+    <value>sendPanel</value>
+  </data>
+  <data name="&gt;&gt;btLoopSend.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 8</value>
+    <value>438, 8</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 12</value>
+    <value>1, 12</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -446,7 +485,7 @@
     <value>sendPanel</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btReadOnly.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -476,13 +515,13 @@
     <value>sendPanel</value>
   </data>
   <data name="&gt;&gt;btReadOnly.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>386, 8</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 12</value>
+    <value>1, 12</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -497,7 +536,7 @@
     <value>sendPanel</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="tbMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>839, 15</value>
@@ -542,7 +581,7 @@
     <value>sendPanel</value>
   </data>
   <data name="&gt;&gt;tbSendMsg.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <metadata name="fileOpMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>430, 15</value>
@@ -626,7 +665,7 @@
     <value>sendPanel</value>
   </data>
   <data name="&gt;&gt;btFileOps.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="sendFromFilePgBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -653,7 +692,7 @@
     <value>sendPanel</value>
   </data>
   <data name="&gt;&gt;sendFromFilePgBar.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btMenu.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -683,39 +722,6 @@
     <value>sendPanel</value>
   </data>
   <data name="&gt;&gt;btMenu.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="btLoopSend.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btLoopSend.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btLoopSend.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btLoopSend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 4</value>
-  </data>
-  <data name="btLoopSend.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 2, 1</value>
-  </data>
-  <data name="btLoopSend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 19</value>
-  </data>
-  <data name="btLoopSend.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;btLoopSend.Name" xml:space="preserve">
-    <value>btLoopSend</value>
-  </data>
-  <data name="&gt;&gt;btLoopSend.Type" xml:space="preserve">
-    <value>DockSample.SpecialButton, ComTool, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btLoopSend.Parent" xml:space="preserve">
-    <value>sendPanel</value>
-  </data>
-  <data name="&gt;&gt;btLoopSend.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="btSendFile.Enabled" type="System.Boolean, mscorlib">

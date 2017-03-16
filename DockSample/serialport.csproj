@@ -191,12 +191,6 @@
     <Compile Include="SendWindow.Designer.cs">
       <DependentUpon>SendWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="SpecialButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="SpecialButton.Designer.cs">
-      <DependentUpon>SpecialButton.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="HistoryWindow.resx">
       <DependentUpon>HistoryWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,9 +225,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SendWindow.resx">
       <DependentUpon>SendWindow.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SpecialButton.resx">
-      <DependentUpon>SpecialButton.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
