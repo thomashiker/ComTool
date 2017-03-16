@@ -123,7 +123,6 @@ namespace DockSample
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            CCWin.CmSysButton cmSysButton1 = new CCWin.CmSysButton();
             this.toolBar = new System.Windows.Forms.ToolStrip();
             this.toolBarButtonNew = new System.Windows.Forms.ToolStripButton();
             this.toolBarButtonOpenClose = new System.Windows.Forms.ToolStripButton();
@@ -180,6 +179,9 @@ namespace DockSample
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btTopMost = new System.Windows.Forms.Button();
+            this.btSysMenu = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.toolBar.SuspendLayout();
             this.systemStatusStrip.SuspendLayout();
             this.cmsNotifyMenu.SuspendLayout();
@@ -189,7 +191,6 @@ namespace DockSample
             // toolBar
             // 
             this.toolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
-            this.toolBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.toolBar.GripMargin = new System.Windows.Forms.Padding(0);
             this.toolBar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -379,7 +380,7 @@ namespace DockSample
             // 
             this.topMostButton.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.topMostButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.topMostButton.Image = global::DockSample.Properties.Resources.padlock_open;
+            this.topMostButton.Image = ((System.Drawing.Image)(resources.GetObject("topMostButton.Image")));
             this.topMostButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.topMostButton.Name = "topMostButton";
             this.topMostButton.Size = new System.Drawing.Size(23, 22);
@@ -468,14 +469,15 @@ namespace DockSample
             // sbtLayoutToolStrip
             // 
             this.sbtLayoutToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.sbtLayoutToolStrip.DropDownButtonWidth = 10;
             this.sbtLayoutToolStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.horizontalToolStrip,
             this.verticalToolStrip,
             this.stackToolStrip});
-            this.sbtLayoutToolStrip.Image = global::DockSample.Properties.Resources.window_stack;
+            this.sbtLayoutToolStrip.Image = global::DockSample.Properties.Resources.window_tile_vertically;
             this.sbtLayoutToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.sbtLayoutToolStrip.Name = "sbtLayoutToolStrip";
-            this.sbtLayoutToolStrip.Size = new System.Drawing.Size(32, 22);
+            this.sbtLayoutToolStrip.Size = new System.Drawing.Size(31, 22);
             this.sbtLayoutToolStrip.Text = "Layout";
             this.sbtLayoutToolStrip.ButtonClick += new System.EventHandler(this.sbtLayoutToolStrip_ButtonClick);
             // 
@@ -774,6 +776,47 @@ namespace DockSample
             this.colorToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.colorToolStripMenuItem.Text = "Color";
             // 
+            // btTopMost
+            // 
+            this.btTopMost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btTopMost.FlatAppearance.BorderSize = 0;
+            this.btTopMost.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(149)))), ((int)(((byte)(222)))));
+            this.btTopMost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btTopMost.Image = global::DockSample.Properties.Resources.pushpin_sticky_16px_1;
+            this.btTopMost.Location = new System.Drawing.Point(542, 1);
+            this.btTopMost.Margin = new System.Windows.Forms.Padding(0);
+            this.btTopMost.Name = "btTopMost";
+            this.btTopMost.Size = new System.Drawing.Size(27, 27);
+            this.btTopMost.TabIndex = 16;
+            this.btTopMost.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btTopMost.UseVisualStyleBackColor = true;
+            this.btTopMost.Click += new System.EventHandler(this.btTopMost_Click);
+            // 
+            // btSysMenu
+            // 
+            this.btSysMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btSysMenu.FlatAppearance.BorderSize = 0;
+            this.btSysMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(149)))), ((int)(((byte)(222)))));
+            this.btSysMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSysMenu.Image = global::DockSample.Properties.Resources.list;
+            this.btSysMenu.Location = new System.Drawing.Point(572, 1);
+            this.btSysMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.btSysMenu.Name = "btSysMenu";
+            this.btSysMenu.Size = new System.Drawing.Size(27, 27);
+            this.btSysMenu.TabIndex = 19;
+            this.btSysMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btSysMenu.UseVisualStyleBackColor = true;
+            this.btSysMenu.Click += new System.EventHandler(this.btSysMenu_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Location = new System.Drawing.Point(600, 7);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1, 16);
+            this.panel1.TabIndex = 20;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -789,6 +832,9 @@ namespace DockSample
             this.CloseDownBack = global::DockSample.Properties.Resources.sysbtn_close_down;
             this.CloseMouseBack = global::DockSample.Properties.Resources.sysbtn_close_hover;
             this.CloseNormlBack = global::DockSample.Properties.Resources.sysbtn_close_normal;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btSysMenu);
+            this.Controls.Add(this.btTopMost);
             this.Controls.Add(this.dockPanel);
             this.Controls.Add(this.systemStatusStrip);
             this.Controls.Add(this.toolBar);
@@ -817,18 +863,6 @@ namespace DockSample
             this.ShadowWidth = 1;
             this.ShowBorder = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            cmSysButton1.Bounds = new System.Drawing.Rectangle(574, 0, 30, 27);
-            cmSysButton1.BoxState = CCWin.ControlBoxState.Normal;
-            cmSysButton1.Location = new System.Drawing.Point(574, 0);
-            cmSysButton1.Name = "SysMenu";
-            cmSysButton1.OwnerForm = this;
-            cmSysButton1.Size = new System.Drawing.Size(30, 27);
-            cmSysButton1.SysButtonDown = global::DockSample.Properties.Resources.aio_setting_down;
-            cmSysButton1.SysButtonMouse = global::DockSample.Properties.Resources.aio_setting_hover;
-            cmSysButton1.SysButtonNorml = global::DockSample.Properties.Resources.aio_setting_normal;
-            cmSysButton1.ToolTip = null;
-            this.SysButtonItems.AddRange(new CCWin.CmSysButton[] {
-            cmSysButton1});
             this.Text = "Com Tool";
             this.SysBottomClick += new CCWin.CCSkinMain.SysBottomEventHandler(this.MainForm_SysBottomClick);
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -902,5 +936,8 @@ namespace DockSample
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem lightToolStripMenuItem;
         private ToolStripMenuItem colorToolStripMenuItem;
+        private Button btTopMost;
+        private Button btSysMenu;
+        private Panel panel1;
     }
 }

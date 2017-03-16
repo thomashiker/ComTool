@@ -54,6 +54,9 @@ namespace DockSample
         {
             InitializeComponent();
 
+            sbtLayoutToolStrip.DefaultItem = verticalToolStrip;
+            //this.Icon = this.
+
             m_solutionExplorer = new SendToolsBox(this);
             sendWindow = new SendWindow(this);
             newPortForm.Owner = this;
@@ -85,9 +88,8 @@ namespace DockSample
 
         private void EnableVSRenderer(VisualStudioToolStripExtender.VsVersion version, ThemeBase theme)
         {
-            //vsToolStripExtender1.SetStyle(mainMenu, version, theme);
             //vsToolStripExtender1.SetStyle(toolBar, version, theme);
-            vsToolStripExtender1.SetStyle(systemStatusStrip, version, theme);
+            //vsToolStripExtender1.SetStyle(systemStatusStrip, version, theme);
         }
 
         private void SetSchema(System.EventArgs e)
@@ -98,16 +100,14 @@ namespace DockSample
             //dockPanel.SaveAsXml(configFile);
             //CloseAllContents();
 
-                this.dockPanel.Theme = vS2015LightTheme1;
-                this.EnableVSRenderer(VisualStudioToolStripExtender.VsVersion.Vs2015, vS2015LightTheme1);
+            this.dockPanel.Theme = vS2015LightTheme1;
+            this.EnableVSRenderer(VisualStudioToolStripExtender.VsVersion.Vs2015, vS2015LightTheme1);
 
             if (dockPanel.Theme.ColorPalette != null)
             {
                 //systemStatusStrip.BackColor = dockPanel.Theme.ColorPalette.MainWindowStatusBarDefault.Background;
                 //miniSendPanel.BackColor = dockPanel.Theme.ColorPalette.MainWindowStatusBarDefault.Background;
             }
-            systemStatusStrip.BackColor = Color.FromArgb(214, 219, 233);
-            systemStatusStrip.ForeColor = Color.Black;
 
             //if (File.Exists(configFile))
             //    dockPanel.LoadFromXml(configFile, m_deserializeDockContent);
@@ -1077,6 +1077,27 @@ namespace DockSample
             {
                 sysMenu.Show(MousePosition);
             }
+        }
+
+        private void btTopMost_Click(object sender, EventArgs e)
+        {
+            if (this.TopMost)
+            {
+                this.TopMost = false;
+                btTopMost.BackColor = this.BackColor;
+            }
+            else
+            {
+                this.TopMost = true;
+                btTopMost.BackColor = Color.FromArgb(222, 77, 58);
+            }
+        }
+
+        private void btSysMenu_Click(object sender, EventArgs e)
+        {
+            //Point p = btSysMenu.PointToClient(btSysMenu.Location);
+            
+            sysMenu.Show(Cursor.Position);//Cursor.Position);
         }
     }
 }

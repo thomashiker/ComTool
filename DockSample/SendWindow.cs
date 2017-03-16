@@ -539,7 +539,7 @@ namespace DockSample
             }
             else
             {
-                btReadOnly.BackColor = SystemColors.MenuBar;
+                btReadOnly.BackColor = sendPanel.BackColor;
             }
         }
 

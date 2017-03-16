@@ -913,6 +913,16 @@ namespace DockSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_triangle_up_16px_1143321_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("arrow_triangle_up_16px_1143321_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap asterisk {
             get {
                 object obj = ResourceManager.GetObject("asterisk", resourceCulture);
@@ -1303,6 +1313,16 @@ namespace DockSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap box_empty_16px_1143339_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("box_empty_16px_1143339_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap briefcase {
             get {
                 object obj = ResourceManager.GetObject("briefcase", resourceCulture);
@@ -1666,6 +1686,16 @@ namespace DockSample.Properties {
         internal static System.Drawing.Bitmap city {
             get {
                 object obj = ResourceManager.GetObject("city", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_16px_1143362_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("close_16px_1143362_easyicon.net", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -3036,6 +3066,16 @@ namespace DockSample.Properties {
         internal static System.Drawing.Bitmap full_screen_exit_alt_5 {
             get {
                 object obj = ResourceManager.GetObject("full_screen_exit_alt_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gallery_16px_1157863_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("gallery_16px_1157863_easyicon.net", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -4813,6 +4853,26 @@ namespace DockSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MINIMIZE_16px_1162364_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("MINIMIZE_16px_1162364_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minus_16px_1103570_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("minus_16px_1103570_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mobile {
             get {
                 object obj = ResourceManager.GetObject("mobile", resourceCulture);
@@ -5005,7 +5065,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap padlock_closed {
             get {
-                object obj = ResourceManager.GetObject("padlock_closed", resourceCulture);
+                object obj = ResourceManager.GetObject("padlock-closed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5015,7 +5075,7 @@ namespace DockSample.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap padlock_open {
             get {
-                object obj = ResourceManager.GetObject("padlock_open", resourceCulture);
+                object obj = ResourceManager.GetObject("padlock-open", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -5253,6 +5313,46 @@ namespace DockSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pushpin_16px_1158130_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("pushpin_16px_1158130_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pushpin_black {
+            get {
+                object obj = ResourceManager.GetObject("Pushpin_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pushpin_sticky_16px {
+            get {
+                object obj = ResourceManager.GetObject("pushpin_sticky_16px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pushpin_sticky_16px_1 {
+            get {
+                object obj = ResourceManager.GetObject("pushpin_sticky_16px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap read_only {
             get {
                 object obj = ResourceManager.GetObject("read_only", resourceCulture);
@@ -5466,6 +5566,26 @@ namespace DockSample.Properties {
         internal static System.Drawing.Bitmap settings {
             get {
                 object obj = ResourceManager.GetObject("settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_16px_1158174_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("settings_16px_1158174_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_16px_1158175_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("settings_16px_1158175_easyicon.net", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -6013,6 +6133,16 @@ namespace DockSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap t_shirt_black_16px_1099068_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("t_shirt_black_16px_1099068_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tab {
             get {
                 object obj = ResourceManager.GetObject("tab", resourceCulture);
@@ -6136,6 +6266,16 @@ namespace DockSample.Properties {
         internal static System.Drawing.Bitmap toolbox {
             get {
                 object obj = ResourceManager.GetObject("toolbox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolbox_16px_1143536_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("toolbox_16px_1143536_easyicon.net", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
