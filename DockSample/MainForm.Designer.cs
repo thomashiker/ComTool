@@ -182,6 +182,10 @@ namespace DockSample
             this.btTopMost = new System.Windows.Forms.Button();
             this.btSysMenu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btClose = new System.Windows.Forms.Button();
+            this.btMaximize = new System.Windows.Forms.Button();
+            this.btMinimize = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.toolBar.SuspendLayout();
             this.systemStatusStrip.SuspendLayout();
             this.cmsNotifyMenu.SuspendLayout();
@@ -782,10 +786,11 @@ namespace DockSample
             this.btTopMost.FlatAppearance.BorderSize = 0;
             this.btTopMost.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(149)))), ((int)(((byte)(222)))));
             this.btTopMost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTopMost.Image = global::DockSample.Properties.Resources.pushpin_sticky_16px_1;
+            this.btTopMost.Image = global::DockSample.Properties.Resources.pin_24px_1083523_easyicon_net;
             this.btTopMost.Location = new System.Drawing.Point(542, 1);
             this.btTopMost.Margin = new System.Windows.Forms.Padding(0);
             this.btTopMost.Name = "btTopMost";
+            this.btTopMost.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.btTopMost.Size = new System.Drawing.Size(27, 27);
             this.btTopMost.TabIndex = 16;
             this.btTopMost.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -817,6 +822,71 @@ namespace DockSample
             this.panel1.Size = new System.Drawing.Size(1, 16);
             this.panel1.TabIndex = 20;
             // 
+            // btClose
+            // 
+            this.btClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btClose.FlatAppearance.BorderSize = 0;
+            this.btClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.btClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btClose.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btClose.Location = new System.Drawing.Point(499, 1);
+            this.btClose.Margin = new System.Windows.Forms.Padding(0);
+            this.btClose.Name = "btClose";
+            this.btClose.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.btClose.Size = new System.Drawing.Size(34, 24);
+            this.btClose.TabIndex = 23;
+            this.btClose.Text = "r";
+            this.btClose.UseVisualStyleBackColor = true;
+            // 
+            // btMaximize
+            // 
+            this.btMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btMaximize.FlatAppearance.BorderSize = 0;
+            this.btMaximize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(149)))), ((int)(((byte)(222)))));
+            this.btMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMaximize.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btMaximize.Location = new System.Drawing.Point(471, 1);
+            this.btMaximize.Margin = new System.Windows.Forms.Padding(0);
+            this.btMaximize.Name = "btMaximize";
+            this.btMaximize.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.btMaximize.Size = new System.Drawing.Size(27, 24);
+            this.btMaximize.TabIndex = 24;
+            this.btMaximize.Text = "1";
+            this.btMaximize.UseVisualStyleBackColor = true;
+            this.btMaximize.Click += new System.EventHandler(this.btMaximize_Click);
+            // 
+            // btMinimize
+            // 
+            this.btMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btMinimize.FlatAppearance.BorderSize = 0;
+            this.btMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(149)))), ((int)(((byte)(222)))));
+            this.btMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMinimize.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btMinimize.Location = new System.Drawing.Point(443, 1);
+            this.btMinimize.Margin = new System.Windows.Forms.Padding(0);
+            this.btMinimize.Name = "btMinimize";
+            this.btMinimize.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.btMinimize.Size = new System.Drawing.Size(27, 24);
+            this.btMinimize.TabIndex = 25;
+            this.btMinimize.Text = "0";
+            this.btMinimize.UseVisualStyleBackColor = true;
+            this.btMinimize.Click += new System.EventHandler(this.btMinimize_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(149)))), ((int)(((byte)(222)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button2.Location = new System.Drawing.Point(400, 1);
+            this.button2.Margin = new System.Windows.Forms.Padding(0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(27, 26);
+            this.button2.TabIndex = 27;
+            this.button2.Text = "6";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -832,6 +902,10 @@ namespace DockSample
             this.CloseDownBack = global::DockSample.Properties.Resources.sysbtn_close_down;
             this.CloseMouseBack = global::DockSample.Properties.Resources.sysbtn_close_hover;
             this.CloseNormlBack = global::DockSample.Properties.Resources.sysbtn_close_normal;
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btMinimize);
+            this.Controls.Add(this.btMaximize);
+            this.Controls.Add(this.btClose);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btSysMenu);
             this.Controls.Add(this.btTopMost);
@@ -867,6 +941,7 @@ namespace DockSample
             this.SysBottomClick += new CCWin.CCSkinMain.SysBottomEventHandler(this.MainForm_SysBottomClick);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.LocationChanged += new System.EventHandler(this.MainForm_LocationChanged);
+            this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             this.toolBar.ResumeLayout(false);
             this.toolBar.PerformLayout();
@@ -939,5 +1014,9 @@ namespace DockSample
         private Button btTopMost;
         private Button btSysMenu;
         private Panel panel1;
+        private Button btClose;
+        private Button btMaximize;
+        private Button btMinimize;
+        private Button button2;
     }
 }

@@ -48,6 +48,7 @@
             this.sendFileBGWorker = new System.ComponentModel.BackgroundWorker();
             this.toolStripimageList = new System.Windows.Forms.ImageList(this.components);
             this.sendPanel = new System.Windows.Forms.Panel();
+            this.btLoopSend = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btReadOnly = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -74,7 +75,6 @@
             this.clearTagsTool = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.settingTool = new System.Windows.Forms.ToolStripMenuItem();
-            this.btLoopSend = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fctbSend)).BeginInit();
             this.sendContextMenu.SuspendLayout();
             this.sendPanel.SuspendLayout();
@@ -276,6 +276,19 @@
             this.sendPanel.Controls.Add(this.btSend);
             resources.ApplyResources(this.sendPanel, "sendPanel");
             this.sendPanel.Name = "sendPanel";
+            // 
+            // btLoopSend
+            // 
+            resources.ApplyResources(this.btLoopSend, "btLoopSend");
+            this.btLoopSend.FlatAppearance.BorderSize = 0;
+            this.btLoopSend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btLoopSend.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btLoopSend.Image = global::DockSample.Properties.Resources.MD_repeat_alt;
+            this.btLoopSend.Name = "btLoopSend";
+            this.btLoopSend.Tag = "Send";
+            this.btLoopSend.UseVisualStyleBackColor = true;
+            this.btLoopSend.Click += new System.EventHandler(this.btLoopSend_Click);
+            this.btLoopSend.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btLoopSend_MouseDown);
             // 
             // panel2
             // 
@@ -489,19 +502,6 @@
             this.settingTool.Name = "settingTool";
             resources.ApplyResources(this.settingTool, "settingTool");
             this.settingTool.Click += new System.EventHandler(this.settingTool_Click);
-            // 
-            // btLoopSend
-            // 
-            resources.ApplyResources(this.btLoopSend, "btLoopSend");
-            this.btLoopSend.FlatAppearance.BorderSize = 0;
-            this.btLoopSend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.btLoopSend.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btLoopSend.Image = global::DockSample.Properties.Resources.MD_repeat_alt;
-            this.btLoopSend.Name = "btLoopSend";
-            this.btLoopSend.Tag = "Send";
-            this.btLoopSend.UseVisualStyleBackColor = true;
-            this.btLoopSend.Click += new System.EventHandler(this.btLoopSend_Click);
-            this.btLoopSend.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btLoopSend_MouseDown);
             // 
             // SendWindow
             // 

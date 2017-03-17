@@ -641,12 +641,12 @@ namespace DockSample
             if (ComboBoxStyle.DropDown == baudrateComboBox.DropDownStyle)
             {
                 baudrateComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-                btEnableCustomBaud.Image = stateFaceImageList.Images[2];
+                btCustomBaud.Image = stateFaceImageList.Images[2];
             }
             else if (ComboBoxStyle.DropDownList == baudrateComboBox.DropDownStyle)
             {
                 baudrateComboBox.DropDownStyle = ComboBoxStyle.DropDown;
-                btEnableCustomBaud.Image = stateFaceImageList.Images[3];
+                btCustomBaud.Image = stateFaceImageList.Images[3];
             }
         }
     }

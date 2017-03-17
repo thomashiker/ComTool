@@ -92,7 +92,6 @@ C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.NewPortW
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.PortOpenFailDialog.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.ReceiveWindow.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.RepeatSendSetting.resources
-C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.SendSettingWindow.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.SendToolsBox.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.MainForm.resources
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.Properties.Resources.resources
@@ -102,3 +101,5 @@ C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\DockSample.ReceiveW
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\serialport.csproj.GenerateResource.Cache
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\ComTool.exe
 C:\Users\hiker\Documents\GitHub\ComTool\DockSample\obj\Debug\ComTool.pdb
+C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\VisualStudioTabControl.dll
+C:\Users\hiker\Documents\GitHub\ComTool\DockSample\bin\Debug\VisualStudioTabControl.pdb

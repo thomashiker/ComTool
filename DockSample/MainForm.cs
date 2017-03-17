@@ -1054,18 +1054,6 @@ namespace DockSample
             this.Visible = true;
         }
 
-        private void MainForm_SizeChanged(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Minimized)
-            {
-                this.ShowInTaskbar = false;
-            }
-            else if (this.WindowState == FormWindowState.Normal)
-            {
-                this.ShowInTaskbar = true;
-            }
-        }
-
         private void mainTimer_Tick(object sender, EventArgs e)
         {
             CreatDropDownPorts();
@@ -1098,6 +1086,41 @@ namespace DockSample
             //Point p = btSysMenu.PointToClient(btSysMenu.Location);
             
             sysMenu.Show(Cursor.Position);//Cursor.Position);
+        }
+
+        private void btMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btMaximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+                btMaximize.Text = "2";
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+                btMaximize.Text = "1";
+            }
+        }
+
+        private void MainForm_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                btMaximize.Text = "1";
+            }
+            else if (this.WindowState == FormWindowState.Normal)
+            {
+                btMaximize.Text = "1";
+            }
+            else if (this.WindowState == FormWindowState.Maximized)
+            {
+                btMaximize.Text = "2";
+            }
         }
     }
 }

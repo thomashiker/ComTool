@@ -15,6 +15,5 @@
     <com port="COM3" baudrate="38400" databits="8" stopbits="1" parity="None" flow="None" />
     <com port="COM3" baudrate="57600" databits="8" stopbits="1" parity="None" flow="None" />
     <com port="COM3" baudrate="115200" databits="8" stopbits="1" parity="None" flow="None" />
-    <com port="COM3" baudrate="128000" databits="8" stopbits="1" parity="None" flow="None" />
   </savedlist>
 </config>

@@ -2583,6 +2583,16 @@ namespace DockSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ellipsis_16px {
+            get {
+                object obj = ResourceManager.GetObject("ellipsis_16px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap enter {
             get {
                 object obj = ResourceManager.GetObject("enter", resourceCulture);
@@ -4853,26 +4863,6 @@ namespace DockSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MINIMIZE_16px_1162364_easyicon_net {
-            get {
-                object obj = ResourceManager.GetObject("MINIMIZE_16px_1162364_easyicon.net", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap minus_16px_1103570_easyicon_net {
-            get {
-                object obj = ResourceManager.GetObject("minus_16px_1103570_easyicon.net", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap mobile {
             get {
                 object obj = ResourceManager.GetObject("mobile", resourceCulture);
@@ -5146,6 +5136,56 @@ namespace DockSample.Properties {
         internal static System.Drawing.Bitmap pill {
             get {
                 object obj = ResourceManager.GetObject("pill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pin_16_285714285714px_1145574_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("pin_16.285714285714px_1145574_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pin_16px_1083523_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("pin_16px_1083523_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pin_16px_1101853_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("pin_16px_1101853_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pin_16px_1169857_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("pin_16px_1169857_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pin_24px_1083523_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("pin_24px_1083523_easyicon.net", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

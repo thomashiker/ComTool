@@ -32,13 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewPortWindow));
             this.treeViewImageList = new System.Windows.Forms.ImageList(this.components);
             this.stateFaceImageList = new System.Windows.Forms.ImageList(this.components);
-            this.OpenPortTitleToolStrip = new System.Windows.Forms.ToolStrip();
-            this.btClose = new System.Windows.Forms.ToolStripButton();
-            this.btOpenPort = new System.Windows.Forms.ToolStripButton();
-            this.btAddCfg = new System.Windows.Forms.ToolStripButton();
-            this.btDelCfg = new System.Windows.Forms.ToolStripButton();
-            this.btEnableCustomBaud = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.portOpenStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.portInfoStatusStrip = new System.Windows.Forms.StatusStrip();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -58,7 +51,13 @@
             this.baudrateComboBox = new System.Windows.Forms.ComboBox();
             this.portTreeView = new System.Windows.Forms.TreeView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.OpenPortTitleToolStrip.SuspendLayout();
+            this.btAdd = new System.Windows.Forms.Button();
+            this.btOk = new System.Windows.Forms.Button();
+            this.btCancel = new System.Windows.Forms.Button();
+            this.btDel = new System.Windows.Forms.Button();
+            this.btCustomBaud = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.portInfoStatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,87 +80,6 @@
             this.stateFaceImageList.Images.SetKeyName(1, "connection-error.png");
             this.stateFaceImageList.Images.SetKeyName(2, "user-locked.png");
             this.stateFaceImageList.Images.SetKeyName(3, "user.png");
-            // 
-            // OpenPortTitleToolStrip
-            // 
-            this.OpenPortTitleToolStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
-            this.OpenPortTitleToolStrip.GripMargin = new System.Windows.Forms.Padding(0);
-            this.OpenPortTitleToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.OpenPortTitleToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btClose,
-            this.btOpenPort,
-            this.btAddCfg,
-            this.btDelCfg,
-            this.btEnableCustomBaud,
-            this.toolStripLabel1});
-            this.OpenPortTitleToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.OpenPortTitleToolStrip.Name = "OpenPortTitleToolStrip";
-            this.OpenPortTitleToolStrip.Padding = new System.Windows.Forms.Padding(0);
-            this.OpenPortTitleToolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.OpenPortTitleToolStrip.Size = new System.Drawing.Size(421, 25);
-            this.OpenPortTitleToolStrip.TabIndex = 27;
-            this.OpenPortTitleToolStrip.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
-            // 
-            // btClose
-            // 
-            this.btClose.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btClose.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btClose.Image = global::DockSample.Properties.Resources.cancel;
-            this.btClose.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btClose.Name = "btClose";
-            this.btClose.Size = new System.Drawing.Size(23, 22);
-            this.btClose.Text = "Cancel";
-            this.btClose.Click += new System.EventHandler(this.btClose_Click);
-            // 
-            // btOpenPort
-            // 
-            this.btOpenPort.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btOpenPort.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btOpenPort.Image = global::DockSample.Properties.Resources.check_alt;
-            this.btOpenPort.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btOpenPort.Name = "btOpenPort";
-            this.btOpenPort.Size = new System.Drawing.Size(23, 22);
-            this.btOpenPort.Text = "Open";
-            this.btOpenPort.Click += new System.EventHandler(this.btOpenPort_Click);
-            // 
-            // btAddCfg
-            // 
-            this.btAddCfg.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btAddCfg.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btAddCfg.Image = global::DockSample.Properties.Resources.database_add_alt_2;
-            this.btAddCfg.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btAddCfg.Name = "btAddCfg";
-            this.btAddCfg.Size = new System.Drawing.Size(23, 22);
-            this.btAddCfg.Text = "Add To List";
-            this.btAddCfg.Click += new System.EventHandler(this.btAddCfg_Click);
-            // 
-            // btDelCfg
-            // 
-            this.btDelCfg.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btDelCfg.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btDelCfg.Image = global::DockSample.Properties.Resources.database_remove_alt_2;
-            this.btDelCfg.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btDelCfg.Name = "btDelCfg";
-            this.btDelCfg.Size = new System.Drawing.Size(23, 22);
-            this.btDelCfg.Text = "Del From List";
-            this.btDelCfg.Click += new System.EventHandler(this.btDelCfg_Click);
-            // 
-            // btEnableCustomBaud
-            // 
-            this.btEnableCustomBaud.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btEnableCustomBaud.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btEnableCustomBaud.Image = global::DockSample.Properties.Resources.user_locked;
-            this.btEnableCustomBaud.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btEnableCustomBaud.Name = "btEnableCustomBaud";
-            this.btEnableCustomBaud.Size = new System.Drawing.Size(23, 22);
-            this.btEnableCustomBaud.Text = "Custom Baud";
-            this.btEnableCustomBaud.Click += new System.EventHandler(this.btEnableCustomBaud_Click);
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(62, 22);
-            this.toolStripLabel1.Text = "New Port";
             // 
             // portOpenStatusLabel
             // 
@@ -192,13 +110,14 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 25);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(421, 1);
             this.panel1.TabIndex = 28;
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Location = new System.Drawing.Point(227, 43);
@@ -209,6 +128,7 @@
             // 
             // cbRcvWinName
             // 
+            this.cbRcvWinName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cbRcvWinName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.cbRcvWinName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbRcvWinName.FormattingEnabled = true;
@@ -219,6 +139,7 @@
             // 
             // flowComboBox
             // 
+            this.flowComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.flowComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.flowComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.flowComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -234,6 +155,7 @@
             // 
             // parityComboBox
             // 
+            this.parityComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.parityComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.parityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.parityComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -251,6 +173,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(227, 193);
             this.label3.Name = "label3";
@@ -260,6 +183,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(227, 168);
             this.label4.Name = "label4";
@@ -269,6 +193,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(227, 143);
             this.label5.Name = "label5";
@@ -278,6 +203,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(227, 118);
             this.label6.Name = "label6";
@@ -287,6 +213,7 @@
             // 
             // stopbitsComboBox
             // 
+            this.stopbitsComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.stopbitsComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.stopbitsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.stopbitsComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -302,6 +229,7 @@
             // 
             // databitsComboBox
             // 
+            this.databitsComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.databitsComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.databitsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.databitsComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -318,6 +246,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(227, 93);
             this.label7.Name = "label7";
@@ -327,6 +256,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Location = new System.Drawing.Point(227, 68);
@@ -337,6 +267,7 @@
             // 
             // portComboBox
             // 
+            this.portComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.portComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.portComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.portComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -348,6 +279,7 @@
             // 
             // baudrateComboBox
             // 
+            this.baudrateComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.baudrateComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.baudrateComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.baudrateComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -371,24 +303,126 @@
             // 
             // portTreeView
             // 
+            this.portTreeView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.portTreeView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.portTreeView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.portTreeView.ImageIndex = 0;
-            this.portTreeView.ImageList = this.treeViewImageList;
             this.portTreeView.Location = new System.Drawing.Point(8, 37);
             this.portTreeView.Name = "portTreeView";
-            this.portTreeView.SelectedImageIndex = 2;
             this.portTreeView.Size = new System.Drawing.Size(197, 169);
             this.portTreeView.StateImageList = this.treeViewImageList;
             this.portTreeView.TabIndex = 45;
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(213, 44);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1, 160);
             this.panel2.TabIndex = 46;
+            // 
+            // btAdd
+            // 
+            this.btAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btAdd.FlatAppearance.BorderSize = 0;
+            this.btAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(149)))), ((int)(((byte)(222)))));
+            this.btAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btAdd.Font = new System.Drawing.Font("DengXian", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btAdd.Image = global::DockSample.Properties.Resources.database_add_alt_2;
+            this.btAdd.Location = new System.Drawing.Point(330, 1);
+            this.btAdd.Margin = new System.Windows.Forms.Padding(0);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.btAdd.Size = new System.Drawing.Size(23, 22);
+            this.btAdd.TabIndex = 49;
+            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAddCfg_Click);
+            // 
+            // btOk
+            // 
+            this.btOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btOk.FlatAppearance.BorderSize = 0;
+            this.btOk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(149)))), ((int)(((byte)(222)))));
+            this.btOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btOk.Font = new System.Drawing.Font("Webdings", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btOk.Image = global::DockSample.Properties.Resources.check;
+            this.btOk.Location = new System.Drawing.Point(365, 1);
+            this.btOk.Margin = new System.Windows.Forms.Padding(0);
+            this.btOk.Name = "btOk";
+            this.btOk.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.btOk.Size = new System.Drawing.Size(23, 22);
+            this.btOk.TabIndex = 48;
+            this.btOk.UseVisualStyleBackColor = true;
+            this.btOk.Click += new System.EventHandler(this.btOpenPort_Click);
+            // 
+            // btCancel
+            // 
+            this.btCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btCancel.FlatAppearance.BorderSize = 0;
+            this.btCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.btCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCancel.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btCancel.Image = global::DockSample.Properties.Resources.cancel;
+            this.btCancel.Location = new System.Drawing.Point(391, 1);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(0);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.btCancel.Size = new System.Drawing.Size(30, 22);
+            this.btCancel.TabIndex = 47;
+            this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btClose_Click);
+            // 
+            // btDel
+            // 
+            this.btDel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btDel.FlatAppearance.BorderSize = 0;
+            this.btDel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(149)))), ((int)(((byte)(222)))));
+            this.btDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btDel.Font = new System.Drawing.Font("DengXian", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btDel.Image = global::DockSample.Properties.Resources.database_remove_alt_2;
+            this.btDel.Location = new System.Drawing.Point(304, 1);
+            this.btDel.Margin = new System.Windows.Forms.Padding(0);
+            this.btDel.Name = "btDel";
+            this.btDel.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.btDel.Size = new System.Drawing.Size(23, 22);
+            this.btDel.TabIndex = 50;
+            this.btDel.UseVisualStyleBackColor = true;
+            this.btDel.Click += new System.EventHandler(this.btDelCfg_Click);
+            // 
+            // btCustomBaud
+            // 
+            this.btCustomBaud.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btCustomBaud.FlatAppearance.BorderSize = 0;
+            this.btCustomBaud.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(149)))), ((int)(((byte)(222)))));
+            this.btCustomBaud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCustomBaud.Font = new System.Drawing.Font("DengXian", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btCustomBaud.Image = global::DockSample.Properties.Resources.user_locked;
+            this.btCustomBaud.Location = new System.Drawing.Point(278, 1);
+            this.btCustomBaud.Margin = new System.Windows.Forms.Padding(0);
+            this.btCustomBaud.Name = "btCustomBaud";
+            this.btCustomBaud.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
+            this.btCustomBaud.Size = new System.Drawing.Size(23, 22);
+            this.btCustomBaud.TabIndex = 51;
+            this.btCustomBaud.UseVisualStyleBackColor = true;
+            this.btCustomBaud.Click += new System.EventHandler(this.btEnableCustomBaud_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.Location = new System.Drawing.Point(357, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1, 16);
+            this.panel3.TabIndex = 52;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(4, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 14);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "New Port";
             // 
             // NewPortWindow
             // 
@@ -396,6 +430,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(421, 239);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.btCustomBaud);
+            this.Controls.Add(this.btDel);
+            this.Controls.Add(this.btAdd);
+            this.Controls.Add(this.btOk);
+            this.Controls.Add(this.btCancel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.portTreeView);
             this.Controls.Add(this.label2);
@@ -414,7 +455,6 @@
             this.Controls.Add(this.baudrateComboBox);
             this.Controls.Add(this.portInfoStatusStrip);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.OpenPortTitleToolStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -424,8 +464,6 @@
             this.Text = "NewPortWindow";
             this.Load += new System.EventHandler(this.NewPortWindow_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
-            this.OpenPortTitleToolStrip.ResumeLayout(false);
-            this.OpenPortTitleToolStrip.PerformLayout();
             this.portInfoStatusStrip.ResumeLayout(false);
             this.portInfoStatusStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -436,16 +474,9 @@
         #endregion
         private System.Windows.Forms.ImageList treeViewImageList;
         private System.Windows.Forms.ImageList stateFaceImageList;
-        private System.Windows.Forms.ToolStrip OpenPortTitleToolStrip;
-        private System.Windows.Forms.ToolStripButton btClose;
-        private System.Windows.Forms.ToolStripButton btDelCfg;
-        private System.Windows.Forms.ToolStripButton btAddCfg;
-        private System.Windows.Forms.ToolStripButton btOpenPort;
         private System.Windows.Forms.ToolStripStatusLabel portOpenStatusLabel;
         private System.Windows.Forms.StatusStrip portInfoStatusStrip;
-        private System.Windows.Forms.ToolStripButton btEnableCustomBaud;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbRcvWinName;
         private System.Windows.Forms.ComboBox flowComboBox;
@@ -462,5 +493,12 @@
         private System.Windows.Forms.ComboBox baudrateComboBox;
         private System.Windows.Forms.TreeView portTreeView;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btAdd;
+        private System.Windows.Forms.Button btOk;
+        private System.Windows.Forms.Button btCancel;
+        private System.Windows.Forms.Button btDel;
+        private System.Windows.Forms.Button btCustomBaud;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
     }
 }
