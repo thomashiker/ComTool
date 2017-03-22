@@ -43,6 +43,9 @@ namespace DockSample
 
         private VisualStudioToolStripExtender vsToolStripExtender1;
 
+        public delegate void UpdateTxtEventHandler(string text);
+        public delegate void UpdateDigitEventHandler(Int64 digit);
+
 
         public string LogPath
         {
@@ -611,7 +614,7 @@ namespace DockSample
                 EnablePortToolBars(state);
                 EnableToolBarButtonOpenClose(true);
 
-                UpdateLinkTimeDisplay(rcv.TimeElapse);
+                //UpdateLinkTimeDisplay(rcv.TimeElapse);
             }
         }
 
@@ -800,7 +803,7 @@ namespace DockSample
             //repeatSendToolTip.Show("repeat send", btRepeatSend);
         }
 
-        public void UpdateLinkTimeDisplay(Int64 time)
+        private void UpdateLinkTimeText(Int64 time)
         {
             Int64 seconds;
             Int64 hours;
@@ -813,14 +816,50 @@ namespace DockSample
             linkTimeLabel.Text = hours.ToString().PadLeft(2, '0') + ":" + minutes.ToString().PadLeft(2, '0') + ":" + seconds.ToString().PadLeft(2, '0');
         }
 
+        public void UpdateLinkTimeDisplay(Int64 time)
+        {
+            /*Int64 seconds;
+            Int64 hours;
+            Int64 minutes;
+
+            seconds = time % 60;
+            hours = time / 60;
+            minutes = (hours) % 60;
+            hours = hours / 60;
+            linkTimeLabel.Text = hours.ToString().PadLeft(2, '0') + ":" + minutes.ToString().PadLeft(2, '0') + ":" + seconds.ToString().PadLeft(2, '0');)*/
+
+            this.systemStatusStrip.BeginInvoke(new UpdateDigitEventHandler(UpdateLinkTimeText), time);
+
+            //linkTimeLabel.Text = time;
+        }
+
+        void UpdateRcvCharNum(string num2text)
+        {
+            rcvCharNumLabel.Text = num2text;
+        }
+
         public void UpdateRcvCharDisplay(Int64 num)
         {
-            rcvCharNumLabel.Text = num.ToString();
+            //rcvCharNumLabel.Text = num.ToString();
+            this.systemStatusStrip.BeginInvoke(new UpdateTxtEventHandler(UpdateRcvCharNum), num.ToString());
+            try
+            {
+                //label1.BeginInvoke(new MethodInvoker(() => label1.Text = num.ToString()));
+            }
+            catch
+            {
+            }
+        }
+
+        void UpdateSendCharNum(string num2text)
+        {
+            sendCharNumLabel.Text = num2text;
         }
 
         public void UpdateSendCharDisplay(Int64 num)
         {
-            sendCharNumLabel.Text = num.ToString();
+            this.BeginInvoke(new UpdateTxtEventHandler(UpdateSendCharNum), num.ToString());
+            //sendCharNumLabel.Text = num.ToString();
         }
 
         private void btUploadCmdList_Click(object sender, EventArgs e)
@@ -1120,6 +1159,26 @@ namespace DockSample
             else if (this.WindowState == FormWindowState.Maximized)
             {
                 btMaximize.Text = "2";
+            }
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
+            {
+                foreach (Form form in MdiChildren)
+                {
+                    MessageBox.Show(form.Text);
+                        form.Close();
+                }
+            }
+            else
+            {
+                foreach (IDockContent document in dockPanel.DocumentsToArray())
+                {
+                    if (!document.DockHandler.IsActivated)
+                        document.DockHandler.Close();
+                }
             }
         }
     }

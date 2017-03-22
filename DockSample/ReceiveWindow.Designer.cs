@@ -49,7 +49,6 @@ namespace DockSample
             this.menuStripImageList = new System.Windows.Forms.ImageList(this.components);
             this.fastColoredTextBox = new FastColoredTextBoxNS.FastColoredTextBox();
             this.serialPort = new System.IO.Ports.SerialPort(this.components);
-            this.openedTimer = new System.Windows.Forms.Timer(this.components);
             this.rightKeyMenuStrip.SuspendLayout();
             this.tabMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox)).BeginInit();
@@ -224,6 +223,7 @@ namespace DockSample
             this.fastColoredTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastColoredTextBox.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.fastColoredTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fastColoredTextBox.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.fastColoredTextBox.Hotkeys = resources.GetString("fastColoredTextBox.Hotkeys");
             this.fastColoredTextBox.ImeMode = System.Windows.Forms.ImeMode.On;
             this.fastColoredTextBox.IndentBackColor = System.Drawing.Color.White;
@@ -247,13 +247,8 @@ namespace DockSample
             // 
             // serialPort
             // 
+            this.serialPort.ReadTimeout = 300;
             this.serialPort.WriteBufferSize = 1048576;
-            this.serialPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort_DataReceived);
-            // 
-            // openedTimer
-            // 
-            this.openedTimer.Interval = 1000;
-            this.openedTimer.Tick += new System.EventHandler(this.openedTimer_Tick);
             // 
             // ReceiveWindow
             // 
@@ -296,7 +291,6 @@ namespace DockSample
         private System.Windows.Forms.ToolStripMenuItem stopScrollToolStripMenuItem;
         private System.Windows.Forms.ImageList menuStripImageList;
         private System.IO.Ports.SerialPort serialPort;
-        private System.Windows.Forms.Timer openedTimer;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem stackToolStrip;
     }

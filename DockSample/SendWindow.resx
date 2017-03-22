@@ -284,7 +284,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADk
-        IAAAAk1TRnQBSQFMAgEBFwEAAZgBDgGYAQ4BEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        IAAAAk1TRnQBSQFMAgEBFwEAAaABDgGgAQ4BEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABYAMAAQEBAAEgBgABYP8A/wCjAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/
         aAADUAGfCAADKgFAA1gB7wMAAf8DWAHvAyoBQFMAAf8DAAH/AwAB/wsAAf8DAAH/AwAB/wMAAf8DAAH/
         UAADWAHvAwAB/wMAAf8DAAH/BAADUAGfAwAB/wMAAf8DMgFQA1gB7wMAAf8HAAH/A1gB71MAAf8DAAH/
@@ -443,7 +443,7 @@
     <value>360, 4</value>
   </data>
   <data name="btLoopSend.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 2, 1</value>
+    <value>0, 0, 1, 1</value>
   </data>
   <data name="btLoopSend.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -497,7 +497,7 @@
     <value>445, 4</value>
   </data>
   <data name="btReadOnly.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 2, 1</value>
+    <value>0, 0, 1, 1</value>
   </data>
   <data name="btReadOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 19</value>
@@ -647,7 +647,7 @@
     <value>415, 4</value>
   </data>
   <data name="btFileOps.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 2, 1</value>
+    <value>0, 0, 1, 1</value>
   </data>
   <data name="btFileOps.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 19</value>
@@ -704,7 +704,7 @@
     <value>2, 4</value>
   </data>
   <data name="btMenu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 2, 1</value>
+    <value>0, 0, 1, 1</value>
   </data>
   <data name="btMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 19</value>
@@ -740,7 +740,7 @@
     <value>392, 4</value>
   </data>
   <data name="btSendFile.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 2, 1</value>
+    <value>0, 0, 1, 1</value>
   </data>
   <data name="btSendFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 19</value>
@@ -776,7 +776,7 @@
     <value>331, 4</value>
   </data>
   <data name="btSend.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 2, 1</value>
+    <value>0, 0, 1, 1</value>
   </data>
   <data name="btSend.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>

@@ -152,6 +152,7 @@ namespace DockSample
             this.horizontalToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.verticalToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.stackToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.dockPanel = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.notifyImageList = new System.Windows.Forms.ImageList(this.components);
             this.toolStripimageList = new System.Windows.Forms.ImageList(this.components);
@@ -172,7 +173,6 @@ namespace DockSample
             this.notifyTSMINewPort = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.notifyTSMIExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.mainTimer = new System.Windows.Forms.Timer(this.components);
             this.sysMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.settingSysMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.themeSysMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -186,6 +186,7 @@ namespace DockSample
             this.btMaximize = new System.Windows.Forms.Button();
             this.btMinimize = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.mainTimer = new System.Windows.Forms.Timer(this.components);
             this.toolBar.SuspendLayout();
             this.systemStatusStrip.SuspendLayout();
             this.cmsNotifyMenu.SuspendLayout();
@@ -223,7 +224,8 @@ namespace DockSample
             this.toolStripSeparator3,
             this.screenShotButton,
             this.openFavourateButton,
-            this.sbtLayoutToolStrip});
+            this.sbtLayoutToolStrip,
+            this.toolStripButton1});
             this.toolBar.Location = new System.Drawing.Point(4, 28);
             this.toolBar.Name = "toolBar";
             this.toolBar.Padding = new System.Windows.Forms.Padding(0);
@@ -509,6 +511,15 @@ namespace DockSample
             this.stackToolStrip.Text = "&Stack";
             this.stackToolStrip.Click += new System.EventHandler(this.stackToolStrip_Click);
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
             // dockPanel
             // 
             this.dockPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
@@ -723,11 +734,6 @@ namespace DockSample
             this.notifyTSMIExit.Text = "&Exit";
             this.notifyTSMIExit.Click += new System.EventHandler(this.notifyTSMIExit_Click);
             // 
-            // mainTimer
-            // 
-            this.mainTimer.Interval = 2000;
-            this.mainTimer.Tick += new System.EventHandler(this.mainTimer_Tick);
-            // 
             // sysMenu
             // 
             this.sysMenu.BackColor = System.Drawing.Color.White;
@@ -887,6 +893,11 @@ namespace DockSample
             this.button2.Text = "6";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // mainTimer
+            // 
+            this.mainTimer.Interval = 2000;
+            this.mainTimer.Tick += new System.EventHandler(this.mainTimer_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -939,6 +950,7 @@ namespace DockSample
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Com Tool";
             this.SysBottomClick += new CCWin.CCSkinMain.SysBottomEventHandler(this.MainForm_SysBottomClick);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.LocationChanged += new System.EventHandler(this.MainForm_LocationChanged);
             this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
@@ -1004,7 +1016,6 @@ namespace DockSample
         private ToolStripMenuItem notifyTSMIExit;
         private ToolStripMenuItem notifyTSMIShow;
         private ToolStripMenuItem notifyTSMINewPort;
-        private Timer mainTimer;
         private ContextMenuStrip sysMenu;
         private ToolStripMenuItem settingSysMenu;
         private ToolStripMenuItem themeSysMenu;
@@ -1018,5 +1029,7 @@ namespace DockSample
         private Button btMaximize;
         private Button btMinimize;
         private Button button2;
+        private ToolStripButton toolStripButton1;
+        private Timer mainTimer;
     }
 }

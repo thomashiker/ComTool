@@ -11,13 +11,17 @@ using System.IO.Ports;
 using System.Timers;
 using FastColoredTextBoxNS;
 using System.Threading;
+using System.Threading.Tasks;
+using System.Windows;
+using Microsoft.Win32;
 
 
 namespace DockSample
 {
     public partial class ReceiveWindow : DockContent
     {
-        delegate void UpdateTextEventHandler(string text);  //委托，此为重点  
+        delegate void UpdateTextEventHandler(string text);  //委托，此为重点
+        delegate void SendTextEventHandler(string text, bool save2file);  //委托，此为重点  
         private bool recordState = true;
         private string logPath = "log";
         private string logFileName = null;
@@ -30,6 +34,13 @@ namespace DockSample
         private Int64 sendCharNum = 0;
         private bool receiveWindowAutoScroll = true;
         private int winID = -1;
+        private volatile bool Sending = false;
+
+        private Thread _readThread;
+        private volatile bool _keepReading;
+        private volatile bool _endReading = false;
+        private System.Timers.Timer sysTimer;
+
 
         public void SetLocationChangedEvent(EventArgs e)
         {
@@ -38,7 +49,6 @@ namespace DockSample
 
         public void SetActivatedEvent(EventArgs e)
         {
-            //this.OnActivated(e);
             this.ActivateMdiChild(this);
         }
 
@@ -111,6 +121,10 @@ namespace DockSample
                 serialPort.Parity   = info.GetPortParity();
                 serialPort.DataBits = info.GetPortDataBits();
                 serialPort.StopBits = info.GetPortStopBits();
+
+                sysTimer = new System.Timers.Timer(1000);
+                sysTimer.Elapsed += new System.Timers.ElapsedEventHandler(timer_tick); //到达时间的时候执行事件；
+                sysTimer.AutoReset = true;   //设置是执行一次（false）还是一直执行(true)；
             }
             catch
             {
@@ -120,37 +134,15 @@ namespace DockSample
             }
         }
 
-        private void StartOpenedTimer()
-        {
-            openedTimer.Enabled = true;
-        }
-        private void StopOpenedTimer()
-        {
-            openedTimer.Enabled = false;
-        }
-
-        private void DisplayTimeElapse(long elapse)
-        {
-            if (mainForm != null)
-            {
-                if (mainForm.GetLastActivedReceiveWindow() == this)
-                {
-                    mainForm.UpdateLinkTimeDisplay(elapse);
-                }
-            }
-        }
-
-        private void openedTimer_Tick(object sender, EventArgs e)
+        private void timer_tick(object source, System.Timers.ElapsedEventArgs e)
         {
             TimeElapse++;
-            DisplayTimeElapse(TimeElapse);
 
             if (mainForm != null)
             {
                 if (mainForm.GetLastActivedReceiveWindow() == this)
                 {
-                    mainForm.UpdateSendCharDisplay(sendCharNum);
-                    mainForm.UpdateRcvCharDisplay(rcvCharNum);
+                    mainForm.UpdateLinkTimeDisplay(TimeElapse);
                 }
             }
 
@@ -158,6 +150,26 @@ namespace DockSample
             {
                 CloseSerialPort();
             }
+        }
+
+        private void StartOpenedTimer()
+        {
+            sysTimer.Start();
+        }
+        private void StopOpenedTimer()
+        {
+            sysTimer.Stop();
+        }
+
+        private void CloseTimer()
+        {
+            sysTimer.Close();
+        }
+
+        void UIAction(Action action)//在主线程外激活线程方法
+        {
+            //System.Threading.SynchronizationContext.SetSynchronizationContext(new System.Threading.DispatcherSynchronizationContext(App.Current.Dispatcher));
+            //System.Threading.SynchronizationContext.Current.Post(_ => action(), null);
         }
 
         public string GetPortInfo()
@@ -275,15 +287,14 @@ namespace DockSample
                 Bitmap bmp = new Bitmap(global::DockSample.Properties.Resources.connect);
                 IntPtr h = bmp.GetHicon();
                 this.Icon = System.Drawing.Icon.FromHandle(h);
-                //DeleteObject(h);
-                //this.Icon = new Icon("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\ico\\connect.ico");
+
+                CreateReceiveThread();
             }
             catch
             {
                 Bitmap bmp = new Bitmap(global::DockSample.Properties.Resources.connection_error);
                 IntPtr h = bmp.GetHicon();
                 this.Icon = System.Drawing.Icon.FromHandle(h);
-                //this.Icon = new Icon("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\ico\\connection_error.ico");
                 return false;
             }
 
@@ -311,11 +322,13 @@ namespace DockSample
         {
             try
             {
-                serialPort.Close();
+                EndReceiveThread();
+
                 Bitmap bmp = new Bitmap(global::DockSample.Properties.Resources.connection_error);
                 IntPtr h = bmp.GetHicon();
                 this.Icon = System.Drawing.Icon.FromHandle(h);
-                //this.Icon = new Icon("E:\\COM Terminal\\COMx\\COM Terminal\\DockSample\\Resources\\DefaultIcon\\ico\\connection_error.ico");
+
+                serialPort.Close();//关闭串口
             }
             catch// (IOException)
             {
@@ -359,9 +372,14 @@ namespace DockSample
         {
             if (serialPort != null)
             {
-                try {
-                    serialPort.Close();
-                } catch{}
+                try
+                {
+                    EndReceiveThread();
+
+                    serialPort.Close();//关闭串口
+                    CloseTimer();
+                }
+                catch { }
             }
 
             this.Close();
@@ -424,32 +442,84 @@ namespace DockSample
             }
         }
 
+        private void ReceiveThread()
+        {
+            while (_keepReading)
+            {
+                if (IsPortOpen())
+                {
+                    byte[] readBuffer = new byte[serialPort.ReadBufferSize + 1];
+                    try
+                    {
+                        // If there are bytes available on the serial port,   
+                        // Read returns up to "count" bytes, but will not block (wait)   
+                        // for the remaining bytes. If there are no bytes available   
+                        // on the serial port, Read will block until at least one byte   
+                        // is available on the port, up until the ReadTimeout milliseconds   
+                        // have elapsed, at which time a TimeoutException will be thrown.   
+                        int count = serialPort.Read(readBuffer, 0, serialPort.ReadBufferSize);
+                        String SerialIn = System.Text.Encoding.ASCII.GetString(readBuffer, 0, count);
+                        if (count != 0)
+                        {
+                            Log(SerialIn);
+
+                            rcvCharNum += count;
+                            if (mainForm != null)
+                            {
+                                if (mainForm.GetLastActivedReceiveWindow() == this)
+                                {
+                                    mainForm.UpdateRcvCharDisplay(rcvCharNum);
+                                }
+                            }
+                        }
+
+                        Application.DoEvents();//循环时，仍进行等待事件中的进程
+                    }
+                    catch
+                    {
+                        //fastColoredTextBox.AppendText("TimeoutException");
+                    }
+                }
+            }
+            _endReading = true;
+        }
+
+        private void CreateReceiveThread()
+        {
+            _keepReading = true;
+            _readThread = new Thread(ReceiveThread);
+            _readThread.Start();
+        }
+
+        private void EndReceiveThread()
+        {
+            _keepReading = false;
+            while (!_endReading)
+            {
+                Application.DoEvents();
+            }
+        }
+
         private void DataReceivedHandler(string data)
         {
             if (!string.IsNullOrEmpty(data))
             {
                 rcvCharNum += data.Length;
+                if (mainForm != null)
+                {
+                    if (mainForm.GetLastActivedReceiveWindow() == this)
+                    {
+                        mainForm.UpdateRcvCharDisplay(rcvCharNum);
+                    }
+                }
 
                 LogToFile(data);
 
                 // Display the text to the user in the terminal
                 Log(data);
+
+                Application.DoEvents();
             }
-        }
-
-        private void serialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
-        {
-            // Read all the data waiting in the buffer
-            string data = serialPort.ReadExisting();
-
-            this.Invoke(new UpdateTextEventHandler(DataReceivedHandler), new string[] { data });
-
-            //rcvCharNum += data.Length;
-
-            //LogToFile(data);
-
-            // Display the text to the user in the terminal
-            //Log(data);
         }
 
         public void CreateSendLogFile()
@@ -494,38 +564,79 @@ namespace DockSample
             }
         }
 
-        private bool SendMessage(string msg, bool save2file)
+        private void DataSendHandler(string data, bool save2file)
         {
-            bool isOpen = IsPortOpen();
-
-            if (msg == null)
-            {
-                return true;
-            }
-
-            if (isOpen)
+            if (!string.IsNullOrEmpty(data))
             {
                 try
                 {
-                    serialPort.Write(msg);
+                    serialPort.Write(data);
 
-                    sendCharNum += msg.Length;
+                    sendCharNum += data.Length;
+                    if (mainForm != null)
+                    {
+                        if (mainForm.GetLastActivedReceiveWindow() == this)
+                        {
+                            mainForm.UpdateSendCharDisplay(sendCharNum);
+                        }
+                    }
 
                     if (save2file)
                     {
-                        SaveSendLogToFile(msg);
+                        SaveSendLogToFile(data);
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                    return;
+                }
+            }
+        }
+
+        private bool SendMessage(string msg, bool save2file)
+        {
+            if (msg == null)
+            {
+                return true;
+            }
+
+            try
+            {
+                Sending = true;////设置标记
+
+                if (IsPortOpen())
+                {
+                    try
+                    {
+                        serialPort.Write(msg);
+
+                        sendCharNum += msg.Length;
+
+                        if (save2file)
+                        {
+                            SaveSendLogToFile(msg);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        return false;
+                    }
+                    //this.Invoke(new SendTextEventHandler(DataSendHandler), msg, save2file);
+                }
+                else
+                {
+                    //MessageBox.Show(serialPort.PortName + "  Not Opened!");
                     return false;
                 }
             }
-            else
+            catch
             {
-                //MessageBox.Show(serialPort.PortName + "  Not Opened!");
-                return false;
+            }
+            finally
+            {
+                Sending = false;
             }
 
             return true;
@@ -856,7 +967,10 @@ namespace DockSample
             {
                 try
                 {
-                    serialPort.Close();
+                    EndReceiveThread();
+
+                    serialPort.Close();//关闭串口
+                    CloseTimer();
                 }
                 catch { }
             }
